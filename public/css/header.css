@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Mulish-ExtraBold';
+    src: url("/Fonts/Mulish-ExtraBold.ttf");
+}
+
+.shadow-effect {
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.25));
+}
+
+.header {
+    height: 11.5vh;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.header-mobile {
+    height: 9vh;
+    background-color: white;
+    position: sticky !important;
+    top: 0;
+    z-index: 1020;
+}
+
+.header-content {
+    margin-left: 10vw;
+    margin-right: 11.11vw;
+    height: 100%;
+}
+
+.header-list {
+    right: 0;
+    margin-left: 10%;
+    width: 100%;
+    color: #105181;
+    font-family: 'Mulish-ExtraBold';
+}
+.btn-contact{
+    background-color: #105181;
+    border: hidden;
+    border-radius: 3px;
+    color: white;
+    font-family: 'Mulish-ExtraBold';
+    font-size: 20px;
+}
+.btn-contact-mobile{
+    background-color: white;
+    border: hidden;
+    border-radius: 3px;
+    color: #105181;
+    font-family: 'Mulish-Black';
+    font-size: 25px;
+}

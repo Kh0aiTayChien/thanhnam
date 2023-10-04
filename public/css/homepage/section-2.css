@@ -1,0 +1,293 @@
+@font-face {
+    font-family: 'Mulish-ExtraBold';
+    src: url("/Fonts/Mulish-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: 'Mulish-Medium';
+    src: url("/Fonts/Mulish-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'Mulish-Black';
+    src: url("/Fonts/Mulish-Black.ttf");
+}
+
+@font-face {
+    font-family: 'Mulish-SemiBold';
+    src: url("/Fonts/Mulish-SemiBold.ttf");
+}
+
+.mulish-semibold {
+    font-family: 'Mulish-SemiBold';
+}
+
+.mulish-medium {
+    font-family: 'Mulish-Medium';
+}
+
+.mulish-extrabold {
+    font-family: 'Mulish-ExtraBold';
+}
+
+.mulish-black {
+    font-family: 'Mulish-Black';
+}
+
+.section-2 {
+    background: url("/images/homepage/section-2/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 5%;
+}
+
+.longer-btn {
+    width: 200px;
+}
+
+.blue-bg {
+    background-color: #105181;
+}
+.blue-text {
+   color: #105181;
+}
+
+.yellow-bg {
+    background-color: #F5CE00;
+}
+
+.rounded-custom-23 {
+    border-radius: 23px !important
+}
+
+.rounded-custom {
+    border-radius: 9px !important
+}
+
+.rounded-custom-top {
+    border-radius: 9px 9px 0 0 !important;
+}
+
+.font-size-custom {
+    font-size: 1rem;
+    font-family: Mitr-Medium, sans-serif;
+}
+
+.height-text-card {
+    height: 2rem;
+    color: #105181;
+}
+
+.carousel-courses {
+    width: 70%;
+    margin: 0px auto;
+}
+
+.carousel-knowledge {
+    width: 70%;
+    margin: 0px auto;
+}
+
+.courses .slick-slide {
+    margin: 10px;
+}
+
+.knowledge .slick-slide {
+    margin: 10px;
+}
+
+.slick-dots li button:before {
+    font-size: 20px;
+    color: white;
+}
+
+.courses .slick-slide:not(.slick-active) {
+    opacity: 0.5;
+}
+
+.knowledge .slick-slide:not(.slick-active) {
+    opacity: 0.5;
+}
+
+.custom-prev-arrow-course,
+.custom-next-arrow-course {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    scale: 75%;
+    z-index: 2;
+}
+
+.custom-prev-arrow-course {
+    left: 10px;
+}
+
+.custom-next-arrow-course {
+    right: 10px;
+}
+
+.hall-of-fame .card {
+    background: transparent;
+}
+
+.custom-prev-arrow-hall-of-fame,
+.custom-next-arrow-hall-of-fame {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    scale: 75%;
+    z-index: 2;
+}
+
+.custom-prev-arrow-hall-of-fame {
+    left: 10px;
+}
+
+.custom-next-arrow-hall-of-fame {
+    right: 10px;
+}
+
+.courses .slick-dots {
+    display: flex;
+    justify-content: start;
+    list-style: none;
+    padding: 0;
+    margin-top: 3rem;
+}
+
+.hall-of-fame .slick-dots {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 3rem;
+}
+
+.knowledge .slick-dots {
+    display: flex;
+    justify-content: start;
+    list-style: none;
+    padding: 0;
+    margin-top: 3rem;
+}
+
+.custom-prev-arrow-knowledge,
+.custom-next-arrow-knowledge {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    scale: 75%;
+    z-index: 2;
+}
+
+.custom-prev-arrow-knowledge {
+    left: 10px;
+}
+
+.custom-next-arrow-knowledge {
+    right: 10px;
+}
+
+.slick-dots li {
+    margin: 0 5px;
+}
+
+
+.slick-dots button {
+    background-color: transparent; /* Màu nền trong suốt cho dot không active */
+    border: 2px solid #105181; /* Viền xanh cho dot không active */
+    color: transparent; /* Màu chữ xanh cho dot không active */
+    padding: 5px;
+    width: 12px; /* Đường kính của dot */
+    height: 12px; /* Đường kính của dot */
+    border-radius: 50%; /* Hình dạng tròn cho dot */
+    cursor: pointer;
+}
+
+.slick-dots .slick-active button {
+    background-color: #105181; /* Màu nền xanh cho dot active */
+    border-color: #105181; /* Viền xanh cho dot active */
+    color: transparent; /* Màu chữ trắng cho dot active */
+}
+
+.btn-long {
+    width: 300px;
+}
+
+.section-2-mb {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .section-2-mb {
+        display: block;
+        justify-content: center;
+        text-align: center;
+        padding-top: 10%;
+    }
+
+    .sec2-homepage-pc, .sec3-homepage-pc {
+        display: none !important;
+    }
+
+    .headersec2-mb-HP {
+        font-size: 30px;
+        color: #965F05;
+        line-height: 5px;
+    }
+    .headersec2-mb2-HP {
+        font-size: 35px;
+        color: #105181;
+        line-height: 40px;
+    }
+    .contentsec2-mb-HP {
+        text-align: justify;
+        justify-content: center;
+        width: 95%;
+        padding-left: 5%;
+        font-weight: bold;
+        word-spacing: 2px;
+        letter-spacing: 0.08rem;
+    }
+    .imgsec2-mb-HP {
+        width: 90%;
+    }
+    .img-course {
+        scale: 70%;
+    }
+
+    .custom-prev-arrow-course {
+        left: -17px;
+        position: absolute;
+        top: 40%;
+        scale: 50%;
+        opacity: 50%;
+    }
+
+    .custom-next-arrow-course {
+        right: -17px;
+        position: absolute;
+        top: 40%;
+        scale: 50%;
+        opacity: 50%;
+    }
+
+    .height-text-card {
+        height: 3.5rem;
+    }
+
+    .height-img-card {
+        height: 160px;
+        width: 404px;
+        text-align: center;
+    }
+}

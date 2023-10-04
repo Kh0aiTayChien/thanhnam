@@ -1,0 +1,49 @@
+.row-test {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgsec2-HP {
+    /*padding-left: 3%;*/
+    transform: translateX(6%);
+}
+
+.containersec2-HP {
+    transform: translateX(-6%);
+}
+
+.contentsec2-HP {
+    font-size: 17px;
+    text-align: justify;
+    font-weight: bold;
+    width: 70%;
+    word-spacing: 4px;
+    letter-spacing: 0.1rem;
+}
+
+.headersec2-HP {
+    font-size: 55px;
+    color: #965F05;
+    font-weight: bold;
+    line-height: 5px;
+}
+.headersec2-HP2 {
+    font-size: 65px;
+    color: #105181;
+    font-weight: 1000;
+}
+
+.btnsec2-HP {
+    width: 45%;
+    height: 50px;
+    background-color: #F5CE00;
+    border: none;
+}
+
+.textbtn {
+    font-size: 20px;
+    margin-top: 2%;
+    color: white;
+}

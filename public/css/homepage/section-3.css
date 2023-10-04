@@ -1,0 +1,21 @@
+.section-3 {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url("/images/homepage/section-3/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 95vh;
+}
+
+.section-3 form {
+    background: rgba(16, 81, 129, 0.65);
+}
+.section-3 form input{
+    height: 3rem;
+    border-radius: 10px;
+}
+.section-3 form textarea{
+   height: 6rem;
+    border-radius: 16px;
+}
