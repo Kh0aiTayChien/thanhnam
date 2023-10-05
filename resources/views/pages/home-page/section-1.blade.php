@@ -5,7 +5,7 @@
          data-bs-ride="carousel">
         <div class="d-flex align-content-center justify-content-center position-absolute"
              style="z-index: 998; bottom: 15vh">
-            <a href="" class="btn btn-large bg-white blue-text mb-3 btn-long button-shake mulish-black py-2 "
+            <a href="/gioi-thieu" class="btn btn-large bg-white blue-text mb-3 btn-long button-shake mulish-black py-2 "
                style="font-size: 20px"
             >GIỚI THIỆU</a>
         </div>

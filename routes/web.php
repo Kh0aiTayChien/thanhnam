@@ -26,6 +26,9 @@ Route::prefix('admin')->middleware('auth')->group(function () {
         return view('admin/about');
     })->name('about');
 });
+Route::get('/gioi-thieu', function () {
+    return view('pages/introduce/index');
+});
 
 
 
