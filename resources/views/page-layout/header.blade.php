@@ -3,7 +3,7 @@
         <img class=header-logo src="{{asset('images/header/LOGO_THANHNAM.png')}}" alt="LOGO">
         <div class="header-list d-flex justify-content-center align-content-center row">
             <div class="col-2 text-center my-auto no-opacity ">TRANG CHỦ</div>
-            <div class="col-2 text-center my-auto no-opacity">GIỚI THIỆU</div>
+            <a href="/gioi-thieu" class="col-2 text-center my-auto no-opacity text-decoration-none"><div class="text-test">GIỚI THIỆU</div></a>
             <div class="col-2 text-center my-auto no-opacity">DỊCH VỤ CUNG CẤP</div>
             <div class="col-2 text-center my-auto no-opacity">TIN TỨC</div>
             <div class="col-3 text-center my-auto no-opacity">
