@@ -31,6 +31,10 @@
             <img src="{{asset('images/homepage/section-1/img1.png')}}" class="img-beboi">
         </div>
     </div>
+    <div class="d-flex align-content-center justify-content-center pt-5 pb-5">
+        <a href=""
+           class="btn blue-bg blue-text btn-block mb-3 text-white mitr-medium longer-btn shadow-test button-shake mulish-black">XEM THÊM</a>
+    </div>
 </div>
 <style>
     .be-boi .col-3 {
