@@ -4,7 +4,7 @@
         <img src="{{asset('images/homepage/sec-kientruc/title.png')}}" class="img-fluid" alt="">
     </div>
 
-    <div class="row gx-3 gy-3 mt-5 mx-4">
+    <div class="row gx-3 gy-3 mt-5" style="padding: 0 19rem">
         <div class="col-3 d-flex justify-content-center align-content-center position-relative " style="">
             <div class=" position-absolute mulish-black text-white" style="top: 65%; font-size: 1.5rem;z-index: 1200">
                 <div class="text-center text-build d-none">THIẾT KẾ KIẾN TRÚC</div>

@@ -34,27 +34,27 @@
     </div>
 
     <div class="row gx-0">
-        <div class="col-3 d-flex justify-content-center align-content-center position-relative " style="height: 20vh">
-            <div class=" position-absolute mulish-black text-white" style="top: 35%; font-size: 1.5rem;z-index: 1200">
+        <div class="col-3 d-flex justify-content-center align-content-center position-relative " style="height: 10vh">
+            <div class=" position-absolute mulish-black text-white" style="top: 35%; font-size: 1rem;z-index: 1200">
                <div class="text-center">THIẾT KẾ KIẾN TRÚC</div>
             </div>
             <img src="{{asset('images/homepage/section-1/img1.png')}}" class="img-under">
             <div class="overlay"></div>
         </div>
-        <div class="col-3 d-flex justify-content-center align-content-center position-relative " style="height: 20vh">
-            <div class=" position-absolute mulish-black text-white" style="top: 35%; font-size: 1.5rem;z-index: 1200">
+        <div class="col-3 d-flex justify-content-center align-content-center position-relative " style="height: 10vh">
+            <div class=" position-absolute mulish-black text-white" style="top: 35%; font-size: 1rem;z-index: 1200">
                 THI CÔNG
             </div>
             <img src="{{asset('images/homepage/section-1/img2.png')}}" class="img-under">
         </div>
-        <div class="col-3 d-flex justify-content-center align-content-center position-relative " style="height: 20vh">
-            <div class=" position-absolute mulish-black text-white" style="top: 35%; font-size: 1.5rem;z-index: 1200">
+        <div class="col-3 d-flex justify-content-center align-content-center position-relative " style="height: 10vh">
+            <div class=" position-absolute mulish-black text-white" style="top: 35%; font-size: 1rem;z-index: 1200">
                 THI CÔNG NỘI THẤT
             </div>
             <img src="{{asset('images/homepage/section-1/img3.png')}}" class="img-under">
         </div>
-        <div class="col-3 d-flex justify-content-center align-content-center position-relative " style="height: 20vh">
-            <div class=" position-absolute mulish-black text-white" style="top: 35%; font-size: 1.5rem;z-index: 1200">
+        <div class="col-3 d-flex justify-content-center align-content-center position-relative " style="height: 10vh">
+            <div class=" position-absolute mulish-black text-white" style="top: 35%; font-size: 1rem;z-index: 1200">
                 <div class="text-center">THIẾT KẾ - THI CÔNG </div>
                 <div class="text-center"> BỂ BƠI</div>
             </div>

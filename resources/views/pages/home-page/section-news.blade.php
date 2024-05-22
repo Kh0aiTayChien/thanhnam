@@ -16,7 +16,7 @@
                     <div class="card shadow-effect me-1"
                          style="width:20rem; height: 70% ">
                         <img class="rounded-custom m-3" src="{{$article->image}}"
-                             alt="Card image" style="height: 50%; object-fit: cover">
+                             alt="Card image" style="height: 10rem; object-fit: cover">
                         <div class="card-body">
                             <p class="height-text-card text-center mulish-black">{{\Illuminate\Support\Str::limit($article->title,60)}}</p>
                             <p class="card-text mulish-semibold ">{{ preg_replace('/<[^>]*>/', '', \Illuminate\Support\Str::limit(strip_tags($article->content), 60)) }}</p>
@@ -77,7 +77,7 @@
     <style>
         .knowledge{
             background: #EAEAEA;
-            padding-top: 20vh;
+            padding-top: 5vh;
         }
     </style>
 </div>
