@@ -1,10 +1,27 @@
 <div class="header shadow-effect sticky-top d-none d-md-block ">
     <div class="header-content d-flex align-content-center ">
-        <img class=header-logo src="{{asset('images/header/LOGO_THANHNAM.png')}}" alt="LOGO">
+        <img class=header-logo src="{{asset('images/header/LOGO_THANHNAM.png')}}" alt="LOGO" style="scale: 75%">
         <div class="header-list d-flex justify-content-center align-content-center row">
             <div class="col-2 text-center my-auto no-opacity ">TRANG CHỦ</div>
             <a href="/gioi-thieu" class="col-2 text-center my-auto no-opacity text-decoration-none"><div class="text-test">GIỚI THIỆU</div></a>
-            <div class="col-2 text-center my-auto no-opacity">DỊCH VỤ CUNG CẤP</div>
+            <div class="col-2 text-center my-auto no-opacity position-relative">
+                <div class="btn-transparent  py-3 product-sc-product"style="background-color: transparent;
+                color: #105181; cursor: pointer">
+                    DỊCH VỤ CUNG CẤP
+                </div>
+                <div class="position-absolute hide_button px-3 py-3" style=" margin-top:10%;  background-color: rgba(255, 255, 255, 0.5);; color: #105181">
+                    <div class="product-sc text-center "style="  width: 12rem;">THIẾT KẾ KIẾN TRÚC</div>
+                </div>
+                <div class="position-absolute hide_button px-3 py-3" style=" margin-top:45%;  background-color: rgba(255, 255, 255, 0.5);; color: #105181">
+                    <div class="product-sc text-center "style=" width: 12rem;">THI CÔNG CÔNG TRÌNH</div>
+                </div>
+                <div class="position-absolute hide_button px-3 py-3" style=" margin-top:80%;  background-color: rgba(255, 255, 255, 0.5);; color: #105181">
+                    <div class="product-sc text-center "style=" width: 12rem;">THI CÔNG NỘI THẤT</div>
+                </div>
+                <div class="position-absolute hide_button px-3 py-3" style=" margin-top:115%;  background-color: rgba(255, 255, 255, 0.5);; color: #105181">
+                    <div class="product-sc text-center "style=" width: 12rem;">THIẾT KẾ - THI CÔNG BỂ BƠI</div>
+                </div>
+            </div>
             <div class="col-2 text-center my-auto no-opacity">TIN TỨC</div>
             <div class="col-3 text-center my-auto no-opacity">
                 <button class="btn-contact px-5 py-1">LIÊN HỆ</button>
@@ -91,6 +108,9 @@
         height: 100%;
         z-index: 999; /* Đảm bảo div phủ lên trên cùng */
     }
+    .hide_button {
+        display: none;
+    }
 </style>
 <script>
     $(document).ready(function () {
@@ -103,6 +123,9 @@
             $('.menu-dropdown').addClass('d-none');
             $('.dropdown-cancer').addClass('d-none');
             $('.dropdown-header').removeClass('d-none');
+        });
+        $('.product-sc-product').click(function(){
+            $('.hide_button').stop().slideToggle(300);
         });
     });
 </script>

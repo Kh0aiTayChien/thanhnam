@@ -171,7 +171,7 @@
 
 .knowledge .slick-dots {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     list-style: none;
     padding: 0;
     margin-top: 3rem;
@@ -190,11 +190,11 @@
 }
 
 .custom-prev-arrow-knowledge {
-    left: 10px;
+    left: 10rem
 }
 
 .custom-next-arrow-knowledge {
-    right: 10px;
+    right: 10rem
 }
 
 .slick-dots li {
@@ -279,6 +279,13 @@
         top: 40%;
         scale: 50%;
         opacity: 50%;
+    }
+    .custom-prev-arrow-knowledge {
+        left: -3px;
+    }
+
+    .custom-next-arrow-knowledge {
+        right: -3px;
     }
 
     .height-text-card {
