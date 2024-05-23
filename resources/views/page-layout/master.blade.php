@@ -38,6 +38,7 @@
     <link href="{{asset('/css/homepage/section5.css')}}" rel="stylesheet">
     <link href="{{asset('/css/homepage/about.css')}}" rel="stylesheet">
     <link href="{{asset('/css/introduce/sec1-GT.css')}}" rel="stylesheet">
+    <link href="{{asset('/css/pools/sec1.css')}}" rel="stylesheet">
     <style>
         body {
             overflow-x: hidden;
