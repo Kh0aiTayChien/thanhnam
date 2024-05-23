@@ -26,6 +26,12 @@ Route::prefix('admin')->middleware('auth')->group(function () {
         return view('admin/about');
     })->name('about');
 });
+Route::get('/pools', function () {
+    return view('pages/service/pool/index');
+});
+Route::get('/news', function () {
+    return view('pages/news/index');
+});
 Route::get('/gioi-thieu', function () {
     return view('pages/introduce/index');
 });
