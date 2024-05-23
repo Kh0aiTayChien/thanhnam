@@ -19,10 +19,10 @@
                     <div class="product-sc text-center "style=" width: 12rem;">THI CÔNG NỘI THẤT</div>
                 </div>
                 <div class="position-absolute hide_button px-3 py-3" style=" margin-top:115%;  background-color: rgba(255, 255, 255, 0.5);; color: #105181">
-                    <div class="product-sc text-center "style=" width: 12rem;">THIẾT KẾ - THI CÔNG BỂ BƠI</div>
+                    <div class="product-sc text-center "style=" width: 12rem;"><a href="{{asset('pools')}}" style="text-decoration: none; color: unset"> THIẾT KẾ - THI CÔNG BỂ BƠI</a></div>
                 </div>
             </div>
-            <div class="col-2 text-center my-auto no-opacity">TIN TỨC</div>
+            <div class="col-2 text-center my-auto no-opacity"><a href="{{asset('news')}}" style="text-decoration: none; color: unset">TIN TỨC</a></div>
             <div class="col-3 text-center my-auto no-opacity">
                 <button class="btn-contact px-5 py-1">LIÊN HỆ</button>
             </div>
