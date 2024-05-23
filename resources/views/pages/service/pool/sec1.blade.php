@@ -1,5 +1,8 @@
-<div class="mt-5 justify-content-center">
-    <div class="content1-pools">
+<div class="justify-content-center">
+    <div class="row-test banner-pools">
+        <p class="" style="font-family: Mulish-ExtraBold, sans-serif; color: white; font-size: 30px">THIẾT KẾ - THI CÔNG BỂ BƠI</p>
+    </div>
+    <div class="content1-pools mt-5">
         <div class="text-pools">
             <p class="" style="font-size: 18px"><span style="font-weight: bold; font-size: 23px">Công trình:</span> Thi
                 công bể bơi ngoài trời </p>
