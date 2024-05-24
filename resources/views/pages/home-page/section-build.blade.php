@@ -49,20 +49,20 @@
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="{{asset('images/homepage/sec-build/tcct/1.png')}}" class="img-slide h-100"
-                                     alt="img-slide">
+                                <img src="{{asset('images/homepage/sec-build/tcct/1.png')}}" class="img-slide img-fluid"
+                                     alt="img-slide img-fluid">
                             </div>
                             <div class="carousel-item ">
-                                <img src="{{asset('images/homepage/sec-build/tcct/2.png')}}" class="img-slide h-100"
-                                     alt="img-slide">
+                                <img src="{{asset('images/homepage/sec-build/tcct/2.png')}}" class="img-slide img-fluid"
+                                     alt="img-slide img-fluid">
                             </div>
                             <div class="carousel-item ">
-                                <img src="{{asset('images/homepage/sec-build/tcct/3.png')}}" class="img-slide  h-100"
-                                     alt="img-slide">
+                                <img src="{{asset('images/homepage/sec-build/tcct/3.png')}}" class="img-slide  img-fluid"
+                                     alt="img-slide img-fluid">
                             </div>
                             <div class="carousel-item ">
-                                <img src="{{asset('images/homepage/sec-build/tcct/4.png')}}" class="img-slide  h-100"
-                                     alt="img-slide">
+                                <img src="{{asset('images/homepage/sec-build/tcct/4.png')}}" class="img-slide img-fluid"
+                                     alt="img-slide ">
                             </div>
                         </div>
                         <button class="carousel-control-prev mobile-space-prev" type="button" data-bs-target="#section-tab1-carousel"
@@ -96,19 +96,19 @@
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="{{asset('images/homepage/sec-build/tcnt/1.png')}}" class="img-slide h-100"
+                                <img src="{{asset('images/homepage/sec-build/tcnt/1.png')}}" class="img-slide img-fluid"
                                      alt="img-slide">
                             </div>
                             <div class="carousel-item ">
-                                <img src="{{asset('images/homepage/sec-build/tcnt/2.png')}}" class="img-slide h-100"
+                                <img src="{{asset('images/homepage/sec-build/tcnt/2.png')}}" class="img-slide img-fluid"
                                      alt="img-slide">
                             </div>
                             <div class="carousel-item ">
-                                <img src="{{asset('images/homepage/sec-build/tcnt/3.png')}}" class="img-slide h-100"
+                                <img src="{{asset('images/homepage/sec-build/tcnt/3.png')}}" class="img-slide img-fluid"
                                      alt="img-slide">
                             </div>
                             <div class="carousel-item ">
-                                <img src="{{asset('images/homepage/sec-build/tcnt/4.png')}}" class="img-slide h-100"
+                                <img src="{{asset('images/homepage/sec-build/tcnt/4.png')}}" class="img-slide img-fluid"
                                      alt="img-slide">
                             </div>
                         </div>
