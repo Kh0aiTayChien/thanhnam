@@ -1,5 +1,6 @@
 <?php
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\ArticlePoolController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\HomePage\IndexController;
 use App\Http\Controllers\MediaController;
@@ -15,6 +16,12 @@ Route::prefix('admin')->middleware('auth')->group(function () {
     Route::get('index/{conditionView}', [ArticleController::class, 'index'])->name('articles.index');
     Route::delete('articles/forceDel/{article} ', [ArticleController::class, 'forceDestroy'])->name('articles.forceDestroy');
     Route::post('articles/trash/{article} ', [ArticleController::class, 'restore'])->name('articles.restore');
+
+    Route::resource('article_pools', 'ArticlePoolController')->except(['index']);
+    Route::get('article_pools', [ArticlePoolController::class, 'index'])->name('article_pools.index');
+//    Route::delete('articles/forceDel/{article} ', [ArticlePoolController::class, 'forceDestroy'])->name('article_pools.forceDestroy');
+//    Route::post('articles/trash/{article} ', [ArticlePoolController::class, 'restore'])->name('article_pools.restore');
+
     Route::post('/order-number', [ArticleController::class, 'OrderNumber'])->name('admin.updateOrderNumber');
     Route::get('/media', [MediaController::class, 'index'])->name('admin.media.index');
     Route::post('/upload', [MediaController::class, 'upload'])->name('admin.media.upload');

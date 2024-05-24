@@ -3,8 +3,8 @@
         <img src="{{asset('images/homepage/about/title.png')}}" alt="">
     </div>
 
-    <div class="content row-test">
-        <img src="{{asset('images/homepage/about/about.png')}}" class="col-xxl-4 imgsec2-HP-test" alt="">
+    <div class=" row-test">
+        <img src="{{asset('images/homepage/about/about.png')}}" class="col-xxl-4 imgsec2-HP-test img-fluid" alt="">
         <div class="col-xxl-4 col-md-12 containercontentsec2-HP">
             <p class="contentsec2-HP-test mulish-semibold">Công ty CP Tư Vấn Xây Dựng Lộc Việt được thành lập tháng 9 năm 2016. Hoạt động
                 trong lĩnh vực xây dựng dân dụng, xây dựng giao thông hạ tầng và thi công nhà xưởng. Trong lĩnh vực xây

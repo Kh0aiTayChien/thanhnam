@@ -7,7 +7,7 @@
     src: url("/Fonts/Mulish-Black.ttf");
 }
 .footer {
-    height: 47.57vh;
+    height: 37.57vh;
     font-family: 'Mulish-ExtraBold';
     bottom: 0;
     left: 0;
@@ -34,7 +34,7 @@
 }
 
 .footer .copyright {
-    height: 8.56vh;
+    height: 5.56vh;
     background-color: white;
 }
 

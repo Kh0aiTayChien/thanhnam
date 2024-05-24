@@ -2,7 +2,7 @@
     <div class="header-content d-flex align-content-center ">
         <img class=header-logo src="{{asset('images/header/LOGO_THANHNAM.png')}}" alt="LOGO" style="scale: 75%">
         <div class="header-list d-flex justify-content-center align-content-center row">
-            <div class="col-2 text-center my-auto no-opacity ">TRANG CHỦ</div>
+            <div class="col-2 text-center my-auto no-opacity header-logo">TRANG CHỦ</div>
             <a href="/gioi-thieu" class="col-2 text-center my-auto no-opacity text-decoration-none"><div class="text-test">GIỚI THIỆU</div></a>
             <div class="col-2 text-center my-auto no-opacity position-relative">
                 <div class="btn-transparent  py-3 product-sc-product"style="background-color: transparent;
@@ -19,7 +19,7 @@
                     <div class="product-sc text-center "style=" width: 12rem;">THI CÔNG NỘI THẤT</div>
                 </div>
                 <div class="position-absolute hide_button px-3 py-3" style=" margin-top:115%;  background-color: rgba(255, 255, 255, 0.5);; color: #105181">
-                    <div class="product-sc text-center "style=" width: 12rem;"><a href="{{asset('pools')}}" style="text-decoration: none; color: unset"> THIẾT KẾ - THI CÔNG BỂ BƠI</a></div>
+                    <div class="product-bb text-center "style=" width: 12rem;"><a href="{{asset('pools')}}" style="text-decoration: none; color: unset"> THIẾT KẾ - THI CÔNG BỂ BƠI</a></div>
                 </div>
             </div>
             <div class="col-2 text-center my-auto no-opacity"><a href="{{asset('news')}}" style="text-decoration: none; color: unset">TIN TỨC</a></div>
@@ -126,6 +126,12 @@
         });
         $('.product-sc-product').click(function(){
             $('.hide_button').stop().slideToggle(300);
+        });
+        $(".header-logo").click(function(){
+            window.location.href = "/";
+        });
+        $(".product-bb").click(function(){
+            window.location.href = "/pools";
         });
     });
 </script>
