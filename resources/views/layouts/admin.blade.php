@@ -85,7 +85,7 @@
             <div class="sidebar-brand-icon rotate-n-15">
 
             </div>
-            <div class="sidebar-brand-text mx-3">NINO TOEIC <sup><i class="fas fa-laugh-wink"></i></sup></div>
+            <div class="sidebar-brand-text mx-3">THÀNH NAM <sup><i class="fas fa-laugh-wink"></i></sup></div>
         </a>
 
         <!-- Divider -->
@@ -123,7 +123,7 @@
             <a class="nav-link" data-toggle="collapse" href="#articles" role="button" aria-expanded="false"
                aria-controls="articles">
                 <i class="fas fa-newspaper"></i>
-                <span>Bài viết</span>
+                <span>Tin Tức</span>
             </a>
             <div class="collapse" id="articles">
                 <ul class="nav flex-column">
@@ -141,26 +141,47 @@
             </div>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#products" role="button" aria-expanded="false"
-               aria-controls="products">
-                <i class="fa fa-shopping-bag"></i>
-                <span>Khóa học</span>
+            <a class="nav-link" data-toggle="collapse" href="#articles" role="button" aria-expanded="false"
+               aria-controls="articles">
+                <i class="fas fa-newspaper"></i>
+                <span>Thiết kế bể bơi</span>
             </a>
-            <div class="collapse" id="products">
+            <div class="collapse" id="articles">
                 <ul class="nav flex-column">
-                    <li class="nav-item {{ Nav::isRoute('products.create') }}">
-                        <a class="nav-link" href="{{ route('products.create') }}">
-                            <span>Khóa học mới</span>
+                    <li class="nav-item {{ Nav::isRoute('article_pools.create') }}">
+                        <a class="nav-link" href="{{ route('article_pools.create') }}">
+                            <span>Bài viết mới</span>
                         </a>
                     </li>
-                    <li class="nav-item {{ Nav::isRoute('products.index') }}">
-                        <a class="nav-link" href="{{ route('products.index') }}">
-                            <span>Danh sách khóa học</span>
+                    <li class="nav-item {{ Nav::isRoute('article_pools.index') }}">
+                        <a class="nav-link" href="{{ route('article_pools.index',['conditionView' => 'index'])}}">
+                            <span>Danh sách bài viết</span>
                         </a>
                     </li>
                 </ul>
             </div>
         </li>
+{{--        <li class="nav-item">--}}
+{{--            <a class="nav-link" data-toggle="collapse" href="#products" role="button" aria-expanded="false"--}}
+{{--               aria-controls="products">--}}
+{{--                <i class="fa fa-shopping-bag"></i>--}}
+{{--                <span>Khóa học</span>--}}
+{{--            </a>--}}
+{{--            <div class="collapse" id="products">--}}
+{{--                <ul class="nav flex-column">--}}
+{{--                    <li class="nav-item {{ Nav::isRoute('products.create') }}">--}}
+{{--                        <a class="nav-link" href="{{ route('products.create') }}">--}}
+{{--                            <span>Khóa học mới</span>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
+{{--                    <li class="nav-item {{ Nav::isRoute('products.index') }}">--}}
+{{--                        <a class="nav-link" href="{{ route('products.index') }}">--}}
+{{--                            <span>Danh sách khóa học</span>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
+{{--                </ul>--}}
+{{--            </div>--}}
+{{--        </li>--}}
         <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#images" role="button" aria-expanded="false"
                aria-controls="images">
@@ -431,7 +452,7 @@
                     <div class="topbar-divider d-none d-sm-block"></div>
 
                     <!-- Nav Item - User Information -->
-                    <li class="nav-item dropdown no-arrow">
+                    <li class="nav-item dropdown no-arrow" style="overflow: unset !important">
                         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{ Auth::user()->name }}</span>

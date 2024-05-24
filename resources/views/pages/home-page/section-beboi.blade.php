@@ -8,16 +8,14 @@
         <div class="col-2 d-flex justify-content-center align-content-center position-relative " style="">
         </div>
         <div class="col-4 d-flex justify-content-center align-content-center position-relative " style="">
-            <div class=" position-absolute mulish-black text-white " style="top: 65%; font-size: 1.5rem;z-index: 1200">
-                <div class="text-center text-build d-none"> THI CÔNG</div>
-            </div>
-            <img src="{{asset('images/homepage/section-1/img2.png')}}" class="img-beboi">
+{{--            <div class=" position-absolute mulish-black text-white " style="top: 65%; font-size: 1.5rem;z-index: 1200">--}}
+{{--            </div>--}}
+            <img src="{{asset('images/homepage/be-boi/1.png')}}" class="img-fluid">
         </div>
         <div class="col-4 d-flex justify-content-center align-content-center position-relative " style="">
-            <div class=" position-absolute mulish-black text-white" style="top: 65%; font-size: 1.5rem;z-index: 1200">
-                <div class="text-center text-build d-none">THI CÔNG NỘI THẤT </div>
-            </div>
-            <img src="{{asset('images/homepage/section-1/img3.png')}}" class="img-beboi">
+{{--            <div class=" position-absolute mulish-black text-white" style="top: 65%; font-size: 1.5rem;z-index: 1200">--}}
+{{--            </div>--}}
+            <img src="{{asset('images/homepage/be-boi/2.png')}}" class="img-fluid">
         </div>
         <div class="col-2 d-flex justify-content-center align-content-center position-relative " style="">
         </div>
