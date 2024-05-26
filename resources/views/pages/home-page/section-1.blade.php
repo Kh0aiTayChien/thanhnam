@@ -11,7 +11,7 @@
                     và đối tác. Công ty TNHH kỹ thuật và thương mại Thành Nam mong muốn chở thành đối tác với các
                     doanh nghiệp, Chủ đầu tư và khách hàng để cùng phát triển đi đến thành công!</p>
             </div>
-            <div class="btn text-white montserrat d-block d-md-none px-3 " style="font-size: 16px; text-align: justify; margin-bottom: 25%">
+            <div class="btn text-white montserrat d-none px-3 " style="font-size: 16px; text-align: justify; margin-bottom: 25%">
                 <div style="font-size: 15px; font-family: Mulish-ExtraBold" class="mb-5">Công ty CP Tư Vấn Xây Dựng THÀNH NAM</div>
                 <p> Chúng tôi đặt mục tiêu chất lượng lên hàng đầu, từ đó xây dựng niềm tin bền vững nơi khách hàng
                     và đối tác. Công ty TNHH kỹ thuật và thương mại Thành Nam mong muốn chở thành đối tác với các
@@ -51,31 +51,31 @@
     </div>
 
     <div class="row gx-0">
-        <div class="col-3 d-flex justify-content-center align-content-center position-relative " style="height: 10vh">
-            <div class=" position-absolute mulish-black text-white" style="top: 35%; font-size: 1rem;z-index: 1200">
+        <div class="col-3 d-flex justify-content-center align-content-center position-relative " style="height: 8vh">
+            <div class=" position-absolute mulish-black text-white font-size-sec-1" style="top: 35%; z-index: 1200">
                <div class="text-center">THIẾT KẾ KIẾN TRÚC</div>
             </div>
-            <img src="{{asset('images/homepage/section-1/img1.png')}}" class="img-under">
+            <img src="{{asset('images/homepage/section-1/footer-sec1/1.png')}}" class="img-under">
             <div class="overlay"></div>
         </div>
-        <div class="col-3 d-flex justify-content-center align-content-center position-relative " style="height: 10vh">
-            <div class=" position-absolute mulish-black text-white" style="top: 35%; font-size: 1rem;z-index: 1200">
+        <div class="col-3 d-flex justify-content-center align-content-center position-relative " style="height: 8vh">
+            <div class=" position-absolute mulish-black text-white font-size-sec-1" style="top: 35%; ;z-index: 1200">
                 THI CÔNG
             </div>
-            <img src="{{asset('images/homepage/section-1/img2.png')}}" class="img-under">
+            <img src="{{asset('images/homepage/section-1/footer-sec1/2.png')}}" class="img-under">
         </div>
-        <div class="col-3 d-flex justify-content-center align-content-center position-relative " style="height: 10vh">
-            <div class=" position-absolute mulish-black text-white" style="top: 35%; font-size: 1rem;z-index: 1200">
+        <div class="col-3 d-flex justify-content-center align-content-center position-relative " style="height: 8vh">
+            <div class=" position-absolute mulish-black text-white font-size-sec-1" style="top: 35%; ;z-index: 1200">
                 THI CÔNG NỘI THẤT
             </div>
-            <img src="{{asset('images/homepage/section-1/img3.png')}}" class="img-under">
+            <img src="{{asset('images/homepage/section-1/footer-sec1/3.png')}}" class="img-under">
         </div>
-        <div class="col-3 d-flex justify-content-center align-content-center position-relative " style="height: 10vh">
-            <div class=" position-absolute mulish-black text-white" style="top: 35%; font-size: 1rem;z-index: 1200">
+        <div class="col-3 d-flex justify-content-center align-content-center position-relative " style="height: 8vh">
+            <div class=" position-absolute mulish-black text-white font-size-sec-1" style="top: 25%; ;z-index: 1200">
                 <div class="text-center">THIẾT KẾ - THI CÔNG </div>
                 <div class="text-center"> BỂ BƠI</div>
             </div>
-            <img src="{{asset('images/homepage/section-1/img1.png')}}" class="img-under">
+            <img src="{{asset('images/homepage/section-1/footer-sec1/4.png')}}" class="img-under">
         </div>
 
     </div>
@@ -93,4 +93,12 @@
         filter: grayscale(100%);
         cursor: pointer;
     }
+    .font-size-sec-1{
+        font-size: 1rem;
+    }
+    @media  only screen and (max-width: 800px) {
+       .font-size-sec-1{
+           font-size: 0.5rem;
+       }
+   }
 </style>

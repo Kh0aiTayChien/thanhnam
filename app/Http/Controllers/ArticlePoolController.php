@@ -49,6 +49,9 @@ class ArticlePoolController extends Controller
             'category' => 'required',
             'slug' => 'required|string',
             'content' => 'required',
+            'investor' => 'required',
+            'location' => 'required',
+            'scale' => 'required',
         ], [
             'title.unique' => 'Tiêu đề đã tồn tại',
             'title.required' => 'Không được để trống'
@@ -59,6 +62,9 @@ class ArticlePoolController extends Controller
         $article->slug = $validatedData['slug'];
         $article->content = $validatedData['content'];
         $article->status = $request->input('status');
+        $article->investor = $validatedData['investor'];
+        $article->location = $validatedData['location'];
+        $article->scale = $validatedData['scale'];
         if ($article->status == 1) {
             $article->order_number = $request->input('order_number') ?? 1;
         } else {
@@ -72,8 +78,8 @@ class ArticlePoolController extends Controller
             $article->image = '/uploads/images/' . $imageName; // Lưu đường dẫn của ảnh vào cột image trong bảng Product
         }
         $article->save();
-        $conditionView = 'index';
-        return redirect()->route('article_pool.index')->with('success', 'Tạo bài viết thành công!');
+//        $conditionView = 'index';
+        return redirect()->route('article_pools.index')->with('success', 'Tạo bài viết thành công!');
     }
 
     public function show($id)
@@ -84,7 +90,7 @@ class ArticlePoolController extends Controller
     public function edit($id)
     {
         $article = Article::findOrFail($id);
-        $categories = Category::where('type',0)->get();
+        $categories = Category::where('type',1)->get();
         return view('admin/article_pool/edit', ['article' => $article, 'categories' => $categories]);
     }
 
@@ -95,6 +101,9 @@ class ArticlePoolController extends Controller
             'category' => 'required',
             'slug' => 'required|string',
             'content' => 'required',
+            'investor' => 'required',
+            'location' => 'required',
+            'scale' => 'required',
         ], [
             'title.unique' => 'Tiêu đề đã tồn tại',
             'title.required' => 'Không được để trống'
@@ -105,6 +114,9 @@ class ArticlePoolController extends Controller
         $article->slug = $validatedData['slug'];
         $article->content = $validatedData['content'];
         $article->status = $request->input('status');
+        $article->investor = $validatedData['investor'];
+        $article->location = $validatedData['location'];
+        $article->scale = $validatedData['scale'];
         if ($article->status == 1) {
             $article->order_number = $request->input('order_number') ?? 1;
         } else {
@@ -119,7 +131,7 @@ class ArticlePoolController extends Controller
         }
         $article->save();
         $conditionView = 'index';
-        return redirect()->route('article_pool.index')->with('success', 'Thay đổi bài viết thành công !');
+        return redirect()->route('article_pools.index')->with('success', 'Thay đổi bài viết thành công !');
     }
 
     public function destroy($id)
