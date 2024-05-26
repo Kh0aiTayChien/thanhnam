@@ -46,13 +46,13 @@
                 @endif
                 @if($conditionView === 'index')
                     <td class="col-lg-1">
-                        <a href="{{route('articles.edit',[ $article->id ])}}" class="btn btn-warning">
+                        <a href="{{route('article_pools.edit',[ $article->id ])}}" class="btn btn-warning">
                             Sửa
                             <i class="fa fa-magic" aria-hidden="true"></i>
                         </a>
                     </td>
                     <td class="col-lg-1">
-                        <form action="{{route('articles.destroy',[ $article->id ])}}" method="POST" id="delete-article">
+                        <form action="{{route('article_pools.destroy',[ $article->id ])}}" method="POST" id="delete-article">
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-danger">Xóa

@@ -21,6 +21,10 @@ class ArticleController extends Controller
             $query = Article::onlyTrashed();
         }
 
+        $query->whereHas('category', function ($query) {
+            $query->where('type', 0);
+        });
+
         if ($searchType == 'title') {
             $query->where('title', 'like', '%' . $keyword . '%');
         } elseif ($searchType == 'content') {
