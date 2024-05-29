@@ -59,6 +59,9 @@ class ArticleController extends Controller
         $article->slug = $validatedData['slug'];
         $article->content = $validatedData['content'];
         $article->status = $request->input('status');
+        $article->investor = ".";
+        $article->location = ".";
+        $article->scale = ".";
         if ($article->status == 1) {
             $article->order_number = $request->input('order_number') ?? 1;
         } else {
@@ -105,6 +108,9 @@ class ArticleController extends Controller
         $article->slug = $validatedData['slug'];
         $article->content = $validatedData['content'];
         $article->status = $request->input('status');
+        $article->investor = ".";
+        $article->location = ".";
+        $article->scale = ".";
         if ($article->status == 1) {
             $article->order_number = $request->input('order_number') ?? 1;
         } else {
