@@ -10,13 +10,13 @@
                     DỊCH VỤ CUNG CẤP
                 </div>
                 <div class="position-absolute hide_button px-3 py-3" style=" margin-top:10%;  background-color: rgba(255, 255, 255, 0.5);; color: #105181">
-                    <div class="product-sc text-center "style="  width: 12rem;">THIẾT KẾ KIẾN TRÚC</div>
+                    <div class="product-sc text-center "style="  width: 12rem;"><a href="{{asset('thiet-ke-kien-truc')}}" style="text-decoration: none; color: unset"> THIẾT KẾ KIẾN TRÚC</a></div>
                 </div>
                 <div class="position-absolute hide_button px-3 py-3" style=" margin-top:45%;  background-color: rgba(255, 255, 255, 0.5);; color: #105181">
-                    <div class="product-sc text-center "style=" width: 12rem;">THI CÔNG CÔNG TRÌNH</div>
+                    <div class="product-sc text-center "style=" width: 12rem;"><a href="{{asset('thi-cong-cong-trinh')}}" style="text-decoration: none; color: unset"> THI CÔNG CÔNG TRÌNH</a></div>
                 </div>
                 <div class="position-absolute hide_button px-3 py-3" style=" margin-top:80%;  background-color: rgba(255, 255, 255, 0.5);; color: #105181">
-                    <div class="product-sc text-center "style=" width: 12rem;">THI CÔNG NỘI THẤT</div>
+                    <div class="product-sc text-center "style=" width: 12rem;"><a href="{{asset('thi-cong-noi-that')}}" style="text-decoration: none; color: unset"> THI CÔNG NỘI THẤT</a></div>
                 </div>
                 <div class="position-absolute hide_button px-3 py-3" style=" margin-top:115%;  background-color: rgba(255, 255, 255, 0.5);; color: #105181">
                     <div class="product-bb text-center "style=" width: 12rem;"><a href="{{asset('thiet-ke-be-boi')}}" style="text-decoration: none; color: unset"> THIẾT KẾ - THI CÔNG BỂ BƠI</a></div>

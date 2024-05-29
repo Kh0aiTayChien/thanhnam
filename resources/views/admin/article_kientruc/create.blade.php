@@ -49,7 +49,6 @@
 
             <div class="card shadow mb-4">
                 <div class="card-profile-image mt-4 ">
-                    <h5 class="font-weight-bold title-image d-none">Ảnh bài viết thay đổi </h5>
                     <img id="image-review" src="" alt="" style="max-width: 100%; max-height: 200px;">
                 </div>
                 <script>
@@ -58,9 +57,6 @@
                         reader.onload = function(){
                             var preview = document.getElementById('image-review');
                             preview.src = reader.result;
-
-                            var Element = document.querySelector('.title-image');
-                            Element.classList.remove('d-none');
                         }
                         reader.readAsDataURL(event.target.files[0]);
                     }
@@ -70,8 +66,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="text-center">
-                                <h5 class="font-weight-bold" >Ảnh cho bài viết</h5>
-                                <img src="{{$article->image}}" style="width: 300px; height: 200px" alt="">
+                                <h5 class="font-weight-bold">Ảnh cho bài viết</h5>
                             </div>
                         </div>
                     </div>
@@ -91,12 +86,12 @@
 
                 <div class="card-body">
 
-                    <form method="POST" action="{{route('articles.update',['article' => $article->id ])}}" autocomplete="off" enctype="multipart/form-data">
+                    <form method="POST" action="{{route('article_kien_truc.store')}}" autocomplete="off" enctype="multipart/form-data">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
-                        <input type="hidden" name="_method" value="PATCH">
+                        <input type="hidden" name="_method" value="POST">
 
-                        <h6 class="heading-small text-muted mb-4">Sửa bài viết </h6>
+                        <h6 class="heading-small text-muted mb-4">Tạo bài viết mới </h6>
 
                         <div class="pl-lg-4">
                             <div class="row">
@@ -105,16 +100,16 @@
                                         <label class="form-control-label" for="title">Tiêu đề<span
                                                 class="small text-danger">*</span></label>
                                         <input type="text" id="title" class="form-control" name="title"
-                                               placeholder="tiêu đề của bài viết" value="{{$article->title}}">
+                                               placeholder="tiêu đề của bài viết">
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-group focused">
                                         <label class="form-control-label" for="category">Chủ đề<span class="small text-danger">*</span></label>
                                         <select id="category" class="form-control" name="category">
-{{--                                            {{--                                            <option value="">-- Chọn chủ đề --</option>--}}--}}
+                                            {{--                                            <option value="">-- 1Chọn chủ đề --</option>--}}
                                             @foreach($categories as $category)
-                                                <option value="{{ $category->id }}" {{ $category->id == $article->category_id ? 'selected' : '' }}>{{ $category->title }}</option>
+                                                <option value="{{ $category->id }}">{{ $category->title }}</option>
                                             @endforeach
                                         </select>
                                     </div>
@@ -123,7 +118,31 @@
                                     <div class="form-group focused">
                                         <label class="form-control-label" for="slug">Slug<span
                                                 class="small text-danger">*</span></label>
-                                        <input type="text" id="slug" class="form-control" name="slug" value="{{$article->slug}}"
+                                        <input type="text" id="slug" class="form-control" name="slug"
+                                               placeholder="link không dấu của bài viết">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group focused">
+                                        <label class="form-control-label" for="slug">Nhà Đầu Tư<span
+                                                class="small text-danger">*</span></label>
+                                        <input type="text" id="investor" class="form-control" name="investor"
+                                               placeholder="link không dấu của bài viết">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group focused">
+                                        <label class="form-control-label" for="slug">Địa điểm<span
+                                                class="small text-danger">*</span></label>
+                                        <input type="text" id="location" class="form-control" name="location"
+                                               placeholder="link không dấu của bài viết">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group focused">
+                                        <label class="form-control-label" for="slug">Quy mô<span
+                                                class="small text-danger">*</span></label>
+                                        <input type="text" id="scale" class="form-control" name="scale"
                                                placeholder="link không dấu của bài viết">
                                     </div>
                                 </div>
@@ -135,29 +154,27 @@
                                         <label class="form-control-label" for="content">Nội dung <span
                                                 class="small text-danger">*</span><span
                                                 class="small text-danger">*</span></label>
-                                        <textarea class="form-control" id="editor" name="content" rows="10">
-                                        {{$article->content}}
-                                        </textarea>
+                                        <textarea class="form-control" id="editor" name="content" rows="10"> </textarea>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-group focused">
                                         <label class="form-control-label" for="order_number">Số thự tự<span
                                                 class="small text-danger">*</span></label>
-                                        <input type="number" id="order_number" class="form-control" name="order_number" value="{{$article->order_number}}"
+                                        <input type="number" id="order_number" class="form-control" name="order_number"
                                                placeholder="Số thự tự - mặc định là 1">
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-group focused">
-                                        <label class="form-control-label" for="status">Trạng thái<span class="small text-danger">*</span></label>
+                                        <label class="form-control-label" for="status">Trạng thái<span
+                                                class="small text-danger">*</span></label>
                                         <select class="form-control" id="status" name="status">
-                                            <option value="1" {{ $article->status == 1 ? 'selected' : '' }}>Công Khai</option>
-                                            <option value="0" {{ $article->status == 0 ? 'selected' : '' }}>Nháp</option>
+                                            <option value="1">Công Khai</option>
+                                            <option value="0">Nháp</option>
                                         </select>
                                     </div>
                                 </div>
-
                                 <div class="col-lg-4">
                                     <div class="form-group focused">
                                         <label class="form-control-label" for="image"> Ảnh cho bài viết <span

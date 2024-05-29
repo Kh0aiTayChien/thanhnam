@@ -91,7 +91,7 @@
 
                 <div class="card-body">
 
-                    <form method="POST" action="{{route('articles.update',['article' => $article->id ])}}" autocomplete="off" enctype="multipart/form-data">
+                    <form method="POST" action="{{route('article_kien_truc.update',['article_kien_truc' => $article->id ])}}" autocomplete="off" enctype="multipart/form-data">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                         <input type="hidden" name="_method" value="PATCH">
@@ -112,7 +112,7 @@
                                     <div class="form-group focused">
                                         <label class="form-control-label" for="category">Chủ đề<span class="small text-danger">*</span></label>
                                         <select id="category" class="form-control" name="category">
-{{--                                            {{--                                            <option value="">-- Chọn chủ đề --</option>--}}--}}
+{{--                                                                                        <option value="">-- Chọn chủ đề --</option>--}}
                                             @foreach($categories as $category)
                                                 <option value="{{ $category->id }}" {{ $category->id == $article->category_id ? 'selected' : '' }}>{{ $category->title }}</option>
                                             @endforeach
@@ -127,7 +127,33 @@
                                                placeholder="link không dấu của bài viết">
                                     </div>
                                 </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group focused">
+                                        <label class="form-control-label" for="slug">Nhà Đầu Tư<span
+                                                class="small text-danger">*</span></label>
+                                        <input type="text" id="investor" class="form-control" name="investor" value="{{$article->investor}}"
+                                               placeholder="link không dấu của bài viết">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group focused">
+                                        <label class="form-control-label" for="slug">Địa điểm<span
+                                                class="small text-danger">*</span></label>
+                                        <input type="text" id="location" class="form-control" name="location" value="{{$article->location}}"
+                                               placeholder="link không dấu của bài viết">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group focused">
+                                        <label class="form-control-label" for="slug">Quy mô<span
+                                                class="small text-danger">*</span></label>
+                                        <input type="text" id="scale" class="form-control" name="scale" value="{{$article->scale}}"
+                                               placeholder="link không dấu của bài viết">
+                                    </div>
+                                </div>
                             </div>
+
+
 
                             <div class="row">
                                 <div class="col-lg-12">

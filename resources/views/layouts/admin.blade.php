@@ -141,12 +141,12 @@
             </div>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#articles" role="button" aria-expanded="false"
-               aria-controls="articles">
+            <a class="nav-link" data-toggle="collapse" href="#articles1" role="button" aria-expanded="false"
+               aria-controls="articles1">
                 <i class="fas fa-newspaper"></i>
                 <span>Thiết kế bể bơi</span>
             </a>
-            <div class="collapse" id="articles">
+            <div class="collapse" id="articles1">
                 <ul class="nav flex-column">
                     <li class="nav-item {{ Nav::isRoute('article_pools.create') }}">
                         <a class="nav-link" href="{{ route('article_pools.create') }}">
@@ -161,6 +161,75 @@
                 </ul>
             </div>
         </li>
+
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#articles2" role="button" aria-expanded="false"
+               aria-controls="articles2">
+                <i class="fas fa-newspaper"></i>
+                <span>Thiết kế kiến trúc</span>
+            </a>
+            <div class="collapse" id="articles2">
+                <ul class="nav flex-column">
+                    <li class="nav-item {{ Nav::isRoute('article_kien_truc.create') }}">
+                        <a class="nav-link" href="{{ route('article_kien_truc.create') }}">
+                            <span>Bài viết mới</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {{ Nav::isRoute('article_kien_truc.index') }}">
+                        <a class="nav-link" href="{{ route('article_kien_truc.index',['conditionView' => 'index'])}}">
+                            <span>Danh sách bài viết</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#articles3" role="button" aria-expanded="false"
+               aria-controls="articles3">
+                <i class="fas fa-newspaper"></i>
+                <span>Thi công công trình</span>
+            </a>
+            <div class="collapse" id="articles3">
+                <ul class="nav flex-column">
+                    <li class="nav-item {{ Nav::isRoute('article_cong_trinh.create') }}">
+                        <a class="nav-link" href="{{ route('article_cong_trinh.create') }}">
+                            <span>Bài viết mới</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {{ Nav::isRoute('article_cong_trinh.index') }}">
+                        <a class="nav-link" href="{{ route('article_cong_trinh.index',['conditionView' => 'index'])}}">
+                            <span>Danh sách bài viết</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#articles4" role="button" aria-expanded="false"
+               aria-controls="articles4">
+                <i class="fas fa-newspaper"></i>
+                <span>Thi công nội thất</span>
+            </a>
+            <div class="collapse" id="articles4">
+                <ul class="nav flex-column">
+                    <li class="nav-item {{ Nav::isRoute('article_noi_that.create') }}">
+                        <a class="nav-link" href="{{ route('article_noi_that.create') }}">
+                            <span>Bài viết mới</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {{ Nav::isRoute('article_noi_that.index') }}">
+                        <a class="nav-link" href="{{ route('article_noi_that.index',['conditionView' => 'index'])}}">
+                            <span>Danh sách bài viết</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+
 {{--        <li class="nav-item">--}}
 {{--            <a class="nav-link" data-toggle="collapse" href="#products" role="button" aria-expanded="false"--}}
 {{--               aria-controls="products">--}}
@@ -551,6 +620,11 @@
 <script>
     $('.nav-item').each(function () {
         let $articles = $(this).find('#articles');
+        let $articles1 = $(this).find('#articles1');
+        let $articles2 = $(this).find('#articles2');
+        let $articles3 = $(this).find('#articles3');
+        let $articles4 = $(this).find('#articles4');
+
         let $products = $(this).find('#products');
         let $images = $(this).find('#images');
         let $libraries = $(this).find('#libraries');
@@ -558,6 +632,19 @@
         if ($articles.find('.active').length > 0) {
             $articles.addClass('show');
         }
+        if ($articles1.find('.active').length > 0) {
+            $articles1.addClass('show');
+        }
+        if ($articles2.find('.active').length > 0) {
+            $articles2.addClass('show');
+        }
+        if ($articles3.find('.active').length > 0) {
+            $articles3.addClass('show');
+        }
+        if ($articles4.find('.active').length > 0) {
+            $articles4.addClass('show');
+        }
+
         if ($products.find('.active').length > 0) {
             $products.addClass('show');
         }
