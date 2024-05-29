@@ -57,9 +57,9 @@ class IndexController extends Controller
         $news = Article::whereHas('category', function ($query) use ($categoryArticleSlug) {
             $query->where('slug', $categoryArticleSlug);
         })
-            ->where('category_id', 0)
             ->take(6)
             ->get();
+
         return view('pages/news/index', ['news' => $news]);
     }
     public function articles_cong_trinh()
@@ -68,7 +68,6 @@ class IndexController extends Controller
         $news = Article::whereHas('category', function ($query) use ($categoryArticleSlug) {
             $query->where('slug', $categoryArticleSlug);
         })
-            ->where('category_id', 3)
             ->take(6)
             ->get();
         return view('pages/cong-trinh/pool/index', ['news' => $news]);
@@ -79,7 +78,7 @@ class IndexController extends Controller
         $news = Article::whereHas('category', function ($query) use ($categoryArticleSlug) {
             $query->where('slug', $categoryArticleSlug);
         })
-            ->where('category_id', 3)
+
             ->take(6)
             ->get();
         return view('pages/kien-truc/pool/index', ['news' => $news]);
@@ -87,11 +86,11 @@ class IndexController extends Controller
 
     public function articles_noi_that()
     {
-        $categoryArticleSlug = "thiet-ke-noi_that";
+        $categoryArticleSlug = "thi-cong-noi-that";
         $news = Article::whereHas('category', function ($query) use ($categoryArticleSlug) {
             $query->where('slug', $categoryArticleSlug);
         })
-            ->where('category_id', 4)
+
             ->take(6)
             ->get();
         return view('pages/noi-that/pool/index', ['news' => $news]);
