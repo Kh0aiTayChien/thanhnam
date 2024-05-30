@@ -83,7 +83,7 @@
     <div class="mobile-menu">
         <div class="text-center">TRANG CHỦ</div>
         <div class="text-center mt-4">GIỚI THIỆU</div>
-        <div class="text-center mt-4">DỊCH VỤ CUNG CẤP</div>
+        <div class="text-center mt-4">DỊCH VỤ</div>
         <div class="text-center mt-4">TIN TỨC</div>
         <div class="text-center mt-4">
             <button class="btn-contact-mobile px-5 py-1">LIÊN HỆ</button>

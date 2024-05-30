@@ -22,7 +22,7 @@
                     <div class="mt-2">
                         <img class=header-logo src="{{asset('images/footer/web.png')}}" alt="web">
                         <span class="ms-2">
-                            https://www.facebook.com/Thanhnam.Shome
+                            www.fb.com/Thanhnam.Shome
                         </span>
                     </div>
                     <div class="mt-2">

@@ -1,6 +1,6 @@
 <div class="sec1-GT">
-    <img src="{{asset('images/introduce/sec1/Sec1.png')}}" class="d-none d-md-block col-12">
-    <img src="{{asset('images/introduce/sec1/0. Sec1Mobile.png')}}" class="d-block d-md-none col-12 sec1-GT-mb">
+    <img src="{{asset('images/introduce/sec1/Sec1 (1).png')}}" class="d-none d-md-block col-12">
+    <img src="{{asset('images/introduce/sec1/0. Sec1Mobile (1).png')}}" class="d-block d-md-none col-12 sec1-GT-mb">
 </div>
 
 <div class="sec1-GT">
@@ -9,13 +9,13 @@
 </div>
 
 <div class="sec1-GT">
-    <img src="{{asset('images/introduce/sec1/Sec3.png')}}" class="d-none d-md-block col-12">
+    <img src="{{asset('images/introduce/sec1/Sec3 (1).png')}}" class="d-none d-md-block col-12">
     <img src="{{asset('images/introduce/sec1/0.Sec3Mobile.png')}}" class="d-block d-md-none col-12">
 </div>
 
 <div class="sec1-GT">
-    <img src="{{asset('images/introduce/sec1/Sec4.png')}}" class="d-none d-md-block col-12 imgsec4-GT">
-    <img src="{{asset('images/introduce/sec1/Asset 10.png')}}" class="d-block d-md-none col-12 imgsec4-GT-mb">
+    <img src="{{asset('images/introduce/sec1/Trang giới thiệu - Group-04.png')}}" class="d-none d-md-block col-12 imgsec4-GT">
+{{--    <img src="{{asset('images/introduce/sec1/Asset 10.png')}}" class="d-block d-md-none col-12 imgsec4-GT-mb">--}}
 </div>
 
 <div class="sec1-GT">
@@ -25,6 +25,6 @@
 
 
 <div class="sec1-GT">
-    <img src="{{asset('images/introduce/sec1/Sec6.png')}}" class="d-none d-md-block col-12 imgsec6-GT">
+    <img src="{{asset('images/introduce/sec1/6-06.png')}}" class="d-none d-md-block col-12 imgsec6-GT">
     <img src="{{asset('images/introduce/sec1/Asset 13.png')}}" class="d-block d-md-none col-12 imgsec6-GT-mb">
 </div>
