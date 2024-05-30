@@ -2,7 +2,7 @@
     <div class=" about text-white ">
         <div class="content row me-1 pt-5">
             <div class="col-lg-6 col-md-12 gx-0">
-                <img class="header-logo img-fluid pt-3" src="{{asset('images/footer/thanh-nam-logo.png')}}" alt="LOGO" style="">
+                <img class="header-logo img-fluid pt-3" src="{{asset('images/footer/image 5 5.png')}}" alt="LOGO" style="">
                 <div class="mt-4">
                     <div class="">
                         <img class=header-logo src="{{asset('images/footer/phone.png')}}" alt="phone">
@@ -19,7 +19,7 @@
                     <div class="mt-2">
                         <img class=header-logo src="{{asset('images/footer/web.png')}}" alt="web">
                         <span class="ms-4">
-                            https://www.facebook.com/Thanhnam.Shome
+                            www.fb.com/Thanhnam.Shome
                         </span>
                     </div>
                     <div class="mt-2">
