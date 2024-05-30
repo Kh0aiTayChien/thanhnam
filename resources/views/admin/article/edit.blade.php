@@ -112,7 +112,7 @@
                                     <div class="form-group focused">
                                         <label class="form-control-label" for="category">Chủ đề<span class="small text-danger">*</span></label>
                                         <select id="category" class="form-control" name="category">
-                                            <option value="">-- Chọn chủ đề --</option>
+{{--                                            {{--                                            <option value="">-- Chọn chủ đề --</option>--}}--}}
                                             @foreach($categories as $category)
                                                 <option value="{{ $category->id }}" {{ $category->id == $article->category_id ? 'selected' : '' }}>{{ $category->title }}</option>
                                             @endforeach
@@ -152,8 +152,8 @@
                                     <div class="form-group focused">
                                         <label class="form-control-label" for="status">Trạng thái<span class="small text-danger">*</span></label>
                                         <select class="form-control" id="status" name="status">
-                                            <option value="0" {{ $article->status == 0 ? 'selected' : '' }}>Draft</option>
-                                            <option value="1" {{ $article->status == 1 ? 'selected' : '' }}>Published</option>
+                                            <option value="1" {{ $article->status == 1 ? 'selected' : '' }}>Công Khai</option>
+                                            <option value="0" {{ $article->status == 0 ? 'selected' : '' }}>Nháp</option>
                                         </select>
                                     </div>
                                 </div>

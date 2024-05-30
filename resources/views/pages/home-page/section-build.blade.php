@@ -35,7 +35,7 @@
 
         <div class=" tabs mb-3 pb-3 px-5">
 
-            <div class="row tab tab1  mt-5 gy-4 gx-0 active" style="padding: 0 17.5rem">
+            <div class="row tab tab1  mt-5 gy-4 gx-0 mobile-padding active" style="">
                 <div class="section-tab d-flex justify-content-center align-items-center ">
                     <div id="section-tab1-carousel" class="carousel slide w-100" data-bs-ride="carousel"
                          data-bs-interval="false">
@@ -46,34 +46,36 @@
                                     aria-label="Slide 2" aria-current="true"></button>
                             <button type="button" data-bs-target="#section-tab1-carousel" data-bs-slide-to="2" class=""
                                     aria-label="Slide 3" aria-current="true"></button>
+                            <button type="button" data-bs-target="#section-tab1-carousel" data-bs-slide-to="3" class=""
+                                    aria-label="Slide 4" aria-current="true"></button>
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="{{asset('images/homepage/sec-build/tcct/1.png')}}" class="img-slide h-100"
-                                     alt="img-slide">
+                                     alt="img-slide img-fluid">
                             </div>
                             <div class="carousel-item ">
                                 <img src="{{asset('images/homepage/sec-build/tcct/2.png')}}" class="img-slide h-100"
-                                     alt="img-slide">
+                                     alt="img-slide img-fluid">
                             </div>
                             <div class="carousel-item ">
                                 <img src="{{asset('images/homepage/sec-build/tcct/3.png')}}" class="img-slide  h-100"
-                                     alt="img-slide">
+                                     alt="img-slide img-fluid">
                             </div>
                             <div class="carousel-item ">
-                                <img src="{{asset('images/homepage/sec-build/tcct/4.png')}}" class="img-slide  h-100"
-                                     alt="img-slide">
+                                <img src="{{asset('images/homepage/sec-build/tcct/4.png')}}" class="img-slide h-100"
+                                     alt="img-slide ">
                             </div>
                         </div>
                         <button class="carousel-control-prev mobile-space-prev" type="button" data-bs-target="#section-tab1-carousel"
                                 data-bs-slide="prev">
-                            <img src="{{asset('images/arrow/left.png')}}" alt="Previous"
+                            <img src="{{asset('images/arrow/blue-left.png')}}" alt="Previous"
                                  class="button-shake img-carousel-arrow">
                             <span class="visually-hidden">Previous</span>
                         </button>
                         <button class="carousel-control-next mobile-space-next" type="button" data-bs-target="#section-tab1-carousel"
                                 data-bs-slide="next">
-                            <img src="{{asset('images/arrow/right.png')}}" alt="Next"
+                            <img src="{{asset('images/arrow/blue-right.png')}}" alt="Next"
                                  class="button-shake img-carousel-arrow">
                             <span class="visually-hidden">Next</span>
                         </button>
@@ -81,7 +83,7 @@
                 </div>
             </div>
 
-            <div class="row tab tab2  mt-5 gy-4 gx-0 " style="padding: 0 17.5rem">
+            <div class="row tab tab2  mt-5 gy-4 gx-0 mobile-padding" style="">
                 <div class="section-tab d-flex justify-content-center align-items-center">
                     <div id="section-tab2-carousel" class="carousel slide w-100" data-bs-ride="carousel">
                         <div class="carousel-indicators">
@@ -114,13 +116,13 @@
                         </div>
                         <button class="carousel-control-prev mobile-space-prev" type="button" data-bs-target="#section-tab2-carousel"
                                 data-bs-slide="prev">
-                            <img src="{{asset('images/arrow/left.png')}}" alt="Previous"
+                            <img src="{{asset('images/arrow/blue-left.png')}}" alt="Previous"
                                  class="button-shake img-carousel-arrow">
                             <span class="visually-hidden">Previous</span>
                         </button>
                         <button class="carousel-control-next mobile-space-next" type="button" data-bs-target="#section-tab2-carousel"
                                 data-bs-slide="next">
-                            <img src="{{asset('images/arrow/right.png')}}" alt="Next"
+                            <img src="{{asset('images/arrow/blue-right.png')}}" alt="Next"
                                  class="button-shake img-carousel-arrow">
                             <span class="visually-hidden">Next</span>
                         </button>
@@ -246,16 +248,18 @@
         });
     </script>
     <style>
-        .section-6 {
-            background-image: url("/images/homepage/section-6/background.png");
-            background-size: cover;
+        .mobile-padding{
+            padding: 0 17.5rem
         }
         @media screen and (max-width: 800px){
             .mobile-space-prev{
-                left: -15%;
+                left: -15% !important;
             }
             .mobile-space-next{
-                right: -15%;
+                right: -15% !important;
+            }
+            .mobile-padding{
+                padding: unset
             }
         }
 

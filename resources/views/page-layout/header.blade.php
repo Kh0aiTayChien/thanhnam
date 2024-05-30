@@ -2,7 +2,7 @@
     <div class="header-content d-flex align-content-center ">
         <img class=header-logo src="{{asset('images/header/LOGO_THANHNAM.png')}}" alt="LOGO" style="scale: 75%">
         <div class="header-list d-flex justify-content-center align-content-center row">
-            <div class="col-2 text-center my-auto no-opacity ">TRANG CHỦ</div>
+            <div class="col-2 text-center my-auto no-opacity header-logo">TRANG CHỦ</div>
             <a href="/gioi-thieu" class="col-2 text-center my-auto no-opacity text-decoration-none"><div class="text-test">GIỚI THIỆU</div></a>
             <div class="col-2 text-center my-auto no-opacity position-relative">
                 <div class="btn-transparent  py-3 product-sc-product"style="background-color: transparent;
@@ -10,19 +10,19 @@
                     DỊCH VỤ CUNG CẤP
                 </div>
                 <div class="position-absolute hide_button px-3 py-3" style=" margin-top:10%;  background-color: rgba(255, 255, 255, 0.5);; color: #105181">
-                    <div class="product-sc text-center "style="  width: 12rem;">THIẾT KẾ KIẾN TRÚC</div>
+                    <div class="product-sc text-center "style="  width: 12rem;"><a href="{{asset('thiet-ke-kien-truc')}}" style="text-decoration: none; color: unset"> THIẾT KẾ KIẾN TRÚC</a></div>
                 </div>
                 <div class="position-absolute hide_button px-3 py-3" style=" margin-top:45%;  background-color: rgba(255, 255, 255, 0.5);; color: #105181">
-                    <div class="product-sc text-center "style=" width: 12rem;">THI CÔNG CÔNG TRÌNH</div>
+                    <div class="product-sc text-center "style=" width: 12rem;"><a href="{{asset('thi-cong-cong-trinh')}}" style="text-decoration: none; color: unset"> THI CÔNG CÔNG TRÌNH</a></div>
                 </div>
                 <div class="position-absolute hide_button px-3 py-3" style=" margin-top:80%;  background-color: rgba(255, 255, 255, 0.5);; color: #105181">
-                    <div class="product-sc text-center "style=" width: 12rem;">THI CÔNG NỘI THẤT</div>
+                    <div class="product-sc text-center "style=" width: 12rem;"><a href="{{asset('thi-cong-noi-that')}}" style="text-decoration: none; color: unset"> THI CÔNG NỘI THẤT</a></div>
                 </div>
                 <div class="position-absolute hide_button px-3 py-3" style=" margin-top:115%;  background-color: rgba(255, 255, 255, 0.5);; color: #105181">
-                    <div class="product-sc text-center "style=" width: 12rem;"><a href="{{asset('pools')}}" style="text-decoration: none; color: unset"> THIẾT KẾ - THI CÔNG BỂ BƠI</a></div>
+                    <div class="product-bb text-center "style=" width: 12rem;"><a href="{{asset('thiet-ke-be-boi')}}" style="text-decoration: none; color: unset"> THIẾT KẾ - THI CÔNG BỂ BƠI</a></div>
                 </div>
             </div>
-            <div class="col-2 text-center my-auto no-opacity"><a href="{{asset('news')}}" style="text-decoration: none; color: unset">TIN TỨC</a></div>
+            <div class="col-2 text-center my-auto no-opacity"><a href="{{asset('tin-tuc')}}" style="text-decoration: none; color: unset">TIN TỨC</a></div>
             <div class="col-3 text-center my-auto no-opacity">
                 <button class="btn-contact px-5 py-1">LIÊN HỆ</button>
             </div>
@@ -126,6 +126,12 @@
         });
         $('.product-sc-product').click(function(){
             $('.hide_button').stop().slideToggle(300);
+        });
+        $(".header-logo").click(function(){
+            window.location.href = "/";
+        });
+        $(".product-bb").click(function(){
+            window.location.href = "/thiet-ke-be-boi";
         });
     });
 </script>

@@ -107,7 +107,7 @@
                                     <div class="form-group focused">
                                         <label class="form-control-label" for="category">Chủ đề<span class="small text-danger">*</span></label>
                                         <select id="category" class="form-control" name="category">
-                                            <option value="">-- Chọn chủ đề --</option>
+                                            {{--                                            <option value="">-- Chọn chủ đề --</option>--}}
                                             @foreach($categories as $category)
                                                 <option value="{{ $category->id }}">{{ $category->title }}</option>
                                             @endforeach
