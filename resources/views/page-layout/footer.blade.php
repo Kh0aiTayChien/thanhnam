@@ -2,7 +2,7 @@
     <div class=" about text-white ">
         <div class="content row me-1 pt-5">
             <div class="col-lg-3 col-md-12 gx-0">
-                <img class="header-logo img-fluid pt-3" src="{{asset('images/footer/thanh-nam-logo.png')}}" alt="LOGO" style="">
+                <img class="header-logo img-fluid pt-3" src="{{asset('images/footer/image 5 5.png')}}" alt="LOGO" style="">
 
             </div>
             <div class="col-lg-4 col-md-12">
