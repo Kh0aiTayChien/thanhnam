@@ -8,7 +8,7 @@
 }
 .footer {
     height: 37.57vh;
-    font-family: 'Mulish-ExtraBold';
+    font-family: 'Montserrat-SemiBold';
     bottom: 0;
     left: 0;
     width: 100%;
@@ -30,7 +30,7 @@
 }
 
 .footer .about .content .title{
-    font-family: 'Mulish-Black';
+    font-family: 'Montserrat-Bold';
 }
 
 .footer .copyright {

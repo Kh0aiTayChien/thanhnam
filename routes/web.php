@@ -47,7 +47,7 @@ Route::prefix('admin')->middleware('auth')->group(function () {
         return view('admin/about');
     })->name('about');
 });
-Route::get('/thiet-ke-be-boi', [IndexController::class, 'pools'])->name('homepage.pool');
+Route::get('/fpt-smart-home', [IndexController::class, 'pools'])->name('homepage.pool');
 Route::get('/thi-cong-noi-that', [IndexController::class, 'articles_noi_that'])->name('homepage.articles_noi_that');
 Route::get('/thi-cong-cong-trinh', [IndexController::class, 'articles_cong_trinh'])->name('homepage.articles_cong_trinh');
 Route::get('/thiet-ke-kien-truc', [IndexController::class, 'articles_kien_truc'])->name('homepage.articles_kien_truc');

@@ -1,7 +1,6 @@
 <div class="justify-content-center">
     <div class="row-test banner-pools mb-5">
-        <p class="" style="font-family: Mulish-ExtraBold, sans-serif; color: white; font-size: 30px">THIẾT KẾ - THI CÔNG
-            BỂ BƠI</p>
+        <p class="" style="font-family: Mulish-ExtraBold, sans-serif; color: white; font-size: 30px">FPT SMART HOME</p>
     </div>
     @foreach($news as $article)
         <div class="content1-pools">

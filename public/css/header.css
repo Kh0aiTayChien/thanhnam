@@ -4,7 +4,7 @@
 }
 
 .shadow-effect {
-    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.75));
 }
 
 .header {
@@ -44,7 +44,7 @@
     border-radius: 3px;
     color: white;
     font-family: 'Mulish-ExtraBold';
-    font-size: 20px;
+    font-size: 16px;
 }
 .btn-contact-mobile{
     background-color: white;

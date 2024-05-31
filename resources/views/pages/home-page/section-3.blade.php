@@ -1,4 +1,4 @@
-<div class="section-3 d-flex align-items-center justify-content-center">
+<div class="section-3 d-flex align-items-center justify-content-center" id="lien-he">
     <form action="" class="p-5 shadow-effect" style="height: 70%">
         <img src="{{'images/homepage/section-3/form-title.png'}}" alt="" class="img-fluid mb-3">
         <div class="mb-4 mt-5">

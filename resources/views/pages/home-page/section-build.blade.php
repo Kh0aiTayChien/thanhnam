@@ -1,26 +1,29 @@
 
 <div class="section-build d-flex flex-column mt-5">
-    <div class="d-flex justify-content-center align-content-center mb-4">
-        <img src="{{asset('images/homepage/sec-build/title.png')}}" alt="">
+    <div class=" justify-content-center align-content-center d-none d-md-flex">
+        <img src="{{asset('images/homepage/sec-build/title.png')}}" alt="" style="">
+    </div>
+    <div class=" justify-content-center align-content-center d-flex d-md-none">
+        <img src="{{asset('images/homepage/sec-build/title.png')}}" alt="" style="scale: 67.5%">
     </div>
 
-    <div class="section-6 pt-5 pb-5 " >
+    <div class="section-6  pb-5 " >
 
         <div class="mt-4 mb-4" >
-            <div class="row px-5  mb-5 gx-0 gy-2">
+            <div class="row px-5  mb-3 gx-0 gy-2">
                 <div class="col-md-3 col-xs-0"></div>
                 <div class="col-md-3  d-flex justify-content-center align-content-center ">
                     <button class="tab-button btn btn-block blue-border-bottom
                                  text-white  mulish-extrabold button-shake active"
                             data-target="tab1" style="width: 100%">
-                        <div class=" " style="font-size: 13px">THI CÔNG CÔNG TRÌNH</div>
+                        <div class=" " style="font-size: 16px">THI CÔNG CÔNG TRÌNH</div>
                     </button>
                 </div>
                 <div class="col-md-3 d-flex justify-content-center align-content-center">
                     <button class="tab-button btn  btn-block  blue-border-bottom
                                  text-white  mulish-extrabold button-shake"
                             data-target="tab2" style="width: 100%">
-                        <div class="  " style="font-size: 13px">THI CÔNG NỘI THẤT</div>
+                        <div class="  " style="font-size: 16px">THI CÔNG NỘI THẤT</div>
                     </button>
                 </div>
 {{--                <div class="col-md-2 d-flex justify-content-center align-content-center">--}}
@@ -33,9 +36,9 @@
             </div>
         </div>
 
-        <div class=" tabs mb-3 pb-3 px-5">
+        <div class=" tabs pb-3 px-5">
 
-            <div class="row tab tab1  mt-5 gy-4 gx-0 mobile-padding active" style="">
+            <div class="row tab tab1  gy-4 gx-0 mobile-padding active" style="">
                 <div class="section-tab d-flex justify-content-center align-items-center ">
                     <div id="section-tab1-carousel" class="carousel slide w-100" data-bs-ride="carousel"
                          data-bs-interval="false">
@@ -70,20 +73,20 @@
                         <button class="carousel-control-prev mobile-space-prev" type="button" data-bs-target="#section-tab1-carousel"
                                 data-bs-slide="prev">
                             <img src="{{asset('images/arrow/blue-left.png')}}" alt="Previous"
-                                 class="button-shake img-carousel-arrow">
+                                 class="button-shake img-carousel-arrow" style="opacity: 30%">
                             <span class="visually-hidden">Previous</span>
                         </button>
                         <button class="carousel-control-next mobile-space-next" type="button" data-bs-target="#section-tab1-carousel"
                                 data-bs-slide="next">
                             <img src="{{asset('images/arrow/blue-right.png')}}" alt="Next"
-                                 class="button-shake img-carousel-arrow">
+                                 class="button-shake img-carousel-arrow" style="opacity: 30%">
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
                 </div>
             </div>
 
-            <div class="row tab tab2  mt-5 gy-4 gx-0 mobile-padding" style="">
+            <div class="row tab tab2  gy-4 gx-0 mobile-padding" style="">
                 <div class="section-tab d-flex justify-content-center align-items-center">
                     <div id="section-tab2-carousel" class="carousel slide w-100" data-bs-ride="carousel">
                         <div class="carousel-indicators">

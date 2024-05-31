@@ -1,30 +1,30 @@
 <div class="header shadow-effect sticky-top d-none d-md-block ">
     <div class="header-content d-flex align-content-center ">
-        <img class=header-logo src="{{asset('images/header/LOGO_THANHNAM.png')}}" alt="LOGO" style="scale: 75%">
+        <img class=header-logo src="{{asset('images/header/LOGO_THANHNAM.png')}}" alt="LOGO" style="scale: 75%; transform: translateX(110%)">
         <div class="header-list d-flex justify-content-center align-content-center row">
             <div class="col-2 text-center my-auto no-opacity header-logo">TRANG CHỦ</div>
             <a href="/gioi-thieu" class="col-2 text-center my-auto no-opacity text-decoration-none"><div class="text-test">GIỚI THIỆU</div></a>
             <div class="col-2 text-center my-auto no-opacity position-relative">
                 <div class="btn-transparent  py-3 product-sc-product"style="background-color: transparent;
                 color: #105181; cursor: pointer">
-                    DỊCH VỤ CUNG CẤP
+                    DỊCH VỤ
                 </div>
-                <div class="position-absolute hide_button px-3 py-3" style=" margin-top:10%;  background-color: rgba(255, 255, 255, 0.5);; color: #105181">
+                <div class="position-absolute hide_button px-3 py-3" style=" margin-top:10%;  background-color: white; color: #105181">
                     <div class="product-sc text-center "style="  width: 12rem;"><a href="{{asset('thiet-ke-kien-truc')}}" style="text-decoration: none; color: unset"> THIẾT KẾ KIẾN TRÚC</a></div>
                 </div>
-                <div class="position-absolute hide_button px-3 py-3" style=" margin-top:45%;  background-color: rgba(255, 255, 255, 0.5);; color: #105181">
+                <div class="position-absolute hide_button px-3 py-3" style=" margin-top:50%;  background-color: white; color: #105181">
                     <div class="product-sc text-center "style=" width: 12rem;"><a href="{{asset('thi-cong-cong-trinh')}}" style="text-decoration: none; color: unset"> THI CÔNG CÔNG TRÌNH</a></div>
                 </div>
-                <div class="position-absolute hide_button px-3 py-3" style=" margin-top:80%;  background-color: rgba(255, 255, 255, 0.5);; color: #105181">
+                <div class="position-absolute hide_button px-3 py-3" style=" margin-top:90%;  background-color: white; color: #105181">
                     <div class="product-sc text-center "style=" width: 12rem;"><a href="{{asset('thi-cong-noi-that')}}" style="text-decoration: none; color: unset"> THI CÔNG NỘI THẤT</a></div>
                 </div>
-                <div class="position-absolute hide_button px-3 py-3" style=" margin-top:115%;  background-color: rgba(255, 255, 255, 0.5);; color: #105181">
-                    <div class="product-bb text-center "style=" width: 12rem;"><a href="{{asset('thiet-ke-be-boi')}}" style="text-decoration: none; color: unset"> THIẾT KẾ - THI CÔNG BỂ BƠI</a></div>
+                <div class="position-absolute hide_button px-3 py-3" style=" margin-top:130%;  background-color: white; color: #105181">
+                    <div class="product-bb text-center "style=" width: 12rem;"><a href="{{asset('fpt-smart-home')}}" style="text-decoration: none; color: unset"> FPT SMART HOME</a></div>
                 </div>
             </div>
             <div class="col-2 text-center my-auto no-opacity"><a href="{{asset('tin-tuc')}}" style="text-decoration: none; color: unset">TIN TỨC</a></div>
             <div class="col-3 text-center my-auto no-opacity">
-                <button class="btn-contact px-5 py-1">LIÊN HỆ</button>
+                <button class="btn-contact px-5 py-1"><a href="#lien-he" style="text-decoration: none; color: unset"> LIÊN HỆ</a></button>
             </div>
         </div>
     </div>
@@ -34,22 +34,22 @@
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewBox="0 0 48 48">
             <linearGradient id="9iHXMuvV7brSX7hFt~tsna_Rdp3AydLFY2A_gr1" x1="12.066" x2="34.891" y1=".066" y2="22.891"
                             gradientUnits="userSpaceOnUse">
-                <stop offset=".237" stop-color="#3bc9f3"></stop>
-                <stop offset=".85" stop-color="#1591d8"></stop>
+                <stop offset=".237" stop-color="#105181"></stop>
+                <stop offset=".85" stop-color="#105181"></stop>
             </linearGradient>
             <path fill="url(#9iHXMuvV7brSX7hFt~tsna_Rdp3AydLFY2A_gr1)"
                   d="M43,15H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,14.1,44.1,15,43,15z"></path>
             <linearGradient id="9iHXMuvV7brSX7hFt~tsnb_Rdp3AydLFY2A_gr2" x1="12.066" x2="34.891" y1="12.066" y2="34.891"
                             gradientUnits="userSpaceOnUse">
-                <stop offset=".237" stop-color="#3bc9f3"></stop>
-                <stop offset=".85" stop-color="#1591d8"></stop>
+                <stop offset=".237" stop-color="#105181"></stop>
+                <stop offset=".85" stop-color="#105181"></stop>
             </linearGradient>
             <path fill="url(#9iHXMuvV7brSX7hFt~tsnb_Rdp3AydLFY2A_gr2)"
                   d="M43,27H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,26.1,44.1,27,43,27z"></path>
             <linearGradient id="9iHXMuvV7brSX7hFt~tsnc_Rdp3AydLFY2A_gr3" x1="12.066" x2="34.891" y1="24.066" y2="46.891"
                             gradientUnits="userSpaceOnUse">
-                <stop offset=".237" stop-color="#3bc9f3"></stop>
-                <stop offset=".85" stop-color="#1591d8"></stop>
+                <stop offset=".237" stop-color="#105181"></stop>
+                <stop offset=".85" stop-color="#105181"></stop>
             </linearGradient>
             <path fill="url(#9iHXMuvV7brSX7hFt~tsnc_Rdp3AydLFY2A_gr3)"
                   d="M43,39H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,38.1,44.1,39,43,39z"></path>
@@ -81,10 +81,12 @@
 </div>
 <div class="menu-dropdown blue-bg d-none">
     <div class="mobile-menu">
-        <div class="text-center">TRANG CHỦ</div>
-        <div class="text-center mt-4">GIỚI THIỆU</div>
-        <div class="text-center mt-4">DỊCH VỤ</div>
-        <div class="text-center mt-4">TIN TỨC</div>
+        <div class="text-center"><a href="" style="text-decoration: none; color: unset"> TRANG CHỦ</a></div>
+        <div class="text-center mt-4"><a href="{{asset('gioi-thieu')}}" style="text-decoration: none; color: white"> GIỚI THIỆU</a></div>
+        <div class="text-center mt-4"><a href="{{asset('thiet-ke-kien-truc')}}" style="text-decoration: none; color: white"> THIẾT KẾ KIẾN TRÚC</a></div>
+        <div class="text-center mt-4"><a href="{{asset('thi-cong-cong-trinh')}}" style="text-decoration: none; color: white"> THI CÔNG CÔNG TRÌNH</a></div>
+        <div class="text-center mt-4"><a href="{{asset('thi-cong-noi-that')}}" style="text-decoration: none; color: white"> THI CÔNG NỘI THẤT</a></div>
+        <div class="text-center mt-4"><a href="{{asset('tin-tuc')}}" style="text-decoration: none; color: white">TIN TỨC</a>C</div>
         <div class="text-center mt-4">
             <button class="btn-contact-mobile px-5 py-1">LIÊN HỆ</button>
         </div>

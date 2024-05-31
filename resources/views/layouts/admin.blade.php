@@ -144,7 +144,7 @@
             <a class="nav-link" data-toggle="collapse" href="#articles1" role="button" aria-expanded="false"
                aria-controls="articles1">
                 <i class="fas fa-newspaper"></i>
-                <span>Thiết kế bể bơi</span>
+                <span>FPT Smart Home</span>
             </a>
             <div class="collapse" id="articles1">
                 <ul class="nav flex-column">

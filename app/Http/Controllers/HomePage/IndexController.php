@@ -41,7 +41,7 @@ class IndexController extends Controller
 
     public function pools()
     {
-        $categoryArticleSlug = "thiet-ke-be-boi";
+        $categoryArticleSlug = "fpt-smart-home";
         $news = Article::whereHas('category', function ($query) use ($categoryArticleSlug) {
             $query->where('slug', $categoryArticleSlug);
         })

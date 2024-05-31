@@ -1,23 +1,28 @@
 <div class="be-boi">
 
-    <div class="d-flex justify-content-center align-content-center mb-4 px-4">
-        <img src="{{asset('images/homepage/be-boi/title.png')}}" alt="" class="img-fluid">
+    <div class="d-none d-md-flex justify-content-center align-content-center  px-4">
+        <img src="{{asset('images/homepage/be-boi/title.png')}}" alt="" class="img-fluid" style="scale: 100%">
+    </div>
+    <div class="d-flex d-md-none justify-content-center align-content-center px-4">
+        <img src="{{asset('images/homepage/be-boi/title.png')}}" alt="" class="img-fluid" style="scale: 75%">
     </div>
 
-    <div class="row gx-3 gy-3 ">
-        <div class="col-lg-2 col-md-1 d-flex justify-content-center align-content-center position-relative " style="">
-        </div>
-        <div class="col-lg-4 col-md-4 d-flex justify-content-center align-content-center position-relative " style="">
-{{--            <div class=" position-absolute mulish-black text-white " style="top: 65%; font-size: 1.5rem;z-index: 1200">--}}
-{{--            </div>--}}
+    <div class="row gx-3 gy-3 padding-mobile mt-4">
+        <div class="col-lg-3 col-md-6 col-md-1 d-flex justify-content-center align-content-center position-relative " style="">
             <img src="{{asset('images/homepage/be-boi/1.png')}}" class="img-fluid">
         </div>
-        <div class="col-lg-4 col-md-4 d-flex justify-content-center align-content-center position-relative " style="">
-{{--            <div class=" position-absolute mulish-black text-white" style="top: 65%; font-size: 1.5rem;z-index: 1200">--}}
+        <div class="col-lg-3 col-md-6 d-flex justify-content-center align-content-center position-relative " style="">
+{{--            <div class=" position-absolute mulish-black text-white " style="top: 65%; font-size: 1.5rem;z-index: 1200">--}}
 {{--            </div>--}}
             <img src="{{asset('images/homepage/be-boi/2.png')}}" class="img-fluid">
         </div>
-        <div class="col-lg-2 col-md-1 d-flex justify-content-center align-content-center position-relative " style="">
+        <div class="col-lg-3 col-md-6 d-flex justify-content-center align-content-center position-relative " style="">
+{{--            <div class=" position-absolute mulish-black text-white" style="top: 65%; font-size: 1.5rem;z-index: 1200">--}}
+{{--            </div>--}}
+            <img src="{{asset('images/homepage/be-boi/3.png')}}" class="img-fluid">
+        </div>
+        <div class="col-lg-3 col-md-6 d-flex justify-content-center align-content-center position-relative " style="">
+            <img src="{{asset('images/homepage/be-boi/3.png')}}" class="img-fluid">
         </div>
     </div>
     <div class="d-flex align-content-center justify-content-center pt-5 pb-5">
@@ -43,6 +48,14 @@
     .img-beboi:hover {
         filter: unset;
         cursor: pointer;
+    }
+    .padding-mobile {
+        padding: unset;
+    }
+    @media only screen and (min-width: 800px) {
+        .padding-mobile {
+            padding: 0 32vh
+        }
     }
 </style>
 <script>
