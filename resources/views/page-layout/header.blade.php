@@ -86,7 +86,7 @@
         <div class="text-center mt-4"><a href="{{asset('thiet-ke-kien-truc')}}" style="text-decoration: none; color: white"> THIẾT KẾ KIẾN TRÚC</a></div>
         <div class="text-center mt-4"><a href="{{asset('thi-cong-cong-trinh')}}" style="text-decoration: none; color: white"> THI CÔNG CÔNG TRÌNH</a></div>
         <div class="text-center mt-4"><a href="{{asset('thi-cong-noi-that')}}" style="text-decoration: none; color: white"> THI CÔNG NỘI THẤT</a></div>
-        <div class="text-center mt-4"><a href="{{asset('tin-tuc')}}" style="text-decoration: none; color: white">TIN TỨC</a>C</div>
+        <div class="text-center mt-4"><a href="{{asset('tin-tuc')}}" style="text-decoration: none; color: white">TIN TỨC</a></div>
         <div class="text-center mt-4">
             <button class="btn-contact-mobile px-5 py-1">LIÊN HỆ</button>
         </div>
