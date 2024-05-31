@@ -12,7 +12,7 @@
                 dụng biện pháp thi công tiên tiến cùng với đội ngũ kỹ sư giỏi, công nhân lành nghề, công ty chúng tôi đã
                 thi công những công trình đạt tiến độ và chất lượng cao.</p><br>
             <div class="d-flex pb-5">
-                <a href=""
+                <a href="/gioi-thieu"
                    class="btn blue-bg blue-text btn-block mb-3 text-white mitr-medium longer-btn shadow-test button-shake mulish-black">XEM THÊM</a>
             </div>
         </div>
@@ -34,7 +34,7 @@
                 dụng biện pháp thi công tiên tiến cùng với đội ngũ kỹ sư giỏi, công nhân lành nghề, công ty chúng tôi đã
                 thi công những công trình đạt tiến độ và chất lượng cao.</p><br>
             <div class="d-flex justify-content-center align-content-center">
-                <a href=""
+                <a href="/gioi-thieu"
                    class="btn blue-bg blue-text btn-block text-white mitr-medium longer-btn shadow-test button-shake mulish-black">XEM THÊM</a>
             </div>
         </div>

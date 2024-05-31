@@ -21,7 +21,7 @@
                             <p class="height-text-card text-center mulish-black">{{\Illuminate\Support\Str::limit($article->title,60)}}</p>
                             <p class="card-text mulish-semibold ">{{ preg_replace('/<[^>]*>/', '', \Illuminate\Support\Str::limit(strip_tags($article->content), 60)) }}</p>
                             <div class="d-flex align-content-center justify-content-center ">
-                                <a href=""
+                                <a href="{{route('homepage.show',[$article->slug])}}"
                                    class="btn blue-bg blue-text text-white btn-sm mb-3  btn-long button-shake mulish-black">XEM
                                     CHI TIẾT</a>
                             </div>
@@ -32,7 +32,7 @@
         </div>
     </div>
     <div class="d-flex align-content-center justify-content-center pb-4">
-        <a href=""
+        <a href="/tin-tuc"
            class="btn blue-bg blue-text btn-block mb-3 text-white mitr-medium longer-btn shadow-test button-shake mulish-black">XEM THÊM</a>
     </div>
 

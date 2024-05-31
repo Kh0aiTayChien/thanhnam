@@ -26,7 +26,7 @@
         </div>
     </div>
     <div class="d-flex align-content-center justify-content-center pt-5 pb-5">
-        <a href=""
+        <a href="{{asset('fpt-smart-home')}}"
            class="btn blue-bg blue-text btn-block mb-3 text-white mitr-medium longer-btn shadow-test button-shake mulish-black">XEM THÊM</a>
     </div>
 </div>
