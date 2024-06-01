@@ -1,6 +1,6 @@
 <div class="justify-content-center">
     <div class="row-test banner-pools">
-        <p class="" style="font-family: Mulish-ExtraBold, sans-serif; color: white; font-size: 30px"> THI CÔNG NỘI THẤT</p>
+        <p class="" style="font-family: Mulish-ExtraBold, sans-serif; color: white; font-size: 30px"> VIMAR</p>
     </div>
     @foreach($news as $article)
         <div class="content1-pools">
@@ -19,7 +19,7 @@
 </div>
 <script>
     $(document).ready(function() {
-        $('.content1-pools img').addClass('img-fluid');
+        $('.image img').addClass('img-fluid');
         $('.image ').addClass('figure-image ');
         // Tìm tất cả thẻ <oembed> và chuyển đổi thành thẻ <iframe>
         $('oembed').each(function () {

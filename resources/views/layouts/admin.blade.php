@@ -161,6 +161,27 @@
                 </ul>
             </div>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#articles5" role="button" aria-expanded="false"
+               aria-controls="articles5">
+                <i class="fas fa-newspaper"></i>
+                <span>Vimar</span>
+            </a>
+            <div class="collapse" id="articles5">
+                <ul class="nav flex-column">
+                    <li class="nav-item {{ Nav::isRoute('article_vimar.create') }}">
+                        <a class="nav-link" href="{{ route('article_vimar.create') }}">
+                            <span>Bài viết mới</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {{ Nav::isRoute('article_vimar.index') }}">
+                        <a class="nav-link" href="{{ route('article_vimar.index',['conditionView' => 'index'])}}">
+                            <span>Danh sách bài viết 1</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
 
         <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#articles2" role="button" aria-expanded="false"
@@ -643,6 +664,9 @@
         }
         if ($articles4.find('.active').length > 0) {
             $articles4.addClass('show');
+        }
+        if ($articles5.find('.active').length > 0) {
+            $articles5.addClass('show');
         }
 
         if ($products.find('.active').length > 0) {

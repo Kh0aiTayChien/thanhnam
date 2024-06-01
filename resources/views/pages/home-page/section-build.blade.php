@@ -84,6 +84,10 @@
                         </button>
                     </div>
                 </div>
+                <div class="d-flex align-content-center justify-content-center pt-5 pb-2">
+                    <a href="{{asset('thi-cong-cong-trinh')}}"
+                       class="btn blue-bg blue-text btn-block mb-3 text-white mitr-medium longer-btn shadow-test button-shake mulish-black">THI CÔNG CÔNG TRÌNH</a>
+                </div>
             </div>
 
             <div class="row tab tab2  gy-4 gx-0 mobile-padding" style="">
@@ -130,6 +134,10 @@
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
+                </div>
+                <div class="d-flex align-content-center justify-content-center pt-5 pb-2">
+                    <a href="{{asset('thi-cong-noi-that')}}"
+                       class="btn blue-bg blue-text btn-block mb-3 text-white mitr-medium longer-btn shadow-test button-shake mulish-black">THI CÔNG NỘI THẤT</a>
                 </div>
             </div>
 

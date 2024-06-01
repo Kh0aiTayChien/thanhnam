@@ -7,7 +7,7 @@
     src: url("/Fonts/Mulish-Black.ttf");
 }
 .footer {
-    height: 37.57vh;
+    height: 39.57vh;
     font-family: 'Montserrat-SemiBold';
     bottom: 0;
     left: 0;
@@ -35,6 +35,11 @@
 
 .footer .copyright {
     height: 5.56vh;
+    background-color: white;
+}
+
+.footer .mobile-copyright {
+    height: 7.56vh;
     background-color: white;
 }
 

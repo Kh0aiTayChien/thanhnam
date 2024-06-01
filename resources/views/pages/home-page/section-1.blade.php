@@ -72,31 +72,31 @@
 
     <div class="row gx-0">
         <div class="col-3 d-flex justify-content-center align-content-center position-relative " style="height: 8vh">
-            <div class=" position-absolute mulish-black text-white font-size-sec-1" style="top: 32%; z-index: 1200">
+            <div class=" position-absolute mulish-black text-white font-size-sec-1" style="top: 32%; z-index: 1000">
                 <div class="text-center shadow-effect">THIẾT KẾ KIẾN TRÚC</div>
             </div>
-                <img src="{{asset('images/homepage/section-1/footer-sec1/1.png')}}" class="img-under">
+                <img src="{{asset('images/homepage/section-1/footer-sec1/1.png')}}" class="img-under tkkt">
             <div class="overlay"></div>
         </div>
         <div class="col-3 d-flex justify-content-center align-content-center position-relative " style="height: 8vh">
             <div class=" position-absolute mulish-black text-white font-size-sec-1 shadow-effect"
-                 style="top: 32%; ;z-index: 1200">
+                 style="top: 32%; ;z-index: 1000">
                 THI CÔNG CÔNG TRÌNH
             </div>
-            <img src="{{asset('images/homepage/section-1/footer-sec1/2.png')}}" class="img-under">
+            <img src="{{asset('images/homepage/section-1/footer-sec1/2.png')}}" class="img-under tcct">
         </div>
         <div class="col-3 d-flex justify-content-center align-content-center position-relative " style="height: 8vh">
             <div class=" position-absolute mulish-black text-white font-size-sec-1 shadow-effect"
-                 style="top: 32%; ;z-index: 1200">
+                 style="top: 32%; ;z-index: 1000">
                 THI CÔNG NỘI THẤT
             </div>
-            <img src="{{asset('images/homepage/section-1/footer-sec1/3.png')}}" class="img-under">
+            <img src="{{asset('images/homepage/section-1/footer-sec1/3.png')}}" class="img-under tcnt">
         </div>
         <div class="col-3 d-flex justify-content-center align-content-center position-relative " style="height: 8vh">
-            <div class=" position-absolute mulish-black text-white font-size-sec-1" style="top: 32%; ;z-index: 1200">
+            <div class=" position-absolute mulish-black text-white font-size-sec-1" style="top: 32%; ;z-index: 1000">
                 <div class="text-center shadow-effect">FPT SMART HOME</div>
             </div>
-            <img src="{{asset('images/homepage/section-1/footer-sec1/4.png')}}" class="img-under">
+            <img src="{{asset('images/homepage/section-1/footer-sec1/4.png')}}" class="img-under fmh">
         </div>
 
     </div>
@@ -125,3 +125,17 @@
         }
     }
 </style>
+<script>
+    $(".tkkt").click(function(){
+        window.location.href = "/thiet-ke-kien-truc";
+    });
+    $(".tcct").click(function(){
+        window.location.href = "thi-cong-cong-trinh";
+    });
+    $(".tcnt").click(function(){
+        window.location.href = "/thi-cong-noi-that";
+    });
+    $(".fmh").click(function(){
+        window.location.href = "/fpt-smart-home";
+    });
+</script>

@@ -100,7 +100,7 @@
 </style>
 <script>
     $(document).ready(function() {
-        $('.image img').addClass('img-fluid');
+        $('.content-article img').addClass('img-fluid');
         $('.image ').addClass('figure-image ');
         // Tìm tất cả thẻ <oembed> và chuyển đổi thành thẻ <iframe>
         $('oembed').each(function () {

@@ -71,23 +71,23 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-12">
-                <div class="title mt-1">GIỚI THIỆU</div>
-                <div class="title mt-2">TIN TỨC</div>
-                <div class="title mt-2">LIÊN HỆ</div>
+            <div class="col-lg-2 col-md-12 ">
+                <div class="title mt-1 push-right">GIỚI THIỆU</div>
+                <div class="title mt-2 push-right">TIN TỨC</div>
+                <div class="title mt-2 push-right">LIÊN HỆ</div>
             </div>
-            <div class="col-lg-3 col-md-12">
-                <div class="title mt-1">DỊCH VỤ</div>
-                <div class="mt-2">Thiết kế kiến trúc</div>
-                <div class="mt-2">Thi công dự án</div>
-                <div class="mt-2">Thi công biệt thự</div>
-                <div class="mt-2">Thi công nội thất</div>
-                <div class="mt-2">Thiết kế bể bơi</div>
-                <div class="mt-2">Thi công bể bơi</div>
+            <div class="col-lg-3 col-md-12 ">
+                <div class="title mt-1 push-right">DỊCH VỤ</div>
+                <div class="mt-2 push-right">Thiết kế kiến trúc</div>
+                <div class="mt-2 push-right">Thi công dự án</div>
+                <div class="mt-2 push-right">Thi công biệt thự</div>
+                <div class="mt-2 push-right">Thi công nội thất</div>
+                <div class="mt-2 push-right">Thiết kế bể bơi</div>
+                <div class="mt-2 push-right">Thi công bể bơi</div>
             </div>
         </div>
     </div>
-    <div class="copyright d-flex d-md-none justify-content-center align-items-center">
+    <div class="mobile-copyright d-flex d-md-none justify-content-center align-items-center">
         <div class="text-center" style="; color: #105181 !important">
             Bản quyền 2024 © Thanh Nam <br>
             Đã đăng ký bản quyền.
@@ -104,9 +104,21 @@
         flex: 0 0 4.16667%; /* 0.5 of 1/12 which is ~4.16667% */
         max-width: 4.16667%;
     }
+    .footer .content{
+        margin-top: unset;
+    }
+    .push-right{
+        margin-left: unset;
+    }
     @media only screen and (max-width: 800px) {
         .transform-mobile {
             transform: translateY(-10%)
+        }
+        .footer .content{
+            margin-top: 3%
+        }
+        .push-right{
+            margin-left: 0.5rem;
         }
     }
 </style>

@@ -1,32 +1,51 @@
 <div class="header shadow-effect sticky-top d-none d-md-block ">
     <div class="header-content d-flex align-content-center ">
-        <img class=header-logo src="{{asset('images/header/LOGO_THANHNAM.png')}}" alt="LOGO" style="scale: 75%; transform: translateX(110%)">
+        <img class=header-logo src="{{asset('images/header/LOGO_THANHNAM.png')}}" alt="LOGO" style="scale: 75%; transform: translateX(1%)">
         <div class="header-list d-flex justify-content-center align-content-center row">
             <div class="col-2 text-center my-auto no-opacity header-logo">TRANG CHỦ</div>
             <a href="/gioi-thieu" class="col-2 text-center my-auto no-opacity text-decoration-none"><div class="text-test">GIỚI THIỆU</div></a>
-            <div class="col-2 text-center my-auto no-opacity position-relative">
+            <div class="col-3 text-center my-auto no-opacity position-relative">
                 <div class="btn-transparent  py-3 product-sc-product"style="background-color: transparent;
                 color: #105181; cursor: pointer">
-                    DỊCH VỤ
+                    KIẾN TRÚC - NỘI THẤT
                 </div>
                 <div class="position-absolute hide_button px-3 py-3" style=" margin-top:10%;  background-color: white; color: #105181">
                     <div class="product-sc text-center "style="  width: 12rem;"><a href="{{asset('thiet-ke-kien-truc')}}" style="text-decoration: none; color: unset"> THIẾT KẾ KIẾN TRÚC</a></div>
                 </div>
-                <div class="position-absolute hide_button px-3 py-3" style=" margin-top:50%;  background-color: white; color: #105181">
+                <div class="position-absolute hide_button px-3 py-3" style=" margin-top:40%;  background-color: white; color: #105181">
                     <div class="product-sc text-center "style=" width: 12rem;"><a href="{{asset('thi-cong-cong-trinh')}}" style="text-decoration: none; color: unset"> THI CÔNG CÔNG TRÌNH</a></div>
                 </div>
-                <div class="position-absolute hide_button px-3 py-3" style=" margin-top:90%;  background-color: white; color: #105181">
+                <div class="position-absolute hide_button px-3 py-3" style=" margin-top:70%;  background-color: white; color: #105181">
                     <div class="product-sc text-center "style=" width: 12rem;"><a href="{{asset('thi-cong-noi-that')}}" style="text-decoration: none; color: unset"> THI CÔNG NỘI THẤT</a></div>
                 </div>
-                <div class="position-absolute hide_button px-3 py-3" style=" margin-top:130%;  background-color: white; color: #105181">
-                    <div class="product-bb text-center "style=" width: 12rem;"><a href="{{asset('fpt-smart-home')}}" style="text-decoration: none; color: unset"> FPT SMART HOME</a></div>
+{{--                <div class="position-absolute hide_button px-3 py-3" style=" margin-top:130%;  background-color: white; color: #105181">--}}
+{{--                    <div class="product-bb text-center "style=" width: 12rem;"><a href="{{asset('fpt-smart-home')}}" style="text-decoration: none; color: unset"> FPT SMART HOME</a></div>--}}
+{{--                </div>--}}
+            </div>
+            <div class="col-2 text-center my-auto no-opacity position-relative">
+                <div class="btn-transparent  py-3 product-sc-smart"style="background-color: transparent;
+                color: #105181; cursor: pointer">
+                    SMART HOME
+                </div>
+                <div class="position-absolute hide_button1 px-3 py-3" style=" margin-top:15%;  background-color: white; color: #105181">
+                    <div class="product-bb text-center "style="  width: 12rem;"><a href="{{asset('fpt-smart-home')}}" style="text-decoration: none; color: unset"> FPT SMART HOME</a></div>
+                </div>
+                <div class="position-absolute hide_button1 px-3 py-3" style=" margin-top:60%;  background-color: white; color: #105181">
+                    <div class="product-bb text-center "style=" width: 12rem;"><a href="{{asset('vimar')}}" style="text-decoration: none; color: unset"> VIMAR</a></div>
                 </div>
             </div>
             <div class="col-2 text-center my-auto no-opacity"><a href="{{asset('tin-tuc')}}" style="text-decoration: none; color: unset">TIN TỨC</a></div>
-            <div class="col-3 text-center my-auto no-opacity">
-                <button class="btn-contact px-5 py-1"><a href="#lien-he" style="text-decoration: none; color: unset"> LIÊN HỆ</a></button>
-            </div>
+{{--            <div class="col-2 text-center my-auto no-opacity">--}}
+{{--
+{{--            </div>--}}
         </div>
+        <div class="d-flex justify-content-center align-content-center">
+            <button class="btn-contact " style="width: 8rem; height: 3rem; transform: translateY(31%)">
+                <a href="#lien-he" style="text-decoration: none; color: unset;">
+                    LIÊN HỆ
+                </a></button>
+        </div>
+
     </div>
 </div>
 <div class="header-mobile shadow-effect sticky-top d-md-none position-relative">
@@ -86,6 +105,8 @@
         <div class="text-center mt-4"><a href="{{asset('thiet-ke-kien-truc')}}" style="text-decoration: none; color: white"> THIẾT KẾ KIẾN TRÚC</a></div>
         <div class="text-center mt-4"><a href="{{asset('thi-cong-cong-trinh')}}" style="text-decoration: none; color: white"> THI CÔNG CÔNG TRÌNH</a></div>
         <div class="text-center mt-4"><a href="{{asset('thi-cong-noi-that')}}" style="text-decoration: none; color: white"> THI CÔNG NỘI THẤT</a></div>
+        <div class="text-center mt-4"><a href="{{asset('fpt-smart-home')}}" style="text-decoration: none; color: white"> FPT SMART HOME</a></div>
+        <div class="text-center mt-4"><a href="{{asset('vimar')}}" style="text-decoration: none; color: white"> ViMAR</a></div>
         <div class="text-center mt-4"><a href="{{asset('tin-tuc')}}" style="text-decoration: none; color: white">TIN TỨC</a></div>
         <div class="text-center mt-4">
             <button class="btn-contact-mobile px-5 py-1">LIÊN HỆ</button>
@@ -108,9 +129,12 @@
         left: 0;
         width: 100%;
         height: 100%;
-        z-index: 999; /* Đảm bảo div phủ lên trên cùng */
+        z-index: 1001; /* Đảm bảo div phủ lên trên cùng */
     }
     .hide_button {
+        display: none;
+    }
+    .hide_button1 {
         display: none;
     }
 </style>
@@ -128,6 +152,9 @@
         });
         $('.product-sc-product').click(function(){
             $('.hide_button').stop().slideToggle(300);
+        });
+        $('.product-sc-smart').click(function(){
+            $('.hide_button1').stop().slideToggle(300);
         });
         $(".header-logo").click(function(){
             window.location.href = "/";

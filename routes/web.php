@@ -1,6 +1,7 @@
 <?php
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ArticlePoolController;
+use App\Http\Controllers\ArticleVimarController;
 use App\Http\Controllers\ArticleCongTrinhController;
 use App\Http\Controllers\ArticleKienTrucController;
 use App\Http\Controllers\ArticleNoiThatController;
@@ -22,6 +23,9 @@ Route::prefix('admin')->middleware('auth')->group(function () {
 
     Route::resource('article_pools', 'ArticlePoolController')->except(['index']);
     Route::get('article_pools', [ArticlePoolController::class, 'index'])->name('article_pools.index');
+
+    Route::resource('article_vimar', 'ArticleVimarController')->except(['index']);
+    Route::get('article_vimar', [ArticleVimarController::class, 'index'])->name('article_vimar.index');
 
     Route::resource('article_cong_trinh', 'ArticleCongTrinhController')->except(['index']);
     Route::get('article_cong_trinh', [ArticleCongTrinhController::class, 'index'])->name('article_cong_trinh.index');
@@ -51,6 +55,7 @@ Route::get('/fpt-smart-home', [IndexController::class, 'pools'])->name('homepage
 Route::get('/thi-cong-noi-that', [IndexController::class, 'articles_noi_that'])->name('homepage.articles_noi_that');
 Route::get('/thi-cong-cong-trinh', [IndexController::class, 'articles_cong_trinh'])->name('homepage.articles_cong_trinh');
 Route::get('/thiet-ke-kien-truc', [IndexController::class, 'articles_kien_truc'])->name('homepage.articles_kien_truc');
+Route::get('/vimar', [IndexController::class, 'articles_vimar'])->name('homepage.articles_vimar');
 
 Route::get('/tin-tuc', [IndexController::class, 'articles'])->name('homepage.articles');
 Route::get('/tin-tuc/{slug}', [IndexController::class, 'show'])->name('homepage.show');

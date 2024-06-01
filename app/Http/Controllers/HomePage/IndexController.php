@@ -95,6 +95,17 @@ class IndexController extends Controller
             ->get();
         return view('pages/noi-that/pool/index', ['news' => $news]);
     }
+    public function articles_vimar()
+    {
+        $categoryArticleSlug = "vimar";
+        $news = Article::whereHas('category', function ($query) use ($categoryArticleSlug) {
+            $query->where('slug', $categoryArticleSlug);
+        })
+
+            ->take(6)
+            ->get();
+        return view('pages/vimar/pool/index', ['news' => $news]);
+    }
     public function show($slug, Request $request)
     {
         $article = Article::where('slug', $slug)->firstOrFail();

@@ -56,7 +56,7 @@
         padding-right: 3%;
     }
     .contentsec2-HP-test {
-        font-size: 23px;
+        font-size: 16px;
         text-align: justify;
     }
 
