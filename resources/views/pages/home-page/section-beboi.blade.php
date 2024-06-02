@@ -30,8 +30,8 @@
            class="btn blue-bg blue-text btn-block mb-3 text-white mitr-medium longer-btn shadow-test button-shake mulish-black">FPT SMART HOME</a>
     </div>
     <div class="d-flex align-content-center justify-content-center pb-2">
-        <a href="{{asset('vmar')}}"
-           class="btn blue-bg blue-text btn-block mb-3 text-white mitr-medium longer-btn shadow-test button-shake mulish-black">VMAR</a>
+        <a href="{{asset('vimar')}}"
+           class="btn blue-bg blue-text btn-block mb-3 text-white mitr-medium longer-btn shadow-test button-shake mulish-black">VIMAR</a>
     </div>
 </div>
 <style>
