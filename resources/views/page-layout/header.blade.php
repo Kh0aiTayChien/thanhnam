@@ -106,7 +106,7 @@
         <div class="text-center mt-4"><a href="{{asset('thi-cong-cong-trinh')}}" style="text-decoration: none; color: white"> THI CÔNG CÔNG TRÌNH</a></div>
         <div class="text-center mt-4"><a href="{{asset('thi-cong-noi-that')}}" style="text-decoration: none; color: white"> THI CÔNG NỘI THẤT</a></div>
         <div class="text-center mt-4"><a href="{{asset('fpt-smart-home')}}" style="text-decoration: none; color: white"> FPT SMART HOME</a></div>
-        <div class="text-center mt-4"><a href="{{asset('vimar')}}" style="text-decoration: none; color: white"> ViMAR</a></div>
+        <div class="text-center mt-4"><a href="{{asset('vimar')}}" style="text-decoration: none; color: white"> VIMAR</a></div>
         <div class="text-center mt-4"><a href="{{asset('tin-tuc')}}" style="text-decoration: none; color: white">TIN TỨC</a></div>
         <div class="text-center mt-4">
             <button class="btn-contact-mobile px-5 py-1">LIÊN HỆ</button>

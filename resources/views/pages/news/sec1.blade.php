@@ -4,11 +4,11 @@
     </div>
     @foreach($news as $article)
         <div class="mt-5 row-test">
-            <div class="row-test col-7 bg-news">
-                <div class="col-lg-4 col-xs-12" style="margin-left: 4%">
+            <div class="row-test col-lg-7 col-md-8 bg-news">
+                <div class="col-lg-4 col-xs-12 padding-mobile" style="">
                     <a href="{{route('homepage.show',['slug' => $article->slug])}}" style="">
                         <img class="img-fluid"
-                             src="{{$article->image}}"/>
+                             src="{{$article->image}}" style="object-fit: cover; height: 12rem; width: 16rem"/>
                     </a>
                 </div>
                 <div class="card-body col-lg-7 col-xs-12" style="padding-left: 5%">
@@ -30,14 +30,29 @@
             </div>
         </div>
     @endforeach
+    <div class="d-flex justify-content-center align-content-center mt-3 mb-3">
+        {{ $news->links() }}
+    </div>
 </div>
 
 <style>
     .bg-news {
         background-color: white;
-        box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
-        border-radius: 3%;
-        padding-bottom: 4%;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 23px;
+        padding-bottom: 1%;
+        overflow: hidden;
+    }
+    .padding-mobile{
+        padding: 3%
+    }
+    @media only screen and (max-width: 800px) {
+        .secp-TT {
+            padding: 0 5%;
+        }
+        .padding-mobile{
+            padding: unset;
+        }
     }
 
     .green-border {

@@ -46,8 +46,7 @@ class IndexController extends Controller
             $query->where('slug', $categoryArticleSlug);
         })
 
-            ->take(6)
-            ->get();
+            ->paginate(3);
         return view('pages/service/pool/index', ['news' => $news]);
     }
 
@@ -57,8 +56,7 @@ class IndexController extends Controller
         $news = Article::whereHas('category', function ($query) use ($categoryArticleSlug) {
             $query->where('slug', $categoryArticleSlug);
         })
-            ->take(6)
-            ->get();
+            ->paginate(6);
 
         return view('pages/news/index', ['news' => $news]);
     }
@@ -68,8 +66,7 @@ class IndexController extends Controller
         $news = Article::whereHas('category', function ($query) use ($categoryArticleSlug) {
             $query->where('slug', $categoryArticleSlug);
         })
-            ->take(6)
-            ->get();
+            ->paginate(3);
         return view('pages/cong-trinh/pool/index', ['news' => $news]);
     }
     public function articles_kien_truc()
@@ -79,8 +76,7 @@ class IndexController extends Controller
             $query->where('slug', $categoryArticleSlug);
         })
 
-            ->take(6)
-            ->get();
+            ->paginate(3);
         return view('pages/kien-truc/pool/index', ['news' => $news]);
     }
 
@@ -91,8 +87,7 @@ class IndexController extends Controller
             $query->where('slug', $categoryArticleSlug);
         })
 
-            ->take(6)
-            ->get();
+            ->paginate(3);
         return view('pages/noi-that/pool/index', ['news' => $news]);
     }
     public function articles_vimar()
@@ -102,8 +97,7 @@ class IndexController extends Controller
             $query->where('slug', $categoryArticleSlug);
         })
 
-            ->take(6)
-            ->get();
+            ->paginate(3);
         return view('pages/vimar/pool/index', ['news' => $news]);
     }
     public function show($slug, Request $request)

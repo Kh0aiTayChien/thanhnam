@@ -17,6 +17,9 @@
             </div>
         </div>
     @endforeach
+    <div class="d-flex justify-content-center align-content-center mt-3 mb-3">
+        {{ $news->links() }}
+    </div>
 </div>
 <script>
     $(document).ready(function() {

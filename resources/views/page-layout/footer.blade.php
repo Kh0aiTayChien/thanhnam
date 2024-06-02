@@ -72,18 +72,18 @@
                 </div>
             </div>
             <div class="col-lg-2 col-md-12 ">
-                <div class="title mt-1 push-right">GIỚI THIỆU</div>
-                <div class="title mt-2 push-right">TIN TỨC</div>
+                <div class="title mt-1 push-right"><a href="{{asset('gioi-thieu')}}" style="text-decoration: none; color: white"> GIỚI THIỆU</a></div>
+                <div class="title mt-2 push-right"><a href="{{asset('tin-tuc')}}" style="text-decoration: none; color: white"> TIN TỨC</a></div>
                 <div class="title mt-2 push-right">LIÊN HỆ</div>
             </div>
-            <div class="col-lg-3 col-md-12 ">
-                <div class="title mt-1 push-right">DỊCH VỤ</div>
-                <div class="mt-2 push-right">Thiết kế kiến trúc</div>
-                <div class="mt-2 push-right">Thi công dự án</div>
-                <div class="mt-2 push-right">Thi công biệt thự</div>
-                <div class="mt-2 push-right">Thi công nội thất</div>
-                <div class="mt-2 push-right">Thiết kế bể bơi</div>
-                <div class="mt-2 push-right">Thi công bể bơi</div>
+            <div class="col-lg-3 col-md-12 mb-5">
+{{--                <div class="title mt-1 push-right">DỊCH VỤ</div>--}}
+                <div class=" push-right"><a href="{{asset('thiet-ke-kien-truc')}}" style="text-decoration: none; color: white"> THIẾT KẾ KIẾN TRÚC</a></div>
+                <div class="mt-2 push-right"><a href="{{asset('thi-cong-cong-trinh')}}" style="text-decoration: none; color: white"> THI CÔNG CÔNG TRÌNH</a></div>
+                <div class="mt-2 push-right"><a href="{{asset('thi-cong-noi-that')}}" style="text-decoration: none; color: white"> THI CÔNG NỘI THẤT</a></div>
+                <div class="mt-2 push-right"><a href="{{asset('fpt-smart-home')}}" style="text-decoration: none; color: white"> FPT SMART HOME</a></div>
+                <div class="mt-2 mb-4 push-right"><a href="{{asset('vimar')}}" style="text-decoration: none; color: white"> ViMAR</a></div>
+{{--                <div class="mt-2 push-right">Thi công bể bơi</div>--}}
             </div>
         </div>
     </div>
