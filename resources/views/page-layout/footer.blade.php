@@ -82,7 +82,7 @@
                 <div class="mt-2 push-right"><a href="{{asset('thi-cong-cong-trinh')}}" style="text-decoration: none; color: white"> THI CÔNG CÔNG TRÌNH</a></div>
                 <div class="mt-2 push-right"><a href="{{asset('thi-cong-noi-that')}}" style="text-decoration: none; color: white"> THI CÔNG NỘI THẤT</a></div>
                 <div class="mt-2 push-right"><a href="{{asset('fpt-smart-home')}}" style="text-decoration: none; color: white"> FPT SMART HOME</a></div>
-                <div class="mt-2 mb-4 push-right"><a href="{{asset('vimar')}}" style="text-decoration: none; color: white"> ViMAR</a></div>
+                <div class="mt-2 mb-4 push-right"><a href="{{asset('vimar')}}" style="text-decoration: none; color: white"> VIMAR</a></div>
 {{--                <div class="mt-2 push-right">Thi công bể bơi</div>--}}
             </div>
         </div>
