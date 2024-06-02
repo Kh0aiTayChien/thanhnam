@@ -100,7 +100,7 @@
 </div>
 <div class="menu-dropdown blue-bg d-none">
     <div class="mobile-menu">
-        <div class="text-center"><a href="" style="text-decoration: none; color: unset"> TRANG CHỦ</a></div>
+        <div class="text-center"><a href="/" style="text-decoration: none; color: unset"> TRANG CHỦ</a></div>
         <div class="text-center mt-4"><a href="{{asset('gioi-thieu')}}" style="text-decoration: none; color: white"> GIỚI THIỆU</a></div>
         <div class="text-center mt-4"><a href="{{asset('thiet-ke-kien-truc')}}" style="text-decoration: none; color: white"> THIẾT KẾ KIẾN TRÚC</a></div>
         <div class="text-center mt-4"><a href="{{asset('thi-cong-cong-trinh')}}" style="text-decoration: none; color: white"> THI CÔNG CÔNG TRÌNH</a></div>
