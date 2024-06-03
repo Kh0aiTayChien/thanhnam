@@ -25,14 +25,18 @@
             <img src="{{asset('images/homepage/be-boi/4.png')}}" class="img-fluid">
         </div>
     </div>
-    <div class="d-flex align-content-center justify-content-center pt-5 pb-2">
-        <a href="{{asset('fpt-smart-home')}}"
-           class="btn blue-bg blue-text btn-block mb-3 text-white mitr-medium longer-btn shadow-test button-shake mulish-black">FPT SMART HOME</a>
+   <div class="container pt-5 pb-2">
+    <div class="row justify-content-center">
+        <div class="col-md-6 d-flex justify-content-center mb-3 mb-md-0">
+            <a href="{{asset('fpt-smart-home')}}"
+               class="btn blue-bg blue-text btn-block text-white mitr-medium longer-btn shadow-test button-shake mulish-black">FPT SMART HOME</a>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center">
+            <a href="{{asset('vimar')}}"
+               class="btn blue-bg blue-text btn-block text-white mitr-medium longer-btn shadow-test button-shake mulish-black">VIMAR</a>
+        </div>
     </div>
-    <div class="d-flex align-content-center justify-content-center pb-2">
-        <a href="{{asset('vimar')}}"
-           class="btn blue-bg blue-text btn-block mb-3 text-white mitr-medium longer-btn shadow-test button-shake mulish-black">VIMAR</a>
-    </div>
+</div>
 </div>
 <style>
     .be-boi .col-3 {
