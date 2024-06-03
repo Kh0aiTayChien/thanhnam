@@ -25,7 +25,7 @@
             <img src="{{asset('images/homepage/be-boi/4.png')}}" class="img-fluid">
         </div>
     </div>
-   <div class="container pt-5 pb-2 mb-3">
+   <div class="container pt-5 pb-2 mb-4">
     <div class="row justify-content-center">
         <div class="col-md-4 offset-md-2 d-flex justify-content-center mb-3 mb-md-0">
             <a href="{{asset('fpt-smart-home')}}"
@@ -35,6 +35,7 @@
             <a href="{{asset('vimar')}}"
                class="btn blue-bg blue-text btn-block text-white mitr-medium longer-btn shadow-test button-shake mulish-black">VIMAR</a>
         </div>
+        <div class="col-md-2"></div> 
     </div>
 </div>
 </div>
