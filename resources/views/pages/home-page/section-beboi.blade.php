@@ -25,13 +25,13 @@
             <img src="{{asset('images/homepage/be-boi/4.png')}}" class="img-fluid">
         </div>
     </div>
-   <div class="container pt-5 pb-2">
+   <div class="container pt-5 pb-2 mb-3">
     <div class="row justify-content-center">
-        <div class="col-md-6 d-flex justify-content-center mb-3 mb-md-0">
+        <div class="col-md-4 offset-md-2 d-flex justify-content-center mb-3 mb-md-0">
             <a href="{{asset('fpt-smart-home')}}"
                class="btn blue-bg blue-text btn-block text-white mitr-medium longer-btn shadow-test button-shake mulish-black">FPT SMART HOME</a>
         </div>
-        <div class="col-md-6 d-flex justify-content-center">
+        <div class="col-md-4 d-flex justify-content-center">
             <a href="{{asset('vimar')}}"
                class="btn blue-bg blue-text btn-block text-white mitr-medium longer-btn shadow-test button-shake mulish-black">VIMAR</a>
         </div>
