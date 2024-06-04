@@ -89,13 +89,13 @@
     </div>
     <div class="mobile-copyright d-flex d-md-none justify-content-center align-items-center">
         <div class="text-center" style="; color: #105181 !important">
-            Bản quyền 2024 © Thanh Nam <br>
+            Bản quyền {{ now()->year}} © Thanh Nam <br>
             Đã đăng ký bản quyền.
         </div>
     </div>
     <div class="copyright d-none d-md-flex justify-content-start align-items-center">
         <div class="text-center" style="margin-left: 10rem; color: #105181 !important">
-            Bản quyền 2024 © Thanh Nam. Đã đăng ký bản quyền.
+            Bản quyền {{ now()->year}}© Thanh Nam. Đã đăng ký bản quyền.
         </div>
     </div>
 </div>

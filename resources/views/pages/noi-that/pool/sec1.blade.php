@@ -11,7 +11,7 @@
                 <p class=""><span style="font-weight: bold">Địa điểm:</span> {{$article->location}}</p>
                 <p class=""><span style="font-weight: bold">Quy mô:</span> {{$article->scale}}</p>
             </div>
-            <div class="content p-3 pb-5">
+            <div class="content pb-5" style="text-align: justify; align-items: center">
                 {!! $article->content!!}
             </div>
         </div>

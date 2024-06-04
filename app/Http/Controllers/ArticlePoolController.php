@@ -49,9 +49,6 @@ class ArticlePoolController extends Controller
             'category' => 'required',
             'slug' => 'required|string',
             'content' => 'required',
-            'investor' => 'required',
-            'location' => 'required',
-            'scale' => 'required',
         ], [
             'title.unique' => 'Tiêu đề đã tồn tại',
             'title.required' => 'Không được để trống'
@@ -62,9 +59,9 @@ class ArticlePoolController extends Controller
         $article->slug = $validatedData['slug'];
         $article->content = $validatedData['content'];
         $article->status = $request->input('status');
-        $article->investor = $validatedData['investor'];
-        $article->location = $validatedData['location'];
-        $article->scale = $validatedData['scale'];
+        $article->investor = ".";
+        $article->location = ".";
+        $article->scale = ".";
         if ($article->status == 1) {
             $article->order_number = $request->input('order_number') ?? 1;
         } else {
@@ -101,9 +98,6 @@ class ArticlePoolController extends Controller
             'category' => 'required',
             'slug' => 'required|string',
             'content' => 'required',
-            'investor' => 'required',
-            'location' => 'required',
-            'scale' => 'required',
         ], [
             'title.unique' => 'Tiêu đề đã tồn tại',
             'title.required' => 'Không được để trống'
@@ -114,9 +108,9 @@ class ArticlePoolController extends Controller
         $article->slug = $validatedData['slug'];
         $article->content = $validatedData['content'];
         $article->status = $request->input('status');
-        $article->investor = $validatedData['investor'];
-        $article->location = $validatedData['location'];
-        $article->scale = $validatedData['scale'];
+        $article->investor = ".";
+        $article->location = ".";
+        $article->scale = ".";
         if ($article->status == 1) {
             $article->order_number = $request->input('order_number') ?? 1;
         } else {

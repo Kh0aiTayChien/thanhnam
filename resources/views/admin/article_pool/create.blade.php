@@ -122,30 +122,30 @@
                                                placeholder="link không dấu của bài viết">
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
-                                    <div class="form-group focused">
-                                        <label class="form-control-label" for="slug">Nhà Đầu Tư<span
-                                                class="small text-danger">*</span></label>
-                                        <input type="text" id="investor" class="form-control" name="investor"
-                                               placeholder="link không dấu của bài viết">
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="form-group focused">
-                                        <label class="form-control-label" for="slug">Địa điểm<span
-                                                class="small text-danger">*</span></label>
-                                        <input type="text" id="location" class="form-control" name="location"
-                                               placeholder="link không dấu của bài viết">
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="form-group focused">
-                                        <label class="form-control-label" for="slug">Quy mô<span
-                                                class="small text-danger">*</span></label>
-                                        <input type="text" id="scale" class="form-control" name="scale"
-                                               placeholder="link không dấu của bài viết">
-                                    </div>
-                                </div>
+{{--                                <div class="col-lg-4">--}}
+{{--                                    <div class="form-group focused">--}}
+{{--                                        <label class="form-control-label" for="slug">Nhà Đầu Tư<span--}}
+{{--                                                class="small text-danger">*</span></label>--}}
+{{--                                        <input type="text" id="investor" class="form-control" name="investor"--}}
+{{--                                               placeholder="link không dấu của bài viết">--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-lg-4">--}}
+{{--                                    <div class="form-group focused">--}}
+{{--                                        <label class="form-control-label" for="slug">Địa điểm<span--}}
+{{--                                                class="small text-danger">*</span></label>--}}
+{{--                                        <input type="text" id="location" class="form-control" name="location"--}}
+{{--                                               placeholder="link không dấu của bài viết">--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-lg-4">--}}
+{{--                                    <div class="form-group focused">--}}
+{{--                                        <label class="form-control-label" for="slug">Quy mô<span--}}
+{{--                                                class="small text-danger">*</span></label>--}}
+{{--                                        <input type="text" id="scale" class="form-control" name="scale"--}}
+{{--                                               placeholder="link không dấu của bài viết">--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
                             </div>
 
                             <div class="row">

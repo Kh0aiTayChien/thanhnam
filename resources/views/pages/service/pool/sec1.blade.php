@@ -5,11 +5,11 @@
     @foreach($news as $article)
         <div class="content1-pools">
             <div class="text-pools">
-                <p class="" style="font-size: 18px"><span style="font-weight: bold; font-size: 23px">Công trình:</span>
-                    {{$article->title}} </p>
-                <p class=""><span style="font-weight: bold">Chủ đầu tư:</span> {{$article->investor}}</p>
-                <p class=""><span style="font-weight: bold">Địa điểm:</span> {{$article->location}}</p>
-                <p class=""><span style="font-weight: bold">Quy mô:</span> {{$article->scale}}</p>
+                <p class="text-center" style="font-size: 18px"><span style="font-weight: bold; font-size: 23px"> {{$article->title}}</span>
+                    </p>
+{{--                <p class=""><span style="font-weight: bold">Chủ đầu tư:</span> {{$article->investor}}</p>--}}
+{{--                <p class=""><span style="font-weight: bold">Địa điểm:</span> {{$article->location}}</p>--}}
+{{--                <p class=""><span style="font-weight: bold">Quy mô:</span> {{$article->scale}}</p>--}}
             </div>
             <div class="content pb-5" style="text-align: justify; align-items: center">
                 {!! $article->content!!}
