@@ -7,10 +7,10 @@
 
             <div class="btn text-white montserrat d-none d-md-block text-center"
                  style="font-size: 29px; text-align: justify; ">
-                <div style="font-size: 35px; font-family: Mulish-ExtraBold" class="mb-3">CÔNG TY TNHH KỸ THUẬT VÀ THƯƠNG
+                <div style="font-size: 35px; font-family: Mulish-ExtraBold" class="mb-3" data-aos="fade-right" data-aos-duration="1000">CÔNG TY TNHH KỸ THUẬT VÀ THƯƠNG
                     MẠI THÀNH NAM
                 </div>
-                <p style="font-family: Montserrat-Medium; font-size: 20px; text-align: center"> Chúng tôi đặt mục tiêu
+                <p style="font-family: Montserrat-Medium; font-size: 20px; text-align: center"  data-aos="fade-left" data-aos-duration="1000"> Chúng tôi đặt mục tiêu
                     chất lượng lên hàng đầu, từ đó xây dựng niềm tin bền vững nơi khách hàng
                     và đối tác. Công ty TNHH kỹ thuật và thương mại Thành Nam mong muốn chở thành đối tác với các
                     doanh nghiệp, Chủ đầu tư và khách hàng để cùng phát triển đi đến thành công!</p>
@@ -33,8 +33,8 @@
                     doanh nghiệp, Chủ đầu tư và khách hàng để cùng phát triển đi đến thành công!</p>
             </div>
         </div>
-        <div class="d-flex align-content-center justify-content-center position-absolute"
-             style="z-index: 998; bottom: 15vh">
+        <div class="d-flex align-content-center justify-content-center position-absolute "
+             style="z-index: 998; bottom: 15vh" data-aos="fade-up" data-aos-duration="1000">
             <a href="#lien-he" class="btn bg-white blue-text mb-3 button-shake mulish-black py-2 "
                style="font-size: 16px; width: 15rem"
             >NHẬN TƯ VẤN NGAY</a>
@@ -70,10 +70,10 @@
         </button>
     </div>
 
-    <div class="row gx-0">
+    <div class="row gx-0" >
         <div class="col-3 d-flex justify-content-center align-content-center position-relative " style="height: 8vh">
             <div class=" position-absolute mulish-black text-white font-size-sec-1" style="top: 32%; z-index: 1000">
-                <div class="text-center shadow-effect">THIẾT KẾ KIẾN TRÚC</div>
+                <div class="text-center shadow-effect" >THIẾT KẾ KIẾN TRÚC</div>
             </div>
                 <img src="{{asset('images/homepage/section-1/footer-sec1/1.png')}}" class="img-under tkkt">
             <div class="overlay"></div>

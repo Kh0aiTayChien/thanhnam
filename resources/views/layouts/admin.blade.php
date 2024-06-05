@@ -311,22 +311,22 @@
             </div>
         </li>
 
-        <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#trash" role="button" aria-expanded="false"
-               aria-controls="trash">
-                <i class="fas fa-trash"></i>
-                <span> Thùng rác </span>
-            </a>
-            <div class="collapse" id="trash">
-                <ul class="nav flex-column">
-                    <li class="nav-item {{ Nav::hasSegment('trash',3) }}">
-                        <a class="nav-link" href="{{ route('articles.index',['conditionView' => 'trash'])}}">
-                            <span>Bài viết </span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </li>
+{{--        <li class="nav-item">--}}
+{{--            <a class="nav-link" data-toggle="collapse" href="#trash" role="button" aria-expanded="false"--}}
+{{--               aria-controls="trash">--}}
+{{--                <i class="fas fa-trash"></i>--}}
+{{--                <span> Thùng rác </span>--}}
+{{--            </a>--}}
+{{--            <div class="collapse" id="trash">--}}
+{{--                <ul class="nav flex-column">--}}
+{{--                    <li class="nav-item {{ Nav::hasSegment('trash',3) }}">--}}
+{{--                        <a class="nav-link" href="{{ route('articles.index',['conditionView' => 'trash'])}}">--}}
+{{--                            <span>Bài viết </span>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
+{{--                </ul>--}}
+{{--            </div>--}}
+{{--        </li>--}}
 
 
         <!-- Divider -->
@@ -644,6 +644,7 @@
         let $articles2 = $(this).find('#articles2');
         let $articles3 = $(this).find('#articles3');
         let $articles4 = $(this).find('#articles4');
+        let $articles5 = $(this).find('#articles5');
 
         let $products = $(this).find('#products');
         let $images = $(this).find('#images');

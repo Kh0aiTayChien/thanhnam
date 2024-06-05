@@ -1,6 +1,6 @@
 <div class="knowledge">
     <div class="d-flex align-content-center justify-content-center img-course">
-        <img src="{{asset('images/homepage/sec-new/title.png')}}" alt="" style="" class="img-fluid">
+        <img src="{{asset('images/homepage/sec-new/title.png')}}" alt="" style="" class="img-fluid"  data-aos="fade-down" data-aos-duration="1000">
     </div>
     <div class="slick-carousel position-relative mt-4">
         <button class="custom-prev-arrow-knowledge " aria-label="Previous">
@@ -12,7 +12,7 @@
 
         <div class="carousel-knowledge">
             @foreach($news as $article)
-                <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-center" data-aos="flip-up" data-aos-duration="1000">
                     <div class="card shadow-effect me-1"
                          style="width:20rem; height: 70% ">
                         <img class="rounded-custom m-3" src="{{$article->image}}"
@@ -31,7 +31,7 @@
             @endforeach
         </div>
     </div>
-    <div class="d-flex align-content-center justify-content-center pb-4">
+    <div class="d-flex align-content-center justify-content-center pb-4" data-aos="fade-up" data-aos-duration="1000">
         <a href="/tin-tuc"
            class="btn blue-bg blue-text btn-block mb-3 text-white mitr-medium longer-btn shadow-test button-shake mulish-black">XEM THÊM</a>
     </div>

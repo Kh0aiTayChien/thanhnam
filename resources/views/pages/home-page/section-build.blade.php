@@ -1,6 +1,6 @@
 
-<div class="section-build d-flex flex-column mt-5">
-    <div class=" justify-content-center align-content-center d-none d-md-flex">
+<div class="section-build d-flex flex-column mt-5" >
+    <div class=" justify-content-center align-content-center d-none d-md-flex" data-aos="fade-down" data-aos-duration="1000">
         <img src="{{asset('images/homepage/sec-build/title.png')}}" alt="" style="">
     </div>
     <div class=" justify-content-center align-content-center d-flex d-md-none">
@@ -15,14 +15,14 @@
                 <div class="col-md-3  d-flex justify-content-center align-content-center ">
                     <button class="tab-button btn btn-block blue-border-bottom
                                  text-white  mulish-extrabold button-shake active"
-                            data-target="tab1" style="width: 100%">
+                            data-target="tab1" style="width: 100%" data-aos="fade-right" data-aos-duration="1000">
                         <div class=" " style="font-size: 16px">THI CÔNG CÔNG TRÌNH</div>
                     </button>
                 </div>
                 <div class="col-md-3 d-flex justify-content-center align-content-center">
                     <button class="tab-button btn  btn-block  blue-border-bottom
                                  text-white  mulish-extrabold button-shake"
-                            data-target="tab2" style="width: 100%">
+                            data-target="tab2" style="width: 100%" data-aos="fade-left" data-aos-duration="1000">
                         <div class="  " style="font-size: 16px">THI CÔNG NỘI THẤT</div>
                     </button>
                 </div>
@@ -36,7 +36,7 @@
             </div>
         </div>
 
-        <div class=" tabs pb-3 px-5">
+        <div class=" tabs pb-3 px-5" data-aos="zoom-in" data-aos-duration="1000">
 
             <div class="row tab tab1  gy-4 gx-0 mobile-padding active" style="">
                 <div class="section-tab d-flex justify-content-center align-items-center ">
@@ -84,7 +84,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="d-flex align-content-center justify-content-center pt-5 pb-2">
+                <div class="d-flex align-content-center justify-content-center pt-5 pb-2" data-aos="fade-up" data-aos-duration="1000">
                     <a href="{{asset('thi-cong-cong-trinh')}}"
                        class="btn blue-bg blue-text btn-block mb-3 text-white mitr-medium longer-btn shadow-test button-shake mulish-black">THI CÔNG CÔNG TRÌNH</a>
                 </div>
