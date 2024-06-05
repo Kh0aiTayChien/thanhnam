@@ -48,6 +48,7 @@
             touch-action: pan-y;
         }
     </style>
+    {!! SEO::generate() !!}
 </head>
 <body>
 @include('page-layout/header')
