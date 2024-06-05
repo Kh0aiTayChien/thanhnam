@@ -10,7 +10,7 @@ ClassicEditor
         editor.editing.view.change(writer => {
             writer.setStyle(
                 'height',
-                '400px',
+                '600px',
                 editor.editing.view.document.getRoot()
             );
         });
