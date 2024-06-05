@@ -30,7 +30,7 @@ class IndexController extends Controller
         OpenGraph::setTitle('Công ty TNHH kỹ thuật và thương mại Thành Nam');
         OpenGraph::setUrl('https://thanhnamshome.vn');
         OpenGraph::addProperty('type', 'article');
-        OpenGraph::addImage('https://thanhnamshome.vn/images/header/LOGO_THANHNAM.png');
+        OpenGraph::addImage(asset('img/seo.png'));
 
         TwitterCard::setTitle('Công ty TNHH kỹ thuật và thương mại Thành Nam');
         TwitterCard::setSite('');
@@ -38,7 +38,7 @@ class IndexController extends Controller
         JsonLd::setTitle('Công ty TNHH kỹ thuật và thương mại Thành Nam');
         JsonLd::setDescription('Công ty TNHH kỹ thuật và thương mại Thành Nam thành lập vào tháng 11 năm 2019
         . Hoạt động trong lĩnh vực xây dựng dân dụng, xây dựng giao thông hạ tầng và thi công nhà xưởng');
-        JsonLd::addImage('https://thanhnamshome.vn/images/header/LOGO_THANHNAM.png');
+        JsonLd::addImage(asset('img/seo.png'));
 
         $categoryImgSlug = "anh-banner-trang-chu";
         $images = Image::whereHas('category', function ($query) use ($categoryImgSlug) {
@@ -69,7 +69,7 @@ class IndexController extends Controller
         OpenGraph::setTitle('Công ty TNHH kỹ thuật và thương mại Thành Nam FPT SMART HOME');
         OpenGraph::setUrl('https://thanhnamshome.vn/fpt-smart-home');
         OpenGraph::addProperty('type', 'article');
-        OpenGraph::addImage('https://thanhnamshome.vn/images/header/LOGO_THANHNAM.png');
+        OpenGraph::addImage(asset('img/seo.png'));
 
         TwitterCard::setTitle('Công ty TNHH kỹ thuật và thương mại Thành Nam - FPT SMARTHOME');
         TwitterCard::setSite('');
@@ -99,7 +99,7 @@ class IndexController extends Controller
         OpenGraph::setTitle('Công ty TNHH kỹ thuật và thương mại Thành Nam - tin tức');
         OpenGraph::setUrl('https://thanhnamshome.vn/tin-tuc');
         OpenGraph::addProperty('type', 'article');
-        OpenGraph::addImage('https://thanhnamshome.vn/images/header/LOGO_THANHNAM.png');
+        OpenGraph::addImage(asset('img/seo.png'));
 
         TwitterCard::setTitle('Công ty TNHH kỹ thuật và thương mại Thành Nam - tin tức');
         TwitterCard::setSite('');
@@ -128,7 +128,7 @@ class IndexController extends Controller
         OpenGraph::setTitle('Công ty TNHH kỹ thuật và thương mại Thành Nam - thi công công trình');
         OpenGraph::setUrl('https://thanhnamshome.vn/thi-cong-cong-trinh');
         OpenGraph::addProperty('type', 'article');
-        OpenGraph::addImage('https://thanhnamshome.vn/images/header/LOGO_THANHNAM.png');
+        OpenGraph::addImage(asset('img/seo.png'));
 
         TwitterCard::setTitle('Công ty TNHH kỹ thuật và thương mại Thành Nam - thi công công trình');
         TwitterCard::setSite('');
@@ -156,7 +156,7 @@ class IndexController extends Controller
         OpenGraph::setTitle('Công ty TNHH kỹ thuật và thương mại Thành Nam - thiết kế kiến trúc');
         OpenGraph::setUrl('https://thanhnamshome.vn/thiet-ke-kien-truc');
         OpenGraph::addProperty('type', 'article');
-        OpenGraph::addImage('https://thanhnamshome.vn/images/header/LOGO_THANHNAM.png');
+        OpenGraph::addImage(asset('img/seo.png'));
 
         TwitterCard::setTitle('Công ty TNHH kỹ thuật và thương mại Thành Nam - thiết kế kiến trúc');
         TwitterCard::setSite('');
@@ -186,7 +186,7 @@ class IndexController extends Controller
         OpenGraph::setTitle('Công ty TNHH kỹ thuật và thương mại Thành Nam - thi công nội thất');
         OpenGraph::setUrl('https://thanhnamshome.vn/thi-cong-noi-that');
         OpenGraph::addProperty('type', 'article');
-        OpenGraph::addImage('https://thanhnamshome.vn/images/header/LOGO_THANHNAM.png');
+        OpenGraph::addImage(asset('img/seo.png'));
 
         TwitterCard::setTitle('Công ty TNHH kỹ thuật và thương mại Thành Nam - thi công nội thất');
         TwitterCard::setSite('');
@@ -215,7 +215,7 @@ class IndexController extends Controller
         OpenGraph::setTitle('Công ty TNHH kỹ thuật và thương mại Thành Nam - vimar');
         OpenGraph::setUrl('https://thanhnamshome.vn/vimar');
         OpenGraph::addProperty('type', 'article');
-        OpenGraph::addImage('https://thanhnamshome.vn/images/header/LOGO_THANHNAM.png');
+        OpenGraph::addImage(asset('img/seo.png'));
 
         TwitterCard::setTitle('Công ty TNHH kỹ thuật và thương mại Thành Nam - vimar');
         TwitterCard::setSite('');
