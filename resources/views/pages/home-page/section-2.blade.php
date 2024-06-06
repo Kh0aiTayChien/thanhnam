@@ -1,15 +1,15 @@
 <div class="section-2">
     <div class="row-test sec2-homepage-pc">
         <div class="col-xxl-4 col-md-5 containersec2-HP">
-            <p class="headersec2-HP mulish-extrabold">GIỚI THIỆU VỀ</p>
-            <p class="headersec2-HP2 mulish-extrabold">Nino's Classes</p><br>
-            <p class="contentsec2-HP mulish-medium">Trung tâm Thầy Nino TOEIC Nhí Nhố hay còn được biết đến là Nino’s
+            <p class="headersec2-HP montserrat-extrabold">GIỚI THIỆU VỀ</p>
+            <p class="headersec2-HP2 montserrat-extrabold">Nino's Classes</p><br>
+            <p class="contentsec2-HP montserrat-medium">Trung tâm Thầy Nino TOEIC Nhí Nhố hay còn được biết đến là Nino’s
                 Classes được
                 thành
                 lập từ năm 2011, được biết đến là một trong những đơn vị đào tạo Anh ngữ hàng đầu tại Hà Nội.</p><br>
             <div class="col-xxl-4 col-md-5">
                 <a href=""
-                   class="btn yellow-bg btn-block mb-3 text-white mitr-medium longer-btn shadow-effect button-shake mulish-black">TÌM
+                   class="btn yellow-bg btn-block mb-3 text-white mitr-medium longer-btn shadow-effect button-shake montserrat-bold">TÌM
                     HIỂU
                     THÊM</a>
             </div>
@@ -19,16 +19,16 @@
     <div class="row-test sec3-homepage-pc">
         <img src="{{asset('images/homepage/section5/Mask group (1).png')}}" class="col-xxl-4 col-md-5 imgsec3-HP">
         <div class="col-xxl-4 col-md-5 contentsec3-HP">
-            <p class="headersec2-HP mulish-extrabold">GIỚI THIỆU VỀ </p>
-            <p class="headersec2-HP2 mulish-extrabold">Thầy Nino</p><br>
-            <p class="contentsec2-HP mulish-medium">Thầy Nino tên thật là Nguyễn Hoài Nam, sinh ngày 09/11/1989. Thầy
+            <p class="headersec2-HP montserrat-extrabold">GIỚI THIỆU VỀ </p>
+            <p class="headersec2-HP2 montserrat-extrabold">Thầy Nino</p><br>
+            <p class="contentsec2-HP montserrat-medium">Thầy Nino tên thật là Nguyễn Hoài Nam, sinh ngày 09/11/1989. Thầy
                 Nino đã tốt
                 nghiệp TESOL học viện American Institute (Mỹ) và có kinh nghiệm trên 11 năm giảng dạy. Với sự trẻ trung,
                 năng động, nhiệt huyết, thầy luôn đem lại cho học viên năng lượng tích cực và những giờ học thú vị.
             </p><br>
             <div class="col-xxl-4 col-md-5">
                 <a href=""
-                   class="btn yellow-bg btn-block mb-3 text-white mitr-medium longer-btn shadow-effect button-shake mulish-black">TÌM
+                   class="btn yellow-bg btn-block mb-3 text-white mitr-medium longer-btn shadow-effect button-shake montserrat-bold">TÌM
                     HIỂU
                     THÊM</a>
             </div>
@@ -36,29 +36,29 @@
     </div>
     <div class="section-2-mb">
         <div class="sec2mb-homepage">
-            <p class="headersec2-mb-HP mulish-extrabold">GIỚI THIỆU VỀ</p>
-            <p class="headersec2-mb2-HP mulish-extrabold">Nino's Classes</p>
-            <p class="contentsec2-mb-HP mulish-medium">Trung tâm Thầy Nino TOEIC Nhí Nhố hay còn được biết đến là Nino’s Classes được
+            <p class="headersec2-mb-HP montserrat-extrabold">GIỚI THIỆU VỀ</p>
+            <p class="headersec2-mb2-HP montserrat-extrabold">Nino's Classes</p>
+            <p class="contentsec2-mb-HP montserrat-medium">Trung tâm Thầy Nino TOEIC Nhí Nhố hay còn được biết đến là Nino’s Classes được
                 thành
                 lập từ năm 2011, được biết đến là một trong những đơn vị đào tạo Anh ngữ hàng đầu tại Hà Nội.</p>
             <img src="{{asset('images/homepage/section4/Mask group.png')}}" class="imgsec2-mb-HP">
             <div class="col-xxl-4 col-md-5 mt-2 mb-4">
                 <a href=""
-                   class="btn yellow-bg btn-block mb-3 text-white mitr-medium longer-btn shadow-effect button-shake mulish-black">TÌM
+                   class="btn yellow-bg btn-block mb-3 text-white mitr-medium longer-btn shadow-effect button-shake montserrat-bold">TÌM
                     HIỂU
                     THÊM</a>
             </div>
         </div>
         <div class="sec2mb-homepage">
-            <p class="headersec2-mb-HP mulish-extrabold">GIỚI THIỆU VỀ</p>
-            <p class="headersec2-mb2-HP mulish-extrabold">Thầy Nino</p>
-            <p class="contentsec2-mb-HP mulish-medium">Thầy Nino tên thật là Nguyễn Hoài Nam, sinh ngày 09/11/1989. Thầy Nino đã tốt
+            <p class="headersec2-mb-HP montserrat-extrabold">GIỚI THIỆU VỀ</p>
+            <p class="headersec2-mb2-HP montserrat-extrabold">Thầy Nino</p>
+            <p class="contentsec2-mb-HP montserrat-medium">Thầy Nino tên thật là Nguyễn Hoài Nam, sinh ngày 09/11/1989. Thầy Nino đã tốt
                 nghiệp TESOL học viện American Institute (Mỹ) và có kinh nghiệm trên 11 năm giảng dạy. Với sự trẻ trung,
                 năng động, nhiệt huyết, thầy luôn đem lại cho học viên năng lượng tích cực và những giờ học thú vị.</p>
             <img src="{{asset('images/homepage/section5/Mask group (1).png')}}" class="imgsec2-mb-HP">
             <div class="col-xxl-4 col-md-5 mt-2 mb-4">
                 <a href=""
-                   class="btn yellow-bg btn-block mb-3 text-white mitr-medium longer-btn shadow-effect button-shake mulish-black">TÌM
+                   class="btn yellow-bg btn-block mb-3 text-white mitr-medium longer-btn shadow-effect button-shake montserrat-bold">TÌM
                     HIỂU
                     THÊM</a>
             </div>
@@ -82,17 +82,17 @@
                         <div class="card rounded-custom shadow-effect me-2 mb-2"
                              style="width:20rem; height: 70% ">
                             <div class="card-header blue-bg rounded-custom-top" style="height: 6rem">
-                                <p class="height-text-card text-white font-size-custom text-center p-3 mulish-black">
+                                <p class="height-text-card text-white font-size-custom text-center p-3 montserrat-black">
                                     <strong>{{\Illuminate\Support\Str::limit($course->title,60)}}</strong></p>
                             </div>
                             <div class="card-body">
-                                <p class="card-text text-center mulish-black">
+                                <p class="card-text text-center montserrat-black">
                                     <strong>{{\Illuminate\Support\Str::limit($course->name,40)}}</strong></p>
-                                <p class="card-text text-center mulish-extrabold" style="height: 12rem">
+                                <p class="card-text text-center montserrat-extrabold" style="height: 12rem">
                                     {{ preg_replace('/<[^>]*>/', '', \Illuminate\Support\Str::limit(strip_tags($course->description), 150)) }}</p>
                                 <div class="d-flex align-content-center justify-content-center ">
                                     <a href=""
-                                       class="btn blue-bg text-white btn-sm mb-3  btn-long button-shake mulish-black">XEM
+                                       class="btn blue-bg text-white btn-sm mb-3  btn-long button-shake montserrat-black">XEM
                                         CHI TIẾT</a>
                                 </div>
                             </div>

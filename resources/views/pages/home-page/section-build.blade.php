@@ -1,6 +1,6 @@
 
 <div class="section-build d-flex flex-column mt-5" >
-    <div class=" justify-content-center align-content-center d-none d-md-flex" data-aos="fade-down" data-aos-duration="1000">
+    <div class=" justify-content-center align-content-center d-none d-md-flex" >
         <img src="{{asset('images/homepage/sec-build/title.png')}}" alt="" style="">
     </div>
     <div class=" justify-content-center align-content-center d-flex d-md-none">
@@ -14,21 +14,21 @@
                 <div class="col-md-3 col-xs-0"></div>
                 <div class="col-md-3  d-flex justify-content-center align-content-center ">
                     <button class="tab-button btn btn-block blue-border-bottom
-                                 text-white  mulish-extrabold button-shake active"
-                            data-target="tab1" style="width: 100%" data-aos="fade-right" data-aos-duration="1000">
-                        <div class=" " style="font-size: 16px">THI CÔNG CÔNG TRÌNH</div>
+                                  button-shake active"
+                            data-target="tab1" style="width: 100%" >
+                        <div class=" " style="font-size: 16px; font-family: Montserrat-Bold">THI CÔNG CÔNG TRÌNH</div>
                     </button>
                 </div>
                 <div class="col-md-3 d-flex justify-content-center align-content-center">
                     <button class="tab-button btn  btn-block  blue-border-bottom
-                                 text-white  mulish-extrabold button-shake"
-                            data-target="tab2" style="width: 100%" data-aos="fade-left" data-aos-duration="1000">
-                        <div class="  " style="font-size: 16px">THI CÔNG NỘI THẤT</div>
+                                  button-shake"
+                            data-target="tab2" style="width: 100%" >
+                        <div class="  " style="font-size: 16px; font-family: Montserrat-Bold">THI CÔNG NỘI THẤT</div>
                     </button>
                 </div>
 {{--                <div class="col-md-2 d-flex justify-content-center align-content-center">--}}
 {{--                    <button class="tab-button btn  btn-block  blue-border-bottom--}}
-{{--                                 text-white  mulish-extrabold button-shake"--}}
+{{--                                 text-white  Montserrat-Bold button-shake"--}}
 {{--                            data-target="tab3" style="width: 100%">--}}
 {{--                        <div class=" font-size-custom" style="font-size: 13px">{{ __('homepage/section6.subTitleSlide3')}}</div>--}}
 {{--                    </button>--}}
@@ -36,9 +36,9 @@
             </div>
         </div>
 
-        <div class=" tabs pb-3 px-5" data-aos="zoom-in" data-aos-duration="1000">
+        <div class=" tabs pb-3 px-5">
 
-            <div class="row tab tab1  gy-4 gx-0 mobile-padding active" style="">
+            <div class="row tab tab1  gy-4 gx-0 mobile-padding active" style="" data-aos="fade-up" data-aos-duration="1500">
                 <div class="section-tab d-flex justify-content-center align-items-center ">
                     <div id="section-tab1-carousel" class="carousel slide w-100" data-bs-ride="carousel"
                          data-bs-interval="false">
@@ -84,13 +84,13 @@
                         </button>
                     </div>
                 </div>
-                <div class="d-flex align-content-center justify-content-center pt-5 pb-2" data-aos="fade-up" data-aos-duration="1000">
+                <div class="d-flex align-content-center justify-content-center pt-5 pb-2" >
                     <a href="{{asset('thi-cong-cong-trinh')}}"
-                       class="btn blue-bg blue-text btn-block mb-3 text-white mitr-medium longer-btn shadow-test button-shake mulish-black">THI CÔNG CÔNG TRÌNH</a>
+                       class="btn blue-bg blue-text btn-block mb-3 text-white mitr-medium longer-btn shadow-test button-shake montserrat-bold">THI CÔNG CÔNG TRÌNH</a>
                 </div>
             </div>
 
-            <div class="row tab tab2  gy-4 gx-0 mobile-padding" style="">
+            <div class="row tab tab2  gy-4 gx-0 mobile-padding" style="" data-aos="fade-up" data-aos-duration="1500">
                 <div class="section-tab d-flex justify-content-center align-items-center">
                     <div id="section-tab2-carousel" class="carousel slide w-100" data-bs-ride="carousel">
                         <div class="carousel-indicators">
@@ -124,20 +124,20 @@
                         <button class="carousel-control-prev mobile-space-prev" type="button" data-bs-target="#section-tab2-carousel"
                                 data-bs-slide="prev">
                             <img src="{{asset('images/arrow/blue-left.png')}}" alt="Previous"
-                                 class="button-shake img-carousel-arrow">
+                                 class="button-shake img-carousel-arrow" style="opacity: 30%">
                             <span class="visually-hidden">Previous</span>
                         </button>
                         <button class="carousel-control-next mobile-space-next" type="button" data-bs-target="#section-tab2-carousel"
                                 data-bs-slide="next">
                             <img src="{{asset('images/arrow/blue-right.png')}}" alt="Next"
-                                 class="button-shake img-carousel-arrow">
+                                 class="button-shake img-carousel-arrow" style="opacity: 30%">
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
                 </div>
                 <div class="d-flex align-content-center justify-content-center pt-5 pb-2">
                     <a href="{{asset('thi-cong-noi-that')}}"
-                       class="btn blue-bg blue-text btn-block mb-3 text-white mitr-medium longer-btn shadow-test button-shake mulish-black">THI CÔNG NỘI THẤT</a>
+                       class="btn blue-bg blue-text btn-block mb-3 text-white mitr-medium longer-btn shadow-test button-shake montserrat-bold">THI CÔNG NỘI THẤT</a>
                 </div>
             </div>
 
@@ -218,12 +218,12 @@
     </div>
     <style>
         .tab-button.active {
-            background-color: #133351;
+            background-color: #105181;
             color: white !important;
         }
 
         .tab-button {
-            color: #133351 !important;
+            color: #105181; !important;
         }
 
         .tabs .tab {
@@ -235,7 +235,7 @@
         }
 
         .blue-border-bottom {
-            border-bottom: 2px solid #133351;
+            border-bottom: 2px solid #105181;
             cursor: pointer;
             border-radius: unset;
         }
@@ -243,6 +243,9 @@
         .btn.focus, .btn:focus {
             outline: 0;
             box-shadow: none !important;
+        }
+        .section-build img{
+            border-radius: 23px;
         }
     </style>
     <script>

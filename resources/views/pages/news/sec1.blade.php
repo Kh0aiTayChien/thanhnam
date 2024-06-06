@@ -52,6 +52,7 @@
         }
         .padding-mobile{
             padding: unset;
+            margin-top: 8%;
         }
     }
 

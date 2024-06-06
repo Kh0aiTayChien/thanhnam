@@ -46,14 +46,14 @@
 
     .datetime_text{
         font-family: "Montserrat-Medium", sans-serif;
-        color: #F79421;
+        color: grey;
     }
     .content-article {
         margin: 1rem 20rem 5rem 20rem;
         background-color: white;
     }
     .tilte-text {
-        color: #59843d;
+        color: #105181;
         font-family: "Montserrat-Bold", sans-serif;
     }
     .figure-image {
@@ -78,9 +78,10 @@
             margin: 3rem 1rem 3rem 1rem;
         }
         .tilte-text {
-            color: #59843d;
+            color: #105181;
             font-family: "Montserrat Bold", sans-serif;
             margin-bottom: 1rem;
+            font-weight: bolder;
         }
     }
 </style>

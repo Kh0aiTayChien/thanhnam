@@ -51,6 +51,26 @@
     font-family: 'Mulish-Black';
 }
 
+.montserrat-semibold {
+    font-family: 'Montserrat-SemiBold';
+}
+
+.montserrat-medium {
+    font-family: 'Montserrat-Medium';
+}
+
+.montserrat-extrabold {
+    font-family: 'Montserrat-ExtraBold';
+}
+.montserrat-bold {
+    font-family: 'Montserrat-Bold';
+}
+
+.montserrat-black {
+    font-family: 'Montserrat-Black';
+}
+
+
 .section-2 {
     background: url("/images/homepage/section-2/background.jpg");
     background-size: cover;

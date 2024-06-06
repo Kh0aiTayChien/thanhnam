@@ -76,7 +76,7 @@
                 <div class="title mt-2 push-right"><a href="{{asset('tin-tuc')}}" style="text-decoration: none; color: white"> TIN TỨC</a></div>
                 <div class="title mt-2 push-right">LIÊN HỆ</div>
             </div>
-            <div class="col-lg-3 col-md-12 mb-5">
+            <div class="col-lg-3 col-md-12 mb-custom">
 {{--                <div class="title mt-1 push-right">DỊCH VỤ</div>--}}
                 <div class=" push-right"><a href="{{asset('thiet-ke-kien-truc')}}" style="text-decoration: none; color: white"> THIẾT KẾ KIẾN TRÚC</a></div>
                 <div class="mt-2 push-right"><a href="{{asset('thi-cong-cong-trinh')}}" style="text-decoration: none; color: white"> THI CÔNG CÔNG TRÌNH</a></div>
@@ -88,7 +88,7 @@
         </div>
     </div>
     <div class="mobile-copyright d-flex d-md-none justify-content-center align-items-center">
-        <div class="text-center" style="; color: #105181 !important" data-aos="fade-up" data-aos-duration="1000">
+        <div class="text-center" style="; color: #105181 !important" >
             Bản quyền {{ now()->year}} © Thanh Nam <br>
             Đã đăng ký bản quyền.
         </div>
@@ -110,6 +110,9 @@
     .push-right{
         margin-left: unset;
     }
+    .mb-custom{
+        margin-bottom: 3rem;
+    }
     @media only screen and (max-width: 800px) {
         .transform-mobile {
             transform: translateY(-10%)
@@ -119,6 +122,9 @@
         }
         .push-right{
             margin-left: 0.5rem;
+        }
+        .mb-custom{
+            margin-bottom: -2.5rem;
         }
     }
 </style>

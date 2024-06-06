@@ -57,5 +57,23 @@
 </body>
 </html>
 <script>
-    AOS.init();
+    document.addEventListener('DOMContentLoaded', function() {
+        function initAOS() {
+            if (window.innerWidth >= 800) {
+                AOS.init();
+            } else {
+                AOS.init({
+                    disable: true
+                });
+            }
+        }
+
+        // Khởi tạo AOS khi tải trang
+        initAOS();
+
+        // Lắng nghe sự kiện thay đổi kích thước màn hình
+        window.addEventListener('resize', function() {
+            initAOS();
+        });
+    });
 </script>

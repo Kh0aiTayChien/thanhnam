@@ -21,7 +21,9 @@
 .sec-read .content{
     padding: 5%;
 }
-
+.border-radius{
+    border-radius: 23px;
+}
 @media only screen and (max-width: 800px) {
     .content1-pools {
         padding-top: 0;
