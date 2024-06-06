@@ -28,7 +28,7 @@
             <img src="{{asset('images/homepage/about/about.png')}}" class="img-fluid" alt="">
         </div>
         <div class=" col-md-12 containercontentsec2-HP">
-            <p class="contentsec2-HP-test mulish-semibold mt-4" style="font-size: 16px">Công ty CP Tư Vấn Xây Dựng Lộc Việt được thành lập tháng 9 năm 2016. Hoạt động
+            <p class="contentsec2-HP-test mulish-semibold mt-4" style="font-size: 16px">Công ty TNHH kỹ thuật và thương mại Thành Nam thành lập vào tháng 11 năm 2019. Hoạt động
                 trong lĩnh vực xây dựng dân dụng, xây dựng giao thông hạ tầng và thi công nhà xưởng. Trong lĩnh vực xây
                 dựng công ty chúng tôi đã không ngừng cải tiến công nghệ đầu tư trang thiết bị thi công hiện đại, áp
                 dụng biện pháp thi công tiên tiến cùng với đội ngũ kỹ sư giỏi, công nhân lành nghề, công ty chúng tôi đã
