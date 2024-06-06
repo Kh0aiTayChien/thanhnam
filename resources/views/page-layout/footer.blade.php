@@ -3,7 +3,7 @@
         <div class="content row me-1 pt-5">
             <div class="col-lg-3 col-md-12 gx-0 d-none d-md-block">
                 <img class="header-logo img-fluid pt-3" src="{{asset('images/footer/image 5 5.png')}}" alt="LOGO"
-                     style="transform: scale(0.7) translateY(-35%); transform-origin: center;" data-aos="fade-down" data-aos-duration="1000">
+                     style="transform: scale(0.7) translateY(-35%); transform-origin: center;">
 
             </div>
             <div class="col-lg-3 col-md-12 gx-0 d-block d-md-none">
@@ -11,7 +11,7 @@
                      style="transform: scale(0.7) translate(-15%, -35%); transform-origin: center;">
 
             </div>
-            <div class="col-lg-4 col-md-12 transform-mobile" style="" data-aos="fade-up" data-aos-duration="1000">
+            <div class="col-lg-4 col-md-12 transform-mobile" style="">
                 <div class="">
                     <div class="row gx-0">
                         <div class="col-1"><img class=header-logo src="{{asset('images/footer/phone.png')}}" alt="phone"
@@ -71,12 +71,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-12 " data-aos="fade-up" data-aos-duration="1000">
+            <div class="col-lg-2 col-md-12 ">
                 <div class="title mt-1 push-right"><a href="{{asset('gioi-thieu')}}" style="text-decoration: none; color: white"> GIỚI THIỆU</a></div>
                 <div class="title mt-2 push-right"><a href="{{asset('tin-tuc')}}" style="text-decoration: none; color: white"> TIN TỨC</a></div>
                 <div class="title mt-2 push-right">LIÊN HỆ</div>
             </div>
-            <div class="col-lg-3 col-md-12 mb-5" data-aos="fade-up" data-aos-duration="1000">
+            <div class="col-lg-3 col-md-12 mb-5">
 {{--                <div class="title mt-1 push-right">DỊCH VỤ</div>--}}
                 <div class=" push-right"><a href="{{asset('thiet-ke-kien-truc')}}" style="text-decoration: none; color: white"> THIẾT KẾ KIẾN TRÚC</a></div>
                 <div class="mt-2 push-right"><a href="{{asset('thi-cong-cong-trinh')}}" style="text-decoration: none; color: white"> THI CÔNG CÔNG TRÌNH</a></div>
