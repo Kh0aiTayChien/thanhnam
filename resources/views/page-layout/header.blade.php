@@ -1,4 +1,4 @@
-<div class="header shadow-effect sticky-top d-none d-md-block "  data-aos="fade-down" data-aos-duration="1000">
+<div class="header shadow-effect sticky-top d-none d-md-block " >
     <div class="header-content d-flex align-content-center ">
         <img class=header-logo src="{{asset('images/header/LOGO_THANHNAM.png')}}" alt="LOGO" style="scale: 75%; transform: translateX(1%)">
         <div class="header-list d-flex justify-content-center align-content-center row">
