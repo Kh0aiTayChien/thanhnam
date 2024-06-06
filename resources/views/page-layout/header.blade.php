@@ -1,8 +1,8 @@
 <div class="header shadow-effect sticky-top d-none d-md-block " >
     <div class="header-content d-flex align-content-center ">
-        <img class=header-logo src="{{asset('images/header/LOGO_THANHNAM.png')}}" alt="LOGO" style="scale: 75%; transform: translateX(1%)">
+        <img class=header-logo src="{{asset('images/header/LOGO_THANHNAM.png')}}" alt="LOGO" style="scale: 75%; transform: translateX(1%); cursor: pointer">
         <div class="header-list d-flex justify-content-center align-content-center row">
-            <div class="col-2 text-center my-auto no-opacity header-logo">TRANG CHỦ</div>
+            <div style="cursor: pointer" class="col-2 text-center my-auto no-opacity header-logo">TRANG CHỦ</div>
             <a href="/gioi-thieu" class="col-2 text-center my-auto no-opacity text-decoration-none"><div class="text-test">GIỚI THIỆU</div></a>
             <div class="col-3 text-center my-auto no-opacity position-relative">
                 <div class="btn-transparent  py-3 product-sc-product"style="background-color: transparent;
