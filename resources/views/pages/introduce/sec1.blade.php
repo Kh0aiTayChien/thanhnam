@@ -1,11 +1,11 @@
 <div class="sec1-GT">
-    <img src="{{asset('images/introduce/sec1/Sec1 (1).png')}}" class="d-none d-md-block col-12">
-    <img src="{{asset('images/introduce/sec1/0. Sec1Mobile (1).png')}}" class="d-block d-md-none col-12 sec1-GT-mb">
+    <img src="{{asset('images/introduce/sec1/Sec-1-PC.png')}}" class="d-none d-md-block col-12">
+    <img src="{{asset('images/introduce/sec1/Sec-1-mobile.png')}}" class="d-block d-md-none col-12 sec1-GT-mb">
 </div>
 
 <div class="sec1-GT">
-    <img src="{{asset('images/introduce/sec1/Sec2.png')}}" class="d-none d-md-block col-12">
-    <img src="{{asset('images/introduce/sec1/0.Sec2Mobile.png')}}" class="d-block d-md-none col-12 imgsec2-GT">
+    <img src="{{asset('images/introduce/sec1/13.06-07-02.png')}}" class="d-none d-md-block col-12">
+    <img src="{{asset('images/introduce/sec1/13.06-07-08.png')}}" class="d-block d-md-none col-12 imgsec2-GT">
 </div>
 
 <div class="sec1-GT">
