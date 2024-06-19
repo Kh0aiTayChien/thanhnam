@@ -176,7 +176,7 @@
                     </li>
                     <li class="nav-item {{ Nav::isRoute('article_vimar.index') }}">
                         <a class="nav-link" href="{{ route('article_vimar.index',['conditionView' => 'index'])}}">
-                            <span>Danh sách bài viết 1</span>
+                            <span>Danh sách bài viết </span>
                         </a>
                     </li>
                 </ul>
