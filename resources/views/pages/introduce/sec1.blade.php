@@ -1,5 +1,5 @@
 <div class="sec1-GT">
-    <img src="{{asset('images/introduce/sec1/Sec-1-PC.png')}}" class="d-none d-md-block col-12">
+    <img src="{{asset('images/introduce/sec1/Sec-1-PC-01-01.png')}}" class="d-none d-md-block col-12">
     <img src="{{asset('images/introduce/sec1/Sec-1-mobile.png')}}" class="d-block d-md-none col-12 sec1-GT-mb">
 </div>
 
