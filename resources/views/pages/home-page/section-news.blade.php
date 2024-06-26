@@ -19,7 +19,7 @@
                              alt="Card image" style="height: 10rem; object-fit: cover">
                         <div class="card-body">
                             <p class="height-text-card text-center montserrat-bold">{{\Illuminate\Support\Str::limit($article->title,60)}}</p>
-                            <p class="card-text montserrat-semibold " style= "height: 4rem">{{ preg_replace('/<[^>]*>/', '', \Illuminate\Support\Str::limit(strip_tags($article->content), 60)) }}</p>
+                            <p class="card-text montserrat-semibold " style= "height: 4rem">{{ preg_replace('/<[^>]*>/', '', \Illuminate\Support\Str::limit(strip_tags($article->content), 53)) }}</p>
                             <div class="d-flex align-content-center justify-content-center ">
                                 <a href="{{route('homepage.show',[$article->slug])}}"
                                    class="btn blue-bg blue-text text-white btn-sm mb-3  btn-long button-shake montserrat-bold">XEM
