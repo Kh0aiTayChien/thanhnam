@@ -5,7 +5,7 @@
     @foreach($news as $article)
         <div class="content1-pools">
             <div class="text-pools">
-                <p class="text-center" style="font-size: 18px"><span style="font-weight: bold; font-size: 28px"> {{$article->title}}</span>
+                <p class="text-center h2" style="font-size: 18px"><span style="font-weight: bold; font-size: 28px"> {{$article->title}}</span>
                 </p>
                 {{--                <p class=""><span style="font-weight: bold">Chủ đầu tư:</span> {{$article->investor}}</p>--}}
                 {{--                <p class=""><span style="font-weight: bold">Địa điểm:</span> {{$article->location}}</p>--}}
