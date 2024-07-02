@@ -43,3 +43,6 @@
     border-color: white; /* Viền trắng cho dot active */
     color: white; /* Màu chữ trắng cho dot active */
 }
+.border-red{
+    border: 2px solid red
+}

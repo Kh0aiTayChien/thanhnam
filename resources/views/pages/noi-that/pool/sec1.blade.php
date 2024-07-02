@@ -1,80 +1,108 @@
-<div class=" sec-read justify-content-center">
+<div class="secp-TT mb-5">
     <div class="row-test banner-pools">
-        <p class="" style="font-family: Mulish-ExtraBold, sans-serif; color: white; font-size: 30px">THI CÔNG NỘI THẤT</p>
+        <p class="" style="font-family: Mulish-ExtraBold, sans-serif; color: white; font-size: 30px">THIẾT KẾ NỘI THẤT</p>
     </div>
     @foreach($news as $article)
-        <div class="content1-pools">
-            <div class="text-pools">
-                <p class="text-center h2"><span style="font-weight: bold"></span> {{$article->title}}</p>
-                {{--                <p class=""><span style="font-weight: bold">Chủ đầu tư:</span> {{$article->investor}}</p>--}}
-                {{--                <p class=""><span style="font-weight: bold">Địa điểm:</span> {{$article->location}}</p>--}}
-                {{--                <p class=""><span style="font-weight: bold">Quy mô:</span> {{$article->scale}}</p>--}}
-            </div>
-            <div class="content pb-5" style="text-align: justify; align-items: center">
-                {!! $article->content!!}
+        <div class="mt-5 row-test">
+            <div class="row-test col-lg-7 col-md-8 bg-news">
+                <div class="col-lg-4 col-xs-12 padding-mobile" style="">
+                    <a href="{{route('noithat.show',['slug' => $article->slug])}}" style="">
+                        <img class="img-fluid border-red"
+                             src="{{$article->image}}" style="object-fit: cover; height: 12rem; width: 16rem"/>
+                    </a>
+                </div>
+                <div class="card-body col-lg-7 col-xs-12" style="padding-left: 5%">
+                    <a href="{{route('noithat.show',['slug' => $article->slug])}}"
+                       style="text-decoration: unset; color: unset">
+                        <p class="textdatetime p-2 mulish-extrabold" style="color: #979797"><img
+                                src="{{asset('images/news/CALENDAR-days.png')}}"
+                                class="imgdatetime" style="transform: translateX(-50%)">{{ \Carbon\Carbon::parse($article->created_at)->format('d-m-Y H:i:s') }}</p>
+
+                        <div class="blue-text"><h4
+                                class="card-title h5 h4-sm titlenews mulish-black">{{\Illuminate\Support\Str::limit($article->title,77)}}</h4>
+                        </div>
+                        <p class="card-text titletext col-10 mulish-semibold"
+                           style="text-align: justify; color: #313131">
+                            {{ preg_replace('/<[^>]*>/', '', \Illuminate\Support\Str::limit(strip_tags($article->content), 200)) }}</p><br>
+                        <p class="blue-text mulish-black" style="text-decoration: underline">XEM THÊM</p>
+                    </a>
+                </div>
             </div>
         </div>
-
     @endforeach
     <div class="d-flex justify-content-center align-content-center mt-3 mb-3">
         {{ $news->links() }}
     </div>
 </div>
+
 <style>
+    .bg-news {
+        background-color: white;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 23px;
+        padding-bottom: 1%;
+        overflow: hidden;
+    }
+    .padding-mobile{
+        padding: 3%
+    }
+    @media only screen and (max-width: 800px) {
+        .secp-TT {
+            padding: 0 5%;
+        }
+        .padding-mobile{
+            padding: unset;
+            margin-top: 8%;
+        }
+    }
+
+    .green-border {
+        border: 2px solid #59843d;
+    }
+
+    .btn-long {
+        width: 200px;
+    }
+
+    .btn-long:hover {
+        color: #F79421;
+    }
+
+    .height-img-card {
+        object-fit: cover;
+        width: 404px;
+        border-radius: 23px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
     .pagination {
+        list-style-type: none;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .pagination .page-item {
-        margin: 0 5px;
+    .pagination li a,
+    .pagination li span {
+        display: inline-block;
+        padding: 8px 12px;
+        color: #59833D;
+        font-family: Mitr-Medium, sans-serif;
+        background-color: #ffffff;
+        border: 1px solid #59833D;
     }
 
-    .pagination .page-item .page-link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40px;
-        height: 40px;
-        border-radius: 5px;
-        background-color: #fff;
-        border: 3px solid #105181;
-        color: #105181;
-        text-decoration: none;
-        transition: background-color 0.3s, color 0.3s;
+    .page-item.active .page-link {
+        background-color: #59833D;
+        border-color: #59833D;
     }
 
-    .pagination .page-item .page-link:hover {
-        background-color: #105181;
-        color: #fff;
+    .border-radius {
+        border-radius: 23px;
     }
 
-    .pagination .page-item.active .page-link {
-        background-color: #105181;
-        color: #fff;
-        border: 3px solid #105181;
-    }
-
-    .pagination .page-item.disabled .page-link {
-        background-color: #f5f5f5;
-        color: #6c757d;
-        border: 1px solid #ddd;
-        cursor: not-allowed;
+    .green-text {
+        color: #59843d;
     }
 </style>
-<script>
-    $(document).ready(function () {
-        $('.content1-pools img').addClass('img-fluid');
-        $('.image ').addClass('figure-image ');
-        // Tìm tất cả thẻ <oembed> và chuyển đổi thành thẻ <iframe>
-        $('oembed').each(function () {
-            var url = $(this).attr('url');
-            var iframe = $('<iframe>').attr({
-                'src': url,
-                'width': '100%', // Đặt chiều rộng là 100%
-            });
-            $(this).replaceWith(iframe);
-        });
-    });
-</script>

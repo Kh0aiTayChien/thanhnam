@@ -36,6 +36,12 @@ Route::prefix('admin')->middleware('auth')->group(function () {
     Route::resource('article_noi_that', 'ArticleNoiThatController')->except(['index']);
     Route::get('article_noi_that', [ArticleNoiThatController::class, 'index'])->name('article_noi_that.index');
 
+    Route::resource('article_xay_nha_tron_goi', 'ArticleXayNhaTronGoiController')->except(['index']);
+    Route::get('article_xay_nha_tron_goi', [\App\Http\Controllers\ArticleXayNhaTronGoiController::class, 'index'])->name('article_xay_nha_tron_goi.index');
+
+    Route::resource('article_sua_chua_nha_tron_goi', 'ArticleSuaChuaNhaTronGoiController')->except(['index']);
+    Route::get('article_sua_chua_nha_tron_goi', [\App\Http\Controllers\ArticleSuaChuaNhaTronGoiController::class, 'index'])->name('article_sua_chua_nha_tron_goi.index');
+
 
 //    Route::delete('articles/forceDel/{article} ', [ArticlePoolController::class, 'forceDestroy'])->name('article_pools.forceDestroy');
 //    Route::post('articles/trash/{article} ', [ArticlePoolController::class, 'restore'])->name('article_pools.restore');
@@ -52,16 +58,34 @@ Route::prefix('admin')->middleware('auth')->group(function () {
     })->name('about');
 });
 Route::get('/fpt-smart-home', [IndexController::class, 'pools'])->name('homepage.pool');
+Route::get('/fpt-smart-home/{slug}', [IndexController::class, 'show_fpt'])->name('fpt.show');
+
 Route::get('/thi-cong-noi-that', [IndexController::class, 'articles_noi_that'])->name('homepage.articles_noi_that');
-Route::get('/thi-cong-cong-trinh', [IndexController::class, 'articles_cong_trinh'])->name('homepage.articles_cong_trinh');
+Route::get('/thi-cong-noi-that/{slug}', [IndexController::class, 'show_noi_that'])->name('noithat.show');
+
+Route::get('/rem-cua', [IndexController::class, 'articles_rem_cua'])->name('homepage.articles_rem_cua');
+Route::get('/rem-cua/{slug}', [IndexController::class, 'show_rem_cua'])->name('remcua.show');
+
+Route::get('/xay-nha-tron-goi', [IndexController::class, 'articles_xay_nha_tron_goi'])->name('homepage.articles_xay_nha_tron_goi');
+Route::get('/xay-nha-tron-goi/{slug}', [IndexController::class, 'show_xay_nha_tron_goi'])->name('xay_nha_tron_goi.show');
+
+Route::get('/sua-chua-nha-tron-goi', [IndexController::class, 'articles_sua_chua_nha_tron_goi'])->name('homepage.sua_chua_nha_tron_goi');
+Route::get('/sua-chua-nha-tron-goi/{slug}', [IndexController::class, 'show_sua_chua_nha_tron_goi'])->name('sua_chua_nha_tron_goi.show');
+
 Route::get('/thiet-ke-kien-truc', [IndexController::class, 'articles_kien_truc'])->name('homepage.articles_kien_truc');
+Route::get('/thiet-ke-kien-truc/{slug}', [IndexController::class, 'show_kien_truc'])->name('kientruc.show');
+
 Route::get('/vimar', [IndexController::class, 'articles_vimar'])->name('homepage.articles_vimar');
+Route::get('/vimar/{slug}', [IndexController::class, 'show_vimar'])->name('vimar.show');
 
 Route::get('/tin-tuc', [IndexController::class, 'articles'])->name('homepage.articles');
 Route::get('/tin-tuc/{slug}', [IndexController::class, 'show'])->name('homepage.show');
 
 Route::get('/gioi-thieu', function () {
     return view('pages/introduce/index');
+});
+Route::middleware('throttle:10,60')->group(function (Router $router) {
+    Route::post("/send-register", [IndexController::class, 'send'])->name('homepage.register.send');
 });
 
 

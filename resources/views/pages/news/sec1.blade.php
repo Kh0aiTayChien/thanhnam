@@ -7,7 +7,7 @@
             <div class="row-test col-lg-7 col-md-8 bg-news">
                 <div class="col-lg-4 col-xs-12 padding-mobile" style="">
                     <a href="{{route('homepage.show',['slug' => $article->slug])}}" style="">
-                        <img class="img-fluid"
+                        <img class="img-fluid border-red"
                              src="{{$article->image}}" style="object-fit: cover; height: 12rem; width: 16rem"/>
                     </a>
                 </div>
@@ -16,7 +16,7 @@
                        style="text-decoration: unset; color: unset">
                         <p class="textdatetime p-2 mulish-extrabold" style="color: #979797"><img
                                 src="{{asset('images/news/CALENDAR-days.png')}}"
-                                class="imgdatetime" style="transform: translateX(-50%)">{{$article->created_at}}</p>
+                                class="imgdatetime" style="transform: translateX(-50%)">{{ \Carbon\Carbon::parse($article->created_at)->format('d-m-Y H:i:s') }}</p>
 
                         <div class="blue-text"><h4
                                 class="card-title h5 h4-sm titlenews mulish-black">{{\Illuminate\Support\Str::limit($article->title,77)}}</h4>

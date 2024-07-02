@@ -1,18 +1,18 @@
 <div class="secp-TT mb-5">
     <div class="row-test banner-pools">
-        <p class="" style="font-family: Mulish-ExtraBold, sans-serif; color: white; font-size: 30px">VIMAR</p>
+        <p class="" style="font-family: Mulish-ExtraBold, sans-serif; color: white; font-size: 30px">RÈM CỬA</p>
     </div>
     @foreach($news as $article)
         <div class="mt-5 row-test">
             <div class="row-test col-lg-7 col-md-8 bg-news">
                 <div class="col-lg-4 col-xs-12 padding-mobile" style="">
-                    <a href="{{route('vimar.show',['slug' => $article->slug])}}" style="">
+                    <a href="{{route('remcua.show',['slug' => $article->slug])}}" style="">
                         <img class="img-fluid border-red"
                              src="{{$article->image}}" style="object-fit: cover; height: 12rem; width: 16rem"/>
                     </a>
                 </div>
                 <div class="card-body col-lg-7 col-xs-12" style="padding-left: 5%">
-                    <a href="{{route('vimar.show',['slug' => $article->slug])}}"
+                    <a href="{{route('remcua.show',['slug' => $article->slug])}}"
                        style="text-decoration: unset; color: unset">
                         <p class="textdatetime p-2 mulish-extrabold" style="color: #979797"><img
                                 src="{{asset('images/news/CALENDAR-days.png')}}"

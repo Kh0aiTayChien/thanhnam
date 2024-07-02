@@ -17,7 +17,7 @@
     </div>
     <div class="d-flex align-content-center justify-content-start">
 
-        <a href="{{route('homepage.articles')}}"
+        <a href="{{route('homepage.pool')}}"
            class="btn  btn-block mb-3 rounded-pill border-1 monte-semibold super-long button-shake">
            <span>
             <svg xmlns="http://www.w3.org/2000/svg" height="1.1em" viewBox="0 0 448 512">

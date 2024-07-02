@@ -13,10 +13,16 @@
                     <div class="product-sc text-center "style="  width: 12rem;"><a href="{{asset('thiet-ke-kien-truc')}}" style="text-decoration: none; color: unset"> THIẾT KẾ KIẾN TRÚC</a></div>
                 </div>
                 <div class="position-absolute hide_button px-3 py-3" style=" margin-top:40%;  background-color: white; color: #105181">
-                    <div class="product-sc text-center "style=" width: 12rem;"><a href="{{asset('thi-cong-cong-trinh')}}" style="text-decoration: none; color: unset"> THI CÔNG CÔNG TRÌNH</a></div>
+                    <div class="product-sc text-center "style=" width: 12rem;"><a href="{{asset('thi-cong-noi-that')}}" style="text-decoration: none; color: unset"> THI CÔNG CÔNG TRÌNH</a></div>
                 </div>
                 <div class="position-absolute hide_button px-3 py-3" style=" margin-top:70%;  background-color: white; color: #105181">
-                    <div class="product-sc text-center "style=" width: 12rem;"><a href="{{asset('thi-cong-noi-that')}}" style="text-decoration: none; color: unset"> THI CÔNG NỘI THẤT</a></div>
+                    <div class="product-sc text-center "style=" width: 12rem;"><a href="{{asset('rem-cua')}}" style="text-decoration: none; color: unset"> RÈM CỬA</a></div>
+                </div>
+                <div class="position-absolute hide_button px-3 py-3" style=" margin-top:100%;  background-color: white; color: #105181">
+                    <div class="product-sc text-center "style=" width: 12rem;"><a href="{{asset('xay-nha-tron-goi')}}" style="text-decoration: none; color: unset"> XÂY NHÀ TRỌN GÓI</a></div>
+                </div>
+                <div class="position-absolute hide_button px-3 py-3" style=" margin-top:130%;  background-color: white; color: #105181">
+                    <div class="product-sc text-center "style=" width: 12rem;"><a href="{{asset('sua-chua-nha-tron-goi')}}" style="text-decoration: none; color: unset"> SỬA CHỮA NHÀ TRỌN GÓI</a></div>
                 </div>
 {{--                <div class="position-absolute hide_button px-3 py-3" style=" margin-top:130%;  background-color: white; color: #105181">--}}
 {{--                    <div class="product-bb text-center "style=" width: 12rem;"><a href="{{asset('fpt-smart-home')}}" style="text-decoration: none; color: unset"> FPT SMART HOME</a></div>--}}

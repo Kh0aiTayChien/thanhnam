@@ -209,7 +209,7 @@
             <a class="nav-link" data-toggle="collapse" href="#articles3" role="button" aria-expanded="false"
                aria-controls="articles3">
                 <i class="fas fa-newspaper"></i>
-                <span>Thi công công trình</span>
+                <span>Rèm Cửa</span>
             </a>
             <div class="collapse" id="articles3">
                 <ul class="nav flex-column">
@@ -243,6 +243,50 @@
                     </li>
                     <li class="nav-item {{ Nav::isRoute('article_noi_that.index') }}">
                         <a class="nav-link" href="{{ route('article_noi_that.index',['conditionView' => 'index'])}}">
+                            <span>Danh sách bài viết</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#articles6" role="button" aria-expanded="false"
+               aria-controls="articles6">
+                <i class="fas fa-newspaper"></i>
+                <span>Xây Nhà Trọn Gói</span>
+            </a>
+            <div class="collapse" id="articles6">
+                <ul class="nav flex-column">
+                    <li class="nav-item {{ Nav::isRoute('article_xay_nha_tron_goi.create') }}">
+                        <a class="nav-link" href="{{ route('article_xay_nha_tron_goi.create') }}">
+                            <span>Bài viết mới</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {{ Nav::isRoute('article_xay_nha_tron_goi.index') }}">
+                        <a class="nav-link" href="{{ route('article_xay_nha_tron_goi.index',['conditionView' => 'index'])}}">
+                            <span>Danh sách bài viết</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#articles7" role="button" aria-expanded="false"
+               aria-controls="articles7">
+                <i class="fas fa-newspaper"></i>
+                <span>Sửa Chữa Nhà Trọn Gói</span>
+            </a>
+            <div class="collapse" id="articles7">
+                <ul class="nav flex-column">
+                    <li class="nav-item {{ Nav::isRoute('article_sua_chua_nha_tron_goi.create') }}">
+                        <a class="nav-link" href="{{ route('article_sua_chua_nha_tron_goi.create') }}">
+                            <span>Bài viết mới</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {{ Nav::isRoute('article_sua_chua_nha_tron_goi.index') }}">
+                        <a class="nav-link" href="{{ route('article_sua_chua_nha_tron_goi.index',['conditionView' => 'index'])}}">
                             <span>Danh sách bài viết</span>
                         </a>
                     </li>
@@ -645,6 +689,8 @@
         let $articles3 = $(this).find('#articles3');
         let $articles4 = $(this).find('#articles4');
         let $articles5 = $(this).find('#articles5');
+        let $articles6 = $(this).find('#articles6');
+        let $articles7 = $(this).find('#articles7');
 
         let $products = $(this).find('#products');
         let $images = $(this).find('#images');
@@ -667,6 +713,12 @@
         }
         if ($articles5.find('.active').length > 0) {
             $articles5.addClass('show');
+        }
+        if ($articles6.find('.active').length > 0) {
+            $articles6.addClass('show');
+        }
+        if ($articles7.find('.active').length > 0) {
+            $articles7.addClass('show');
         }
 
         if ($products.find('.active').length > 0) {

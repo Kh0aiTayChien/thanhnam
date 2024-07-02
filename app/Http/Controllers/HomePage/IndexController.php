@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\HomePage;
 
 use App\Http\Controllers\Controller;
+use App\Mail\RegisterMailable;
 use App\Models\Article;
 use App\Models\Cart;
 use App\Models\Image;
@@ -14,6 +15,7 @@ use Artesaos\SEOTools\Facades\SEOMeta;
 use Artesaos\SEOTools\Facades\TwitterCard;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cookie;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Str;
 use App\Models\Category;
 
@@ -113,11 +115,12 @@ class IndexController extends Controller
         $news = Article::whereHas('category', function ($query) use ($categoryArticleSlug) {
             $query->where('slug', $categoryArticleSlug);
         })
+            ->orderBy('created_at', 'desc')
             ->paginate(6);
 
         return view('pages/news/index', ['news' => $news]);
     }
-    public function articles_cong_trinh()
+    public function articles_rem_cua()
     {
         SEOMeta::setTitle('Công ty TNHH kỹ thuật và thương mại Thành Nam - thi công công trình');
         SEOMeta::setDescription('Công ty TNHH kỹ thuật và thương mại Thành Nam - thi công công trình
@@ -138,12 +141,13 @@ class IndexController extends Controller
         . Hoạt động trong lĩnh vực xây dựng dân dụng, xây dựng giao thông hạ tầng và thi công nhà xưởng ');
         JsonLd::addImage('https://thanhnamshome.vn/images/header/LOGO_THANHNAM.png');
 
-        $categoryArticleSlug = "thi-cong-cong-trinh";
+        $categoryArticleSlug = "rem-cua";
         $news = Article::whereHas('category', function ($query) use ($categoryArticleSlug) {
             $query->where('slug', $categoryArticleSlug);
         })
+            ->orderBy('created_at', 'desc')
             ->paginate(3);
-        return view('pages/cong-trinh/pool/index', ['news' => $news]);
+        return view('pages/rem-cua/pool/index', ['news' => $news]);
     }
     public function articles_kien_truc()
     {
@@ -170,7 +174,7 @@ class IndexController extends Controller
         $news = Article::whereHas('category', function ($query) use ($categoryArticleSlug) {
             $query->where('slug', $categoryArticleSlug);
         })
-
+            ->orderBy('created_at', 'desc')
             ->paginate(3);
         return view('pages/kien-truc/pool/index', ['news' => $news]);
     }
@@ -200,7 +204,7 @@ class IndexController extends Controller
         $news = Article::whereHas('category', function ($query) use ($categoryArticleSlug) {
             $query->where('slug', $categoryArticleSlug);
         })
-
+            ->orderBy('created_at', 'desc')
             ->paginate(3);
         return view('pages/noi-that/pool/index', ['news' => $news]);
     }
@@ -229,10 +233,72 @@ class IndexController extends Controller
         $news = Article::whereHas('category', function ($query) use ($categoryArticleSlug) {
             $query->where('slug', $categoryArticleSlug);
         })
-
+            ->orderBy('created_at', 'desc')
             ->paginate(3);
         return view('pages/vimar/pool/index', ['news' => $news]);
     }
+
+    public function articles_xay_nha_tron_goi()
+    {
+        SEOMeta::setTitle('Công ty TNHH kỹ thuật và thương mại Thành Nam - xây nhà trọn gói');
+        SEOMeta::setDescription('Công ty TNHH kỹ thuật và thương mại Thành Nam - xây nhà trọn gói
+        . Hoạt động trong lĩnh vực xây dựng dân dụng, xây dựng giao thông hạ tầng và thi công nhà xưởng');
+
+        OpenGraph::setDescription('Công ty TNHH kỹ thuật và thương mại Thành Nam - xây nhà trọn gói
+        . Hoạt động trong lĩnh vực xây dựng dân dụng, xây dựng giao thông hạ tầng và xây nhà trọn gói');
+        OpenGraph::setTitle('Công ty TNHH kỹ thuật và thương mại Thành Nam - xây nhà trọn gói');
+        OpenGraph::setUrl('https://thanhnamshome.vn/xay-nha-tron-goi');
+        OpenGraph::addProperty('type', 'article');
+        OpenGraph::addImage(asset('img/seo.png'));
+
+        TwitterCard::setTitle('Công ty TNHH kỹ thuật và thương mại Thành Nam - xây nhà trọn gói');
+        TwitterCard::setSite('');
+
+        JsonLd::setTitle('Công ty TNHH kỹ thuật và thương mại Thành Nam');
+        JsonLd::setDescription('Công ty TNHH kỹ thuật và thương mại Thành Nam - xây nhà trọn gói
+        . Hoạt động trong lĩnh vực xây dựng dân dụng, xây dựng giao thông hạ tầng và thi công nhà xưởng ');
+        JsonLd::addImage('https://thanhnamshome.vn/images/header/LOGO_THANHNAM.png');
+
+        $categoryArticleSlug = "xay-nha-tron-goi";
+        $news = Article::whereHas('category', function ($query) use ($categoryArticleSlug) {
+            $query->where('slug', $categoryArticleSlug);
+        })
+            ->orderBy('created_at', 'desc')
+            ->paginate(3);
+        return view('pages/xay-nha-tron-goi/pool/index', ['news' => $news]);
+    }
+
+    public function articles_sua_chua_nha_tron_goi()
+    {
+        SEOMeta::setTitle('Công ty TNHH kỹ thuật và thương mại Thành Nam - xây nhà trọn gói');
+        SEOMeta::setDescription('Công ty TNHH kỹ thuật và thương mại Thành Nam - xây nhà trọn gói
+        . Hoạt động trong lĩnh vực xây dựng dân dụng, xây dựng giao thông hạ tầng và thi công nhà xưởng');
+
+        OpenGraph::setDescription('Công ty TNHH kỹ thuật và thương mại Thành Nam - xây nhà trọn gói
+        . Hoạt động trong lĩnh vực xây dựng dân dụng, xây dựng giao thông hạ tầng và xây nhà trọn gói');
+        OpenGraph::setTitle('Công ty TNHH kỹ thuật và thương mại Thành Nam - xây nhà trọn gói');
+        OpenGraph::setUrl('https://thanhnamshome.vn/xay-nha-tron-goi');
+        OpenGraph::addProperty('type', 'article');
+        OpenGraph::addImage(asset('img/seo.png'));
+
+        TwitterCard::setTitle('Công ty TNHH kỹ thuật và thương mại Thành Nam - xây nhà trọn gói');
+        TwitterCard::setSite('');
+
+        JsonLd::setTitle('Công ty TNHH kỹ thuật và thương mại Thành Nam');
+        JsonLd::setDescription('Công ty TNHH kỹ thuật và thương mại Thành Nam - xây nhà trọn gói
+        . Hoạt động trong lĩnh vực xây dựng dân dụng, xây dựng giao thông hạ tầng và thi công nhà xưởng ');
+        JsonLd::addImage('https://thanhnamshome.vn/images/header/LOGO_THANHNAM.png');
+
+        $categoryArticleSlug = "sua-chua-nha-tron-goi";
+        $news = Article::whereHas('category', function ($query) use ($categoryArticleSlug) {
+            $query->where('slug', $categoryArticleSlug);
+        })
+            ->orderBy('created_at', 'desc')
+            ->paginate(3);
+        return view('pages/sua-chua-nha-tron-goi/pool/index', ['news' => $news]);
+    }
+
+
     public function show($slug, Request $request)
     {
         $article = Article::where('slug', $slug)->firstOrFail();
@@ -253,5 +319,195 @@ class IndexController extends Controller
         JsonLd::setDescription('/thanhnamshome.vn/tin-tuc/'.$slug);
         JsonLd::addImage(url($article->image));
         return response()->view('pages.news.show.index',['article' => $article]);
+    }
+
+    public function show_kien_truc($slug, Request $request)
+    {
+        $article = Article::where('slug', $slug)->firstOrFail();
+
+        SEOMeta::setTitle($article->title);
+        SEOMeta::setDescription('/thanhnamshome.vn/thiet-ke-kien-truc/'.$slug);
+
+        OpenGraph::setDescription('/thanhnamshome.vn/thiet-ke-kien-truc/'.$slug);
+        OpenGraph::setTitle($article->title);
+        OpenGraph::setUrl(route('kientruc.show',['slug' => $slug]));
+        OpenGraph::addProperty('type', 'article');
+        OpenGraph::addImage(url($article->image));
+
+        TwitterCard::setTitle($article->title);
+        TwitterCard::setSite('');
+
+        JsonLd::setTitle($article->title);
+        JsonLd::setDescription('/thanhnamshome.vn/thiet-ke-kien-truc/'.$slug);
+        JsonLd::addImage(url($article->image));
+        return response()->view('pages.kien-truc.show.index',['article' => $article]);
+    }
+
+    public function show_noi_that($slug, Request $request)
+    {
+        $article = Article::where('slug', $slug)->firstOrFail();
+
+        SEOMeta::setTitle($article->title);
+        SEOMeta::setDescription('/thanhnamshome.vn/thi-cong-noi-that/'.$slug);
+
+        OpenGraph::setDescription('/thanhnamshome.vn/thi-cong-noi-that/'.$slug);
+        OpenGraph::setTitle($article->title);
+        OpenGraph::setUrl(route('noithat.show',['slug' => $slug]));
+        OpenGraph::addProperty('type', 'article');
+        if (!empty($article->image)) {
+            OpenGraph::addImage(url($article->image));
+        }
+
+        TwitterCard::setTitle($article->title);
+        TwitterCard::setSite('');
+
+        JsonLd::setTitle($article->title);
+        JsonLd::setDescription('/thanhnamshome.vn/thi-cong-noi-that/'.$slug);
+        if (!empty($article->image)) {
+            JsonLd::addImage(url($article->image));
+        }
+        return response()->view('pages.noi-that.show.index',['article' => $article]);
+    }
+
+    public function show_fpt($slug, Request $request)
+    {
+        $article = Article::where('slug', $slug)->firstOrFail();
+
+        SEOMeta::setTitle($article->title);
+        SEOMeta::setDescription('/thanhnamshome.vn/fpt-smart-home/'.$slug);
+
+        OpenGraph::setDescription('/thanhnamshome.vn/fpt-smart-home/'.$slug);
+        OpenGraph::setTitle($article->title);
+        OpenGraph::setUrl(route('noithat.show',['slug' => $slug]));
+        OpenGraph::addProperty('type', 'article');
+        if (!empty($article->image)) {
+            OpenGraph::addImage(url($article->image));
+        }
+
+        TwitterCard::setTitle($article->title);
+        TwitterCard::setSite('');
+
+        JsonLd::setTitle($article->title);
+        JsonLd::setDescription('/thanhnamshome.vn/fpt-smart-home/'.$slug);
+        if (!empty($article->image)) {
+            JsonLd::addImage(url($article->image));
+        }
+        return response()->view('pages.service.show.index',['article' => $article]);
+    }
+
+    public function show_vimar($slug, Request $request)
+    {
+        $article = Article::where('slug', $slug)->firstOrFail();
+
+        SEOMeta::setTitle($article->title);
+        SEOMeta::setDescription('/thanhnamshome.vn/vimar/'.$slug);
+
+        OpenGraph::setDescription('/thanhnamshome.vn/vimar/'.$slug);
+        OpenGraph::setTitle($article->title);
+        OpenGraph::setUrl(route('vimar.show',['slug' => $slug]));
+        OpenGraph::addProperty('type', 'article');
+        if (!empty($article->image)) {
+            OpenGraph::addImage(url($article->image));
+        }
+
+        TwitterCard::setTitle($article->title);
+        TwitterCard::setSite('');
+
+        JsonLd::setTitle($article->title);
+        JsonLd::setDescription('/thanhnamshome.vn/vimar/'.$slug);
+        if (!empty($article->image)) {
+            JsonLd::addImage(url($article->image));
+        }
+        return response()->view('pages.vimar.show.index',['article' => $article]);
+    }
+
+    public function show_rem_cua($slug, Request $request)
+    {
+        $article = Article::where('slug', $slug)->firstOrFail();
+
+        SEOMeta::setTitle($article->title);
+        SEOMeta::setDescription('/thanhnamshome.vn/rem-cua/'.$slug);
+
+        OpenGraph::setDescription('/thanhnamshome.vn/rem-cua/'.$slug);
+        OpenGraph::setTitle($article->title);
+        OpenGraph::setUrl(route('remcua.show',['slug' => $slug]));
+        OpenGraph::addProperty('type', 'article');
+        if (!empty($article->image)) {
+            OpenGraph::addImage(url($article->image));
+        }
+
+        TwitterCard::setTitle($article->title);
+        TwitterCard::setSite('');
+
+        JsonLd::setTitle($article->title);
+        JsonLd::setDescription('/thanhnamshome.vn/remcua/'.$slug);
+        if (!empty($article->image)) {
+            JsonLd::addImage(url($article->image));
+        }
+        return response()->view('pages.rem-cua.show.index',['article' => $article]);
+    }
+
+    public function show_xay_nha_tron_goi($slug, Request $request)
+    {
+        $article = Article::where('slug', $slug)->firstOrFail();
+
+        SEOMeta::setTitle($article->title);
+        SEOMeta::setDescription('/thanhnamshome.vn/show_xay_nha_tron_goi/'.$slug);
+
+        OpenGraph::setDescription('/thanhnamshome.vn/show_xay_nha_tron_goi/'.$slug);
+        OpenGraph::setTitle($article->title);
+        OpenGraph::setUrl(route('xay_nha_tron_goi.show',['slug' => $slug]));
+        OpenGraph::addProperty('type', 'article');
+        if (!empty($article->image)) {
+            OpenGraph::addImage(url($article->image));
+        }
+
+        TwitterCard::setTitle($article->title);
+        TwitterCard::setSite('');
+
+        JsonLd::setTitle($article->title);
+        JsonLd::setDescription('/thanhnamshome.vn/xay_nha_tron_goi/'.$slug);
+        if (!empty($article->image)) {
+            JsonLd::addImage(url($article->image));
+        }
+        return response()->view('pages.rem-cua.show.index',['article' => $article]);
+    }
+
+    public function show_sua_chua_nha_tron_goi($slug, Request $request)
+    {
+        $article = Article::where('slug', $slug)->firstOrFail();
+
+        SEOMeta::setTitle($article->title);
+        SEOMeta::setDescription('/thanhnamshome.vn/show_sua_chua_nha_tron_goi/'.$slug);
+
+        OpenGraph::setDescription('/thanhnamshome.vn/show_sua_chua_nha_tron_goi/'.$slug);
+        OpenGraph::setTitle($article->title);
+        OpenGraph::setUrl(route('sua_chua_nha_tron_goi.show',['slug' => $slug]));
+        OpenGraph::addProperty('type', 'article');
+        if (!empty($article->image)) {
+            OpenGraph::addImage(url($article->image));
+        }
+
+        TwitterCard::setTitle($article->title);
+        TwitterCard::setSite('');
+
+        JsonLd::setTitle($article->title);
+        JsonLd::setDescription('/thanhnamshome.vn/sua_chua_nha_tron_goi/'.$slug);
+        if (!empty($article->image)) {
+            JsonLd::addImage(url($article->image));
+        }
+        return response()->view('pages.sua-chua-nha-tron-goi.show.index',['article' => $article]);
+    }
+
+    public function send(Request $request)
+    {
+        $viewData = [
+            'status' => 'register_send',
+        ];
+        $name = $request->name;
+        $phone = $request->phone;
+        $question = $request->question;
+        Mail::to('chien.hcckt@gmail.com')->send(new RegisterMailable($name, $phone, $question));
+        return response()->json($viewData);
     }
 }
