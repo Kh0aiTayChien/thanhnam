@@ -10,6 +10,7 @@ use App\Http\Controllers\HomePage\IndexController;
 use App\Http\Controllers\MediaController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Routing\Router;
 
 Route::get('/', [IndexController::class, 'index'])->name('homepage.index');
 Auth::routes();
