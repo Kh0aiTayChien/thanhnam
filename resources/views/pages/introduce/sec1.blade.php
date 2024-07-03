@@ -10,7 +10,7 @@
 
 <div class="sec1-GT">
     <img src="{{asset('images/introduce/sec1/Sec3 (1).png')}}" class="d-none d-md-block col-12">
-    <img src="{{asset('images/introduce/sec1/0.Sec3Mobile.png')}}" class="d-block d-md-none col-12">
+{{--  <img src="{{asset('images/introduce/sec1/0.Sec3Mobile.png')}}" class="d-block d-md-none col-12">--}}
 </div>
 
 {{--  <div class="sec1-GT">--}}
