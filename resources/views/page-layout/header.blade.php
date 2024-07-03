@@ -46,7 +46,7 @@
 {{--            </div>--}}
         </div>
         <div class="d-flex justify-content-center align-content-center">
-            <button class="btn-contact " style="width: 8rem; height: 2rem; transform: translateY(2.1vh)">
+            <button class="btn-contact " style="width: 7.8vw; height: 3.2vh; transform: translateY(2.5vh)">
                 <a href="#lien-he" style="text-decoration: none; color: unset;">
                     LIÊN HỆ
                 </a></button>

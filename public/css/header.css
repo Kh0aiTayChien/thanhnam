@@ -23,6 +23,7 @@
     margin-left: 8vw;
     margin-right: 8vw;
     height: 100%;
+    font-size: 1.09vw;
 }
 
 .header-list {
@@ -43,7 +44,7 @@
     border-radius: 3px;
     color: white;
     font-family: 'Mulish-ExtraBold';
-    font-size: 16px;
+    font-size: 1.09vw;
 
 }
 .btn-contact-mobile{
