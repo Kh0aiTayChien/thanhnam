@@ -13,10 +13,10 @@
     <img src="{{asset('images/introduce/sec1/0.Sec3Mobile.png')}}" class="d-block d-md-none col-12">
 </div>
 
-<div class="sec1-GT">
-    <img src="{{asset('images/introduce/sec1/Trang giới thiệu - Group-04.png')}}" class="d-none d-md-block col-12 imgsec4-GT">
+{{--  <div class="sec1-GT">--}}
+{{--    <img src="{{asset('images/introduce/sec1/Trang giới thiệu - Group-04.png')}}" class="d-none d-md-block col-12 imgsec4-GT">--}}
 {{--    <img src="{{asset('images/introduce/sec1/Asset 10.png')}}" class="d-block d-md-none col-12 imgsec4-GT-mb">--}}
-</div>
+{{--  </div>--}}
 
 <div class="sec1-GT">
     <img src="{{asset('images/introduce/sec1/Sec5.png')}}" class="d-none d-md-block col-12 imgsec5-GT">
