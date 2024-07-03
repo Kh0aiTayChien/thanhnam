@@ -87,15 +87,15 @@
     .pagination li span {
         display: inline-block;
         padding: 8px 12px;
-        color: #59833D;
+        color: #105181;
         font-family: Mitr-Medium, sans-serif;
         background-color: #ffffff;
-        border: 1px solid #59833D;
+        border: 1px solid #105181;
     }
 
     .page-item.active .page-link {
-        background-color: #59833D;
-        border-color: #59833D;
+        background-color: #105181;
+        border-color: #105181;
     }
 
     .border-radius {
