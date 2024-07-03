@@ -10,7 +10,7 @@
             <input type="number" class="form-control montserrat-semibold" id="phone" name="phone"
                    placeholder="Số điện thoại">
         </div>
-        <textarea class="form-control mb-4 mt-3 montserrat-semibold" name="care" id=""
+        <textarea class="form-control mb-4 mt-3 montserrat-semibold" name="question" id="question"
                   placeholder="Bạn đang muốn tư vấn thiết kế hay thi công ?"></textarea>
         <div class="d-flex align-items-center justify-content-center" style="transform: translateY(-8%)">
             <button type="submit" class="btn bg-white blue-text mt-3 me-2 montserrat-bold">NHẬN TƯ VẤN NGAY</button>
