@@ -1,6 +1,6 @@
 <div class="secp-TT mb-5">
     <div class="row-test banner-pools">
-        <p class="" style="font-family: Mulish-ExtraBold, sans-serif; color: white; font-size: 30px">THIẾT KẾ NỘI THẤT</p>
+        <p class="" style="font-family: Mulish-ExtraBold, sans-serif; color: white; font-size: 30px">THI CÔNG NỘI THẤT</p>
     </div>
     @foreach($news as $article)
         <div class="mt-5 row-test">
@@ -21,9 +21,10 @@
                         <div class="blue-text"><h4
                                 class="card-title h5 h4-sm titlenews mulish-black">{{\Illuminate\Support\Str::limit($article->title,77)}}</h4>
                         </div>
+
                         <p class="card-text titletext col-10 mulish-semibold"
                            style="text-align: justify; color: #313131">
-                            {{ preg_replace('/<[^>]*>/', '', \Illuminate\Support\Str::limit(strip_tags($article->content), 200)) }}</p><br>
+                            {{ \Illuminate\Support\Str::limit(preg_replace('/\xA0|&nbsp;|\s+/u', ' ', strip_tags($article->content)), 200) }}</p><br>
                         <p class="blue-text mulish-black" style="text-decoration: underline">XEM THÊM</p>
                     </a>
                 </div>

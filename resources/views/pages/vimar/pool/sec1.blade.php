@@ -23,7 +23,7 @@
                         </div>
                         <p class="card-text titletext col-10 mulish-semibold"
                            style="text-align: justify; color: #313131">
-                            {{ preg_replace('/<[^>]*>/', '', \Illuminate\Support\Str::limit(strip_tags($article->content), 200)) }}</p><br>
+                            {{ \Illuminate\Support\Str::limit(preg_replace('/\xA0|&nbsp;|\s+/u', ' ', strip_tags($article->content)), 200) }}</p><br>
                         <p class="blue-text mulish-black" style="text-decoration: underline">XEM THÊM</p>
                     </a>
                 </div>

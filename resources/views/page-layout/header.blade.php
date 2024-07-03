@@ -13,7 +13,7 @@
                     <div class="product-sc text-center "style="  width: 12rem;"><a href="{{asset('thiet-ke-kien-truc')}}" style="text-decoration: none; color: unset"> THIẾT KẾ KIẾN TRÚC</a></div>
                 </div>
                 <div class="position-absolute hide_button px-3 py-3" style=" margin-top:40%;  background-color: white; color: #105181">
-                    <div class="product-sc text-center "style=" width: 12rem;"><a href="{{asset('thi-cong-noi-that')}}" style="text-decoration: none; color: unset"> THI CÔNG CÔNG TRÌNH</a></div>
+                    <div class="product-sc text-center "style=" width: 12rem;"><a href="{{asset('thi-cong-noi-that')}}" style="text-decoration: none; color: unset"> THI CÔNG NỘI THẤT</a></div>
                 </div>
                 <div class="position-absolute hide_button px-3 py-3" style=" margin-top:70%;  background-color: white; color: #105181">
                     <div class="product-sc text-center "style=" width: 12rem;"><a href="{{asset('rem-cua')}}" style="text-decoration: none; color: unset"> RÈM CỬA</a></div>
