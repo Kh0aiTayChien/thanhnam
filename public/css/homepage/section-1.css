@@ -44,5 +44,5 @@
     color: white; /* Màu chữ trắng cho dot active */
 }
 .border-red{
-    border: 2px solid red
+    border-radius: 23px
 }
