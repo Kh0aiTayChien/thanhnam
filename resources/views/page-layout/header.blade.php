@@ -53,6 +53,16 @@
         </div>
 
     </div>
+    <div class="position-absolute shake" style="right: 2%; margin-top: 72vh; ">
+        <a target="_blank" href="https://zalo.me/0988865315">
+            <img src="{{asset('images/header/zalo.png')}}" alt="" style="">
+        </a>
+    </div>
+    <div class="position-absolute shake" style="right: 2%; margin-top: 80vh; animation: shake 1s infinite;">
+        <a href="tel:0988865315">
+            <img src="{{asset('images/header/phone.png')}}" alt="" style="">
+        </a>
+    </div>
 </div>
 <div class="header-mobile shadow-effect sticky-top d-md-none position-relative">
     <div class="position-absolute dropdown-header" style="right: -2px; scale: 60%">
