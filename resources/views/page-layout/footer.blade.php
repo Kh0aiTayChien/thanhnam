@@ -79,8 +79,9 @@
             <div class="col-lg-3 col-md-12 mb-custom">
 {{--                <div class="title mt-1 push-right">DỊCH VỤ</div>--}}
                 <div class=" push-right"><a href="{{asset('thiet-ke-kien-truc')}}" style="text-decoration: none; color: white"> THIẾT KẾ KIẾN TRÚC</a></div>
-                <div class="mt-2 push-right"><a href="{{asset('thi-cong-cong-trinh')}}" style="text-decoration: none; color: white"> THI CÔNG CÔNG TRÌNH</a></div>
                 <div class="mt-2 push-right"><a href="{{asset('thi-cong-noi-that')}}" style="text-decoration: none; color: white"> THI CÔNG NỘI THẤT</a></div>
+                <div class="mt-2 push-right"><a href="{{asset('xay-nha-tron-goi')}}" style="text-decoration: none; color: white"> XÂY NHÀ TRỌN GÓI</a></div>
+                <div class="mt-2 push-right"><a href="{{asset('rem-cua')}}" style="text-decoration: none; color: white"> RÈM CỬA</a></div>
                 <div class="mt-2 push-right"><a href="{{asset('fpt-smart-home')}}" style="text-decoration: none; color: white"> FPT SMART HOME</a></div>
                 <div class="mt-2 mb-4 push-right"><a href="{{asset('vimar')}}" style="text-decoration: none; color: white"> VIMAR</a></div>
 {{--                <div class="mt-2 push-right">Thi công bể bơi</div>--}}

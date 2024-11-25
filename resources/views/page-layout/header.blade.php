@@ -119,7 +119,7 @@
         <div class="text-center"><a href="/" style="text-decoration: none; color: unset"> TRANG CHỦ</a></div>
         <div class="text-center mt-4"><a href="{{asset('gioi-thieu')}}" style="text-decoration: none; color: white"> GIỚI THIỆU</a></div>
         <div class="text-center mt-4"><a href="{{asset('thiet-ke-kien-truc')}}" style="text-decoration: none; color: white"> THIẾT KẾ KIẾN TRÚC</a></div>
-        <div class="text-center mt-4"><a href="{{asset('thi-cong-cong-trinh')}}" style="text-decoration: none; color: white"> THI CÔNG CÔNG TRÌNH</a></div>
+        <div class="text-center mt-4"><a href="{{asset('xay-nha-tron-goi')}}" style="text-decoration: none; color: white"> XÂY NHÀ TRỌN GÓI</a></div>
         <div class="text-center mt-4"><a href="{{asset('thi-cong-noi-that')}}" style="text-decoration: none; color: white"> THI CÔNG NỘI THẤT</a></div>
         <div class="text-center mt-4"><a href="{{asset('fpt-smart-home')}}" style="text-decoration: none; color: white"> FPT SMART HOME</a></div>
         <div class="text-center mt-4"><a href="{{asset('vimar')}}" style="text-decoration: none; color: white"> VIMAR</a></div>

@@ -81,7 +81,7 @@
         <div class="col-3 d-flex justify-content-center align-content-center position-relative " style="height: 8vh">
             <div class=" position-absolute montserrat-bold text-white font-size-sec-1 shadow-effect"
                  style="top: 32%; ;z-index: 1000">
-                THI CÔNG CÔNG TRÌNH
+                XÂY NHÀ TRỌN GÓI
             </div>
             <img src="{{asset('images/homepage/section-1/footer-sec1/2.png')}}" class="img-under tcct">
         </div>
