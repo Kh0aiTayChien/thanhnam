@@ -86,6 +86,7 @@ class IndexController extends Controller
             $query->where('slug', $categoryArticleSlug);
         })
 
+            ->orderBy('created_at', 'desc')
             ->paginate(3);
         return view('pages/service/pool/index', ['news' => $news]);
     }
