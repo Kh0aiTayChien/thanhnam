@@ -22,7 +22,7 @@ class ArticleSuaChuaNhaTronGoiController extends Controller
 //            $query = Article::onlyTrashed();
 //        }
         $query->whereHas('category', function ($query) {
-            $query->where('type', 7);
+            $query->where('type', 7)->orderBy('created_at', 'desc');
         });
 
         if ($searchType == 'title') {

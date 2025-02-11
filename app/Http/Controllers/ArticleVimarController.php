@@ -30,7 +30,7 @@ class ArticleVimarController extends Controller
         } elseif ($searchType == 'content') {
             $query->where('content', 'like', '%' . $keyword . '%');
         }
-        $articles = $query->paginate($paginate);
+        $articles = $query->orderBy('created_at', 'desc')->paginate($paginate);
 
         return view('admin.article_vimar.index',
             compact('articles', 'conditionView' , 'paginate', 'searchType', 'conditionView'));

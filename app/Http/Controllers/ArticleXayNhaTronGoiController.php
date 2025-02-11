@@ -31,7 +31,7 @@ class ArticleXayNhaTronGoiController extends Controller
             $query->where('content', 'like', '%' . $keyword . '%');
         }
 
-        $articles = $query->paginate($paginate);
+        $articles = $query->orderBy('created_at', 'desc')->paginate($paginate);
         return view('admin.article_xay_nha_tron_goi.index',
             compact('articles', 'conditionView' , 'paginate', 'searchType', 'conditionView'));
     }

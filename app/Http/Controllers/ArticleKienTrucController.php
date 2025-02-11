@@ -31,7 +31,7 @@ class ArticleKienTrucController extends Controller
             $query->where('content', 'like', '%' . $keyword . '%');
         }
 
-        $articles = $query->paginate($paginate);
+        $articles = $query->orderBy('created_at', 'desc')->paginate($paginate);
         return view('admin.article_kientruc.index',
             compact('articles', 'conditionView' , 'paginate', 'searchType', 'conditionView'));
     }

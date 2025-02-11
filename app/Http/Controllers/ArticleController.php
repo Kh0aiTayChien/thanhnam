@@ -31,7 +31,7 @@ class ArticleController extends Controller
             $query->where('content', 'like', '%' . $keyword . '%');
         }
 
-        $articles = $query->paginate($paginate);
+        $articles = $query->orderBy('created_at', 'desc')->paginate($paginate);
         return view('admin/article/index',
             compact('articles', 'conditionView' , 'paginate', 'searchType', 'conditionView'));
     }
