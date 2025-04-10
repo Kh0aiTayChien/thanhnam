@@ -80,10 +80,10 @@
             }
         }
 
-        // Khởi tạo AOS khi tải trang
+        // Khởi tạo AOS khi tải trang 1
         initAOS();
 
-        // Lắng nghe sự kiện thay đổi kích thước màn hình
+        // Lắng nghe sự kiện thay đổi kích thước màn hình 1
         window.addEventListener('resize', function() {
             initAOS();
         });
