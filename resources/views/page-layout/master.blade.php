@@ -42,15 +42,7 @@
     <link href="{{asset('/css/homepage/about.css')}}" rel="stylesheet">
     <link href="{{asset('/css/introduce/sec1-GT.css')}}" rel="stylesheet">
     <link href="{{asset('/css/pools/sec1.css')}}" rel="stylesheet">
-    <style>
-        body {
-            overflow-x: hidden;
-            touch-action: pan-y;
-        }
-    </style>
-    {!! SEO::generate() !!}
-    
-   <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16989148690"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -59,6 +51,16 @@
     
       gtag('config', 'AW-16989148690');
     </script>
+     <script>
+            console.log(1);
+      </script>
+    <style>
+        body {
+            overflow-x: hidden;
+            touch-action: pan-y;
+        }
+    </style>
+    {!! SEO::generate() !!}
 </head>
 <body>
 @include('page-layout/header')
