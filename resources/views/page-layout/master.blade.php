@@ -42,15 +42,6 @@
     <link href="{{asset('/css/homepage/about.css')}}" rel="stylesheet">
     <link href="{{asset('/css/introduce/sec1-GT.css')}}" rel="stylesheet">
     <link href="{{asset('/css/pools/sec1.css')}}" rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16989148690"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'AW-16989148690');
-    </script>
      <script>
             console.log(1);
       </script>
@@ -68,6 +59,15 @@
 @include('page-layout/footer')
 </body>
 </html>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16989148690"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16989148690');
+</script>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         function initAOS() {
